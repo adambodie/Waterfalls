@@ -1,0 +1,18 @@
+<p>
+  <strong>Name:</strong>
+  <%= @waterfall.title %>
+</p>
+ 
+<p>
+  <strong>Description:</strong>
+  <%= @waterfall.text %>
+</p>
+
+<h2>Comments</h2>
+<%= render @waterfall.comments %>
+ 
+<h2>Add a comment:</h2>
+<%= render 'comments/form' %>
+
+<%= link_to 'Edit', edit_waterfall_path(@waterfall) %> |
+<%= link_to 'Back', waterfalls_path %>
