@@ -14,6 +14,9 @@ class CommentsController < ApplicationController
     @comment.destroy
     redirect_to waterfall_path(@waterfall)
   end
+  
+  def show
+  end
  
   private
     def comment_params
