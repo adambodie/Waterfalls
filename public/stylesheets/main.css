@@ -1,0 +1,51 @@
+h1 {
+text-align: center;
+}
+
+.video {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	max-width: 900px;
+}
+
+.block {
+	width: 150px;
+	height: 400px;
+	display: inline-block;
+	margin-right: -5px;
+}
+#one {
+	background-color: #000033;
+}
+#two {
+	background-color: #007FFF;
+}
+#three {
+	background-color: #0147FA;
+}
+#four {
+	background-color: #00C5CD;
+}
+#five {
+	background-color: #1B3F8B;
+}
+#six {
+	background-color: #42C0FB;
+}
+
+#one-pic, #two-pic, #three-pic, #four-pic, #five-pic, #six-pic {
+	z-index: 4;
+}
+
+#seven-pic, #eight-pic, #nine-pic, #ten-pic, #eleven-pic, #twelve-pic {
+	z-index: 8;
+}
+
+#thirteen-pic, #fourteen-pic, #fifteen-pic, #sixteen-pic, #seventeen-pic, #eighteen-pic {
+	z-index: 12;
+}
+
+#nineteen-pic, #twenty-pic, #twentyone-pic, #twentytwo-pic, #twentythree-pic, #twentyfour-pic {
+	z-index: 16;
+}
