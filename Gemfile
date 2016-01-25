@@ -44,7 +44,12 @@ gem 'sdoc', '~> 0.4.0', group: :doc
 gem 'bootstrap-sass', '~> 3.3', '>= 3.3.6'
 
 # Autoprefixer
-gem 'autoprefixer-rails'
+gem 'autoprefixer-rails', '>= 5.0'
+
+#sprockets
+gem 'sprockets'
+
+
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
