@@ -2,6 +2,13 @@ h1 {
 text-align: center;
 }
 
+.jumbotron {
+	height: 150px;
+}
+
+.jumbotron h1 {
+	margin: 0;
+}
 .video {
 	display: block;
 	margin-left: auto;
@@ -14,6 +21,7 @@ text-align: center;
 	height: 400px;
 	display: inline-block;
 	margin-right: -5px;
+	vertical-align: top;
 }
 #one {
 	background-color: #000033;
