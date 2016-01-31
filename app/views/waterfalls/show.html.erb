@@ -8,12 +8,24 @@
  		<div class="row">
  			<div class="col-md-6">
 				<p><%= @waterfall.text %></p>
+				<p>Height: <%= @waterfall.height %> feet</p>
+				<p>Average width: <%= @waterfall.width %> feet</p>
+				<p>Drops: <%= @waterfall.drops %></p>
+				<p>Tallest drop: <%= @waterfall.tallestDrop %></p>		
+				<p>Waterfall form: <%= @waterfall.form %></p>
+				<p>Watershed: <%= @waterfall.watershed %></p>
+				<p>Stream: <%= @waterfall.stream %></p>
+				<p>Location: <%= @waterfall.location %></p>
+				<p>State: <%= @waterfall.state %></p>
+				<p>Visited: <%= @waterfall.visit %></p>
+				
 			</div>
  			<div class="col-md-6">
 				<%= image_tag @waterfall.avatar.url(:medium) %>
 			</div>
 			
 		</div>
+		
 		<div class ="row">
 			<h3>Comments</h3>
 			<%= render @waterfall.comments %>

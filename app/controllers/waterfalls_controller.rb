@@ -31,7 +31,7 @@ class WaterfallsController < ApplicationController
 	def update
   		@waterfall = Waterfall.find(params[:id])
  
-  		if @waterfall.update(waterfall_params)
+  		if @waterfall.update(waterfall_params)	
     		redirect_to @waterfall
   		else
     		render 'edit'
@@ -46,6 +46,8 @@ class WaterfallsController < ApplicationController
 	end
   	private
   		def waterfall_params
-    		params.require(:waterfall).permit(:title, :text, :avatar)
+    		params.require(:waterfall).permit(:title, :text, :height, :width, :drops, :tallestDrop, :form, :watershed, :stream, :location, :state, :visit, :avatar)
   		end
 end
+
+

@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160130175227) do
+ActiveRecord::Schema.define(version: 20160131184253) do
 
   create_table "comments", force: :cascade do |t|
     t.string   "commenter"
@@ -32,6 +32,16 @@ ActiveRecord::Schema.define(version: 20160130175227) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
+    t.integer  "height"
+    t.integer  "width"
+    t.integer  "drops"
+    t.integer  "tallestDrop"
+    t.string   "form"
+    t.string   "watershed"
+    t.string   "stream"
+    t.string   "location"
+    t.string   "state"
+    t.boolean  "visit"
   end
 
 end
