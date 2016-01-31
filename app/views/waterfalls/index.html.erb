@@ -12,6 +12,7 @@
   	<% @waterfalls.each do |waterfall| %>
     	<tr>
       	<td><%= waterfall.title %></td>
+      	<td><%= image_tag waterfall.avatar.url(:thumb) %></td>
       	<td><%= link_to 'Show', waterfall_path(waterfall) %></td>
       	<td><%= link_to 'Edit', edit_waterfall_path(waterfall) %></td>
       	<td><%= link_to 'Destroy', waterfall_path(waterfall),

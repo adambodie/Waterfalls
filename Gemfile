@@ -46,6 +46,10 @@ gem 'autoprefixer-rails', '>= 5.0'
 #sprockets
 gem 'sprockets'
 
+#Paperclip
+gem "paperclip", "~> 4.3.3"
+gem "cocaine", "~> 0.5.8"
+
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console
   gem 'byebug'

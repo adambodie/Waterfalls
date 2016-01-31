@@ -46,6 +46,6 @@ class WaterfallsController < ApplicationController
 	end
   	private
   		def waterfall_params
-    		params.require(:waterfall).permit(:title, :text)
+    		params.require(:waterfall).permit(:title, :text, :avatar)
   		end
 end
