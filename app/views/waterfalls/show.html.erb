@@ -8,31 +8,35 @@
  		<div class="row">
  			<div class="col-md-6">
 				<p><%= @waterfall.text %></p>
-				<p>Height: <%= @waterfall.height %> feet</p>
-				<p>Average width: <%= @waterfall.width %> feet</p>
-				<p>Drops: <%= @waterfall.drops %></p>
-				<p>Tallest drop: <%= @waterfall.tallestDrop %></p>		
-				<p>Waterfall form: <%= @waterfall.form %></p>
-				<p>Watershed: <%= @waterfall.watershed %></p>
-				<p>Stream: <%= @waterfall.stream %></p>
-				<p>Location: <%= @waterfall.location %></p>
-				<p>State: <%= @waterfall.state %></p>
-				<p>Visited: <%= @waterfall.visit %></p>
+				<p><strong>Height:</strong> <%= @waterfall.height %> feet</p>
+				<p><strong>Average width:</strong> <%= @waterfall.width %> feet</p>
+				<p><strong>Drops:</strong> <%= @waterfall.drops %></p>
+				<p><strong>Tallest drop:</strong> <%= @waterfall.tallestDrop %> feet</p>		
+				<p><strong>Waterfall form:</strong> <%= @waterfall.form %></p>
+				<p><strong>Watershed:</strong> <%= @waterfall.watershed %></p>
+				<p><strong>Stream:</strong> <%= @waterfall.stream %></p>
+				<p><strong>Location:</strong> <%= @waterfall.location %></p>
+				<p><strong>State:</strong> <%= @waterfall.state %></p>
+				<p><strong>Visited:</strong> <%= @waterfall.visit %></p>
 				
 			</div>
  			<div class="col-md-6">
-				<%= image_tag @waterfall.avatar.url(:medium) %>
+				<%= image_tag @waterfall.avatar.url(:medium), class:"img-responsive big-picture" %>
 			</div>
 			
 		</div>
 		
 		<div class ="row">
-			<h3>Comments</h3>
-			<%= render @waterfall.comments %>
+ 			<div class="col-sm-6">
+				<h3>Comments</h3>
+				<%= render @waterfall.comments %>
+			</div> 		
  		</div>
  		<div class ="row">
-			<h3>Add a comment:</h3>
-			<%= render 'comments/form' %>
+ 			<div class="col-sm-6">
+				<h3>Add a comment:</h3>
+				<%= render 'comments/form' %>
+			</div>
 		</div>
 		<%= link_to 'Edit', edit_waterfall_path(@waterfall) %> |
 		<%= link_to 'Back', waterfalls_path %>

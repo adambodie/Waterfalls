@@ -29813,3 +29813,1481 @@ Started GET "/" for ::1 at 2016-01-31 15:26:59 -0800
 Processing by WelcomeController#index as HTML
   Rendered welcome/index.html.erb within layouts/application (7.1ms)
 Completed 200 OK in 65ms (Views: 63.4ms | ActiveRecord: 0.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAvatarToUsers (20160131233433)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.0ms)[0m  [1mALTER TABLE "users" ADD "avatar" varchar[0m
+SQLite3::SQLException: no such table: users: ALTER TABLE "users" ADD "avatar" varchar
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAvatarToUsers (20160131233433)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.8ms)[0m  [1mALTER TABLE "users" ADD "avatar" varchar[0m
+SQLite3::SQLException: no such table: users: ALTER TABLE "users" ADD "avatar" varchar
+  [1m[35m (0.1ms)[0m  rollback transaction
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to AddAvatarToWaterfalls (20160131233521)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (10.7ms)[0m  [1mALTER TABLE "waterfalls" ADD "avatar" varchar[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160131233521"]]
+  [1m[36m (21.0ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.3ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_waterfall_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_waterfall_id' AND type='index'
+[0m
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to CreatePictures (20160131234139)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.6ms)[0m  [1mCREATE TABLE "pictures" ("id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL, "post_id" integer, "avatar" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL) [0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160131234139"]]
+  [1m[36m (68.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_waterfall_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_waterfall_id' AND type='index'
+[0m
+
+
+Started GET "/" for ::1 at 2016-01-31 15:58:39 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.5ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (512.1ms)
+Completed 200 OK in 995ms (Views: 963.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-01-31 15:58:41 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 80ms (Views: 79.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/pictures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 15:58:41 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 15:58:43 -0800
+
+SyntaxError (/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:28: syntax error, unexpected '=', expecting =>
+...reate!(:avatar => a, :post_id = -> @waterfall.id)
+...                               ^
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:28: formal argument cannot be an instance variable
+... => a, :post_id = -> @waterfall.id)
+...                               ^
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:31: syntax error, unexpected keyword_else, expecting keyword_end
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:58: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/waterfalls_controller.rb:28: syntax error, unexpected '=', expecting =>
+  app/controllers/waterfalls_controller.rb:28: formal argument cannot be an instance variable
+  app/controllers/waterfalls_controller.rb:31: syntax error, unexpected keyword_else, expecting keyword_end
+  app/controllers/waterfalls_controller.rb:58: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (40.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (87.8ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 15:58:43 -0800
+
+SyntaxError (/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:28: syntax error, unexpected '=', expecting =>
+...reate!(:avatar => a, :post_id = -> @waterfall.id)
+...                               ^
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:28: formal argument cannot be an instance variable
+... => a, :post_id = -> @waterfall.id)
+...                               ^
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:31: syntax error, unexpected keyword_else, expecting keyword_end
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:58: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/waterfalls_controller.rb:28: syntax error, unexpected '=', expecting =>
+  app/controllers/waterfalls_controller.rb:28: formal argument cannot be an instance variable
+  app/controllers/waterfalls_controller.rb:31: syntax error, unexpected keyword_else, expecting keyword_end
+  app/controllers/waterfalls_controller.rb:58: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (10.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (56.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (117.4ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 15:59:37 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.0ms)[0m  SELECT "waterfalls".* FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (45.5ms)
+Completed 200 OK in 117ms (Views: 92.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 15:59:37 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 15:59:37 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 15:59:37 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 15:59:37 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 15:59:37 -0800
+
+
+Started GET "/assets/pictures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 15:59:38 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 15:59:38 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 15:59:38 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 15:59:38 -0800
+
+
+Started GET "/waterfalls/8" for ::1 at 2016-01-31 15:59:41 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWaterfall Load (0.6ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 500 Internal Server Error in 62ms (ActiveRecord: 0.6ms)
+
+LoadError (cannot load such file -- carrierwave/orm/actionrecord):
+  app/uploaders/avatar_uploader.rb:3:in `<top (required)>'
+  app/models/picture.rb:2:in `<class:Picture>'
+  app/models/picture.rb:1:in `<top (required)>'
+  app/controllers/waterfalls_controller.rb:11:in `show'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (17.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (60.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (38.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (79.5ms)
+
+
+Started GET "/waterfalls/8" for ::1 at 2016-01-31 15:59:42 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 8]]
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.3ms)
+
+LoadError (cannot load such file -- carrierwave/orm/actionrecord):
+  app/uploaders/avatar_uploader.rb:3:in `<top (required)>'
+  app/models/picture.rb:2:in `<class:Picture>'
+  app/models/picture.rb:1:in `<top (required)>'
+  app/controllers/waterfalls_controller.rb:11:in `show'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (24.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (11.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (76.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (93.9ms)
+
+
+Started GET "/waterfalls/8" for ::1 at 2016-01-31 16:00:09 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWaterfall Load (0.5ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 8]]
+Completed 500 Internal Server Error in 57ms (ActiveRecord: 2.2ms)
+
+NameError (uninitialized constant CarrierWave::MimeTYpes):
+  app/uploaders/avatar_uploader.rb:10:in `<class:AvatarUploader>'
+  app/uploaders/avatar_uploader.rb:5:in `<top (required)>'
+  app/models/picture.rb:2:in `<class:Picture>'
+  app/models/picture.rb:1:in `<top (required)>'
+  app/controllers/waterfalls_controller.rb:11:in `show'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (89.0ms)
+
+
+Started GET "/waterfalls/8" for ::1 at 2016-01-31 16:00:26 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mWaterfall Load (0.4ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mPicture Load (1.6ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."waterfall_id" = ?[0m  [[nil, 8]]
+SQLite3::SQLException: no such column: pictures.waterfall_id: SELECT "pictures".* FROM "pictures" WHERE "pictures"."waterfall_id" = ?
+  Rendered waterfalls/show.html.erb within layouts/application (8.9ms)
+Completed 500 Internal Server Error in 84ms (ActiveRecord: 3.5ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: pictures.waterfall_id: SELECT "pictures".* FROM "pictures" WHERE "pictures"."waterfall_id" = ?):
+    21: 				
+    22: 			</div>
+    23:  			<div class="col-md-6">
+    24:  				<% @pictures.each do |p| %>
+    25: 					<%= image_tag p.avatar.url %>
+    26: 				<% end %>
+    27: 			</div>
+  app/views/waterfalls/show.html.erb:24:in `_app_views_waterfalls_show_html_erb___113524371__640496252'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (22.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (69.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (46.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (92.9ms)
+
+
+Started GET "/waterfalls/8" for ::1 at 2016-01-31 16:01:24 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mPicture Load (3.3ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."waterfall_id" = ?[0m  [[nil, 8]]
+SQLite3::SQLException: no such column: pictures.waterfall_id: SELECT "pictures".* FROM "pictures" WHERE "pictures"."waterfall_id" = ?
+  Rendered waterfalls/show.html.erb within layouts/application (11.8ms)
+Completed 500 Internal Server Error in 21ms (ActiveRecord: 3.7ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: pictures.waterfall_id: SELECT "pictures".* FROM "pictures" WHERE "pictures"."waterfall_id" = ?):
+    21: 				
+    22: 			</div>
+    23:  			<div class="col-md-6">
+    24:  				<%= @pictures.each do |p| %>
+    25: 					<%= image_tag p.avatar.url %>
+    26: 				<% end %>
+    27: 			</div>
+  app/views/waterfalls/show.html.erb:24:in `_app_views_waterfalls_show_html_erb___113524371__633101864'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (64.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (90.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.2ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_waterfall_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_waterfall_id' AND type='index'
+[0m
+
+
+Started GET "/" for ::1 at 2016-01-31 16:04:50 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (498.7ms)
+Completed 200 OK in 613ms (Views: 590.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 16:04:51 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 16:04:51 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 16:04:51 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 16:04:51 -0800
+
+
+Started GET "/assets/pictures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:04:51 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:04:51 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:04:51 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 16:04:51 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:04:51 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 16:04:55 -0800
+
+SyntaxError (/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:28: syntax error, unexpected '=', expecting =>
+...reate!(:avatar => a, :post_id = -> @waterfall.id)
+...                               ^
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:28: formal argument cannot be an instance variable
+... => a, :post_id = -> @waterfall.id)
+...                               ^
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:31: syntax error, unexpected keyword_else, expecting keyword_end
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:58: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/waterfalls_controller.rb:28: syntax error, unexpected '=', expecting =>
+  app/controllers/waterfalls_controller.rb:28: formal argument cannot be an instance variable
+  app/controllers/waterfalls_controller.rb:31: syntax error, unexpected keyword_else, expecting keyword_end
+  app/controllers/waterfalls_controller.rb:58: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (10.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (4.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (61.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (117.4ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 16:04:55 -0800
+
+SyntaxError (/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:28: syntax error, unexpected '=', expecting =>
+...reate!(:avatar => a, :post_id = -> @waterfall.id)
+...                               ^
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:28: formal argument cannot be an instance variable
+... => a, :post_id = -> @waterfall.id)
+...                               ^
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:31: syntax error, unexpected keyword_else, expecting keyword_end
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:58: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/waterfalls_controller.rb:28: syntax error, unexpected '=', expecting =>
+  app/controllers/waterfalls_controller.rb:28: formal argument cannot be an instance variable
+  app/controllers/waterfalls_controller.rb:31: syntax error, unexpected keyword_else, expecting keyword_end
+  app/controllers/waterfalls_controller.rb:58: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (5.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (52.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (41.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (85.7ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-01-31 16:05:03 -0800
+
+SyntaxError (/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:28: syntax error, unexpected '=', expecting =>
+...reate!(:avatar => a, :post_id = -> @waterfall.id)
+...                               ^
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:28: formal argument cannot be an instance variable
+... => a, :post_id = -> @waterfall.id)
+...                               ^
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:31: syntax error, unexpected keyword_else, expecting keyword_end
+/home/aduo3000/waterfalls/app/controllers/waterfalls_controller.rb:58: syntax error, unexpected end-of-input, expecting keyword_end):
+  app/controllers/waterfalls_controller.rb:28: syntax error, unexpected '=', expecting =>
+  app/controllers/waterfalls_controller.rb:28: formal argument cannot be an instance variable
+  app/controllers/waterfalls_controller.rb:31: syntax error, unexpected keyword_else, expecting keyword_end
+  app/controllers/waterfalls_controller.rb:58: syntax error, unexpected end-of-input, expecting keyword_end
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (11.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (54.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (89.2ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-01-31 16:05:19 -0800
+Processing by WaterfallsController#new as HTML
+Filter chain halted as #<Proc:0xb9a84258@/usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-01-31 16:05:21 -0800
+Processing by WaterfallsController#new as HTML
+Completed 500 Internal Server Error in 162ms (ActiveRecord: 2.2ms)
+
+ActiveRecord::UnknownAttributeError (unknown attribute 'waterfall_id' for Picture.):
+  app/controllers/waterfalls_controller.rb:16:in `new'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (15.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (6.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (59.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (88.3ms)
+
+
+Started GET "/waterfalls/8" for ::1 at 2016-01-31 16:05:52 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mWaterfall Load (0.7ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 8]]
+  [1m[36mPicture Load (1.5ms)[0m  [1mSELECT "pictures".* FROM "pictures" WHERE "pictures"."waterfall_id" = ?[0m  [[nil, 8]]
+SQLite3::SQLException: no such column: pictures.waterfall_id: SELECT "pictures".* FROM "pictures" WHERE "pictures"."waterfall_id" = ?
+  Rendered waterfalls/show.html.erb within layouts/application (10.5ms)
+Completed 500 Internal Server Error in 52ms (ActiveRecord: 2.2ms)
+
+ActionView::Template::Error (SQLite3::SQLException: no such column: pictures.waterfall_id: SELECT "pictures".* FROM "pictures" WHERE "pictures"."waterfall_id" = ?):
+    21: 				
+    22: 			</div>
+    23:  			<div class="col-md-6">
+    24:  				<% @pictures.each do |p| %>
+    25: 					<%= image_tag p.avatar.url %>
+    26: 				<% end %>
+    27: 			</div>
+  app/views/waterfalls/show.html.erb:24:in `_app_views_waterfalls_show_html_erb__465608356__583415312'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (20.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (67.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (43.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (90.2ms)
+
+
+Started GET "/waterfalls/8" for ::1 at 2016-01-31 16:06:19 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mWaterfall Load (0.5ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered waterfalls/show.html.erb within layouts/application (3.7ms)
+Completed 500 Internal Server Error in 56ms (ActiveRecord: 2.3ms)
+
+ActionView::Template::Error (undefined method `each' for nil:NilClass):
+    21: 				
+    22: 			</div>
+    23:  			<div class="col-md-6">
+    24:  				<% @pictures.each do |p| %>
+    25: 					<%= image_tag p.avatar.url %>
+    26: 				<% end %>
+    27: 			</div>
+  app/views/waterfalls/show.html.erb:24:in `_app_views_waterfalls_show_html_erb__465608356__583415312'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (18.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/template_error.html.erb within rescues/layout (62.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (44.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (90.5ms)
+
+
+Started GET "/waterfalls/8" for ::1 at 2016-01-31 16:06:39 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWaterfall Load (0.3ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mComment Load (0.5ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 8]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (70.2ms)
+  Rendered waterfalls/show.html.erb within layouts/application (92.4ms)
+Completed 200 OK in 139ms (Views: 131.9ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 16:06:39 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 16:06:39 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 16:06:39 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 16:06:39 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:06:39 -0800
+
+
+Started GET "/assets/pictures.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:06:39 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:06:39 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:06:39 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 16:06:39 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 16:06:52 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (0.5ms)[0m  [1mSELECT "waterfalls".* FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 62ms (Views: 60.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/waterfalls/10" for ::1 at 2016-01-31 16:06:54 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mWaterfall Load (0.2ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 10]]
+  Rendered collection (0.1ms)
+  Rendered comments/_form.html.erb (5.3ms)
+  Rendered waterfalls/show.html.erb within layouts/application (13.4ms)
+Completed 200 OK in 65ms (Views: 62.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 16:16:47 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.7ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (0.5ms)[0m  SELECT "waterfalls".* FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (43.7ms)
+Completed 200 OK in 676ms (Views: 636.6ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 16:16:48 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 16:16:48 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 16:16:48 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 16:16:48 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:16:48 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:16:48 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 16:16:48 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:16:48 -0800
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-01-31 16:17:22 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (90.4ms)
+  Rendered waterfalls/new.html.erb within layouts/application (102.3ms)
+Completed 200 OK in 194ms (Views: 191.8ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-01-31 16:29:16 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v8y33WQG6uE6N2y+IQNKuRWTMZlU3odzdMPZiPwwY93jFh5be7ZsEW4/ofkGq/s3l0CNOqbATxpR/zCLqC0LYQ==", "waterfall"=>{"title"=>"Ruby Falls", "text"=>"Located just outside of Chattanooga, Tennessee within Lookout Mountain, Ruby Falls is perhaps the most unique waterfall you may ever see.  Found 1120 feet underground, this 145 foot high waterfall is fed by rainwater and natural springs and has been available for tourists via a tour since the 1930's.  Located just off I-24 in Chattanooga, chances are you will see signs saying \"See Ruby Falls\" in the area, just be sure to follow them.  Also take the time to visit the other attractions in the area, including Lookout Mountain Caverns, Rock City and the Lookout Mountain Incline Railway.   ", "height"=>"145", "width"=>"5", "drops"=>"1", "tallestDrop"=>"145", "form"=>"Plunge", "watershed"=>"Tennessee River", "stream"=>"Tennessee River", "location"=>"Chattanooga", "state"=>"Tennessee", "visit"=>"true", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb8f846f8 @tempfile=#<Tempfile:/tmp/RackMultipart20160131-29574-c7t0y4.jpg>, @original_filename="ruby.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"ruby.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Filter chain halted as #<Proc:0xb947c380@/usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 36ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-01-31 16:29:16 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"v8y33WQG6uE6N2y+IQNKuRWTMZlU3odzdMPZiPwwY93jFh5be7ZsEW4/ofkGq/s3l0CNOqbATxpR/zCLqC0LYQ==", "waterfall"=>{"title"=>"Ruby Falls", "text"=>"Located just outside of Chattanooga, Tennessee within Lookout Mountain, Ruby Falls is perhaps the most unique waterfall you may ever see.  Found 1120 feet underground, this 145 foot high waterfall is fed by rainwater and natural springs and has been available for tourists via a tour since the 1930's.  Located just off I-24 in Chattanooga, chances are you will see signs saying \"See Ruby Falls\" in the area, just be sure to follow them.  Also take the time to visit the other attractions in the area, including Lookout Mountain Caverns, Rock City and the Lookout Mountain Incline Railway.   ", "height"=>"145", "width"=>"5", "drops"=>"1", "tallestDrop"=>"145", "form"=>"Plunge", "watershed"=>"Tennessee River", "stream"=>"Tennessee River", "location"=>"Chattanooga", "state"=>"Tennessee", "visit"=>"true", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb51c4ba0 @tempfile=#<Tempfile:/tmp/RackMultipart20160131-29574-8e8cf5.jpg>, @original_filename="ruby.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"ruby.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/58e53d1324eef6265fdb97b08ed9aadf20160131-29574-h7zpa0.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/58e53d1324eef6265fdb97b08ed9aadf20160131-29574-1ckqutn.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/58e53d1324eef6265fdb97b08ed9aadf20160131-29574-1ckqutn.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/58e53d1324eef6265fdb97b08ed9aadf20160131-29574-1ckqutn.jpg[0]' -auto-orient -resize "500x500>" '/tmp/26ecb36901eb9cf7e1a7e7ed0e22d48e20160131-29574-uxwrs3'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/58e53d1324eef6265fdb97b08ed9aadf20160131-29574-1ckqutn.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/58e53d1324eef6265fdb97b08ed9aadf20160131-29574-1ckqutn.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/58e53d1324eef6265fdb97b08ed9aadf20160131-29574-1ckqutn.jpg[0]' -auto-orient -resize "200x200>" '/tmp/26ecb36901eb9cf7e1a7e7ed0e22d48e20160131-29574-k81vqo'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/58e53d1324eef6265fdb97b08ed9aadf20160131-29574-j508ki.jpg'
+  [1m[35mSQL (1.9ms)[0m  INSERT INTO "waterfalls" ("title", "text", "height", "width", "drops", "tallestDrop", "form", "watershed", "stream", "location", "state", "visit", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Ruby Falls"], ["text", "Located just outside of Chattanooga, Tennessee within Lookout Mountain, Ruby Falls is perhaps the most unique waterfall you may ever see.  Found 1120 feet underground, this 145 foot high waterfall is fed by rainwater and natural springs and has been available for tourists via a tour since the 1930's.  Located just off I-24 in Chattanooga, chances are you will see signs saying \"See Ruby Falls\" in the area, just be sure to follow them.  Also take the time to visit the other attractions in the area, including Lookout Mountain Caverns, Rock City and the Lookout Mountain Incline Railway.   "], ["height", 145], ["width", 5], ["drops", 1], ["tallestDrop", 145], ["form", "Plunge"], ["watershed", "Tennessee River"], ["stream", "Tennessee River"], ["location", "Chattanooga"], ["state", "Tennessee"], ["visit", "t"], ["avatar_file_name", "ruby.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 47305], ["avatar_updated_at", "2016-02-01 00:29:16.278373"], ["created_at", "2016-02-01 00:29:16.599048"], ["updated_at", "2016-02-01 00:29:16.599048"]]
+  [1m[36m (23.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/24
+Completed 302 Found in 439ms (ActiveRecord: 25.7ms)
+
+
+Started GET "/waterfalls/24" for ::1 at 2016-01-31 16:29:16 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mWaterfall Load (0.5ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 24]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 24]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (28.7ms)
+  Rendered waterfalls/show.html.erb within layouts/application (95.1ms)
+Completed 200 OK in 180ms (Views: 141.6ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 16:29:27 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.0ms)[0m  SELECT "waterfalls".* FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 55ms (Views: 52.3ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/waterfalls/10" for ::1 at 2016-01-31 16:31:23 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mWaterfall Load (0.2ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 10]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.0ms)
+  Rendered waterfalls/show.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 58ms (Views: 54.7ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/waterfalls/10/comments" for ::1 at 2016-01-31 16:32:33 -0800
+Processing by CommentsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"HmyR93WvnJGu7lVc1dsTd5Lhg4/BezSrkHXLNemg1NlCtjhxah8aYfrmmBvyc6L5EDI/LDNl/MK1SSI2vb28ZQ==", "comment"=>{"commenter"=>"Adam Bodie", "body"=>"This is truly one of the best waterfalls for me.  When I first saw it, I was in complete awe over the beauty."}, "commit"=>"Create Comment", "waterfall_id"=>"10"}
+  [1m[36mWaterfall Load (0.4ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36mSQL (1.4ms)[0m  [1mINSERT INTO "comments" ("commenter", "body", "waterfall_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?)[0m  [["commenter", "Adam Bodie"], ["body", "This is truly one of the best waterfalls for me.  When I first saw it, I was in complete awe over the beauty."], ["waterfall_id", 10], ["created_at", "2016-02-01 00:32:33.157162"], ["updated_at", "2016-02-01 00:32:33.157162"]]
+  [1m[35m (18.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/waterfalls/10
+Completed 302 Found in 32ms (ActiveRecord: 19.9ms)
+
+
+Started GET "/waterfalls/10" for ::1 at 2016-01-31 16:32:33 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[36mWaterfall Load (0.6ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 10]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 10]]
+  Rendered comments/_comment.html.erb (2.3ms)
+  Rendered comments/_form.html.erb (4.2ms)
+  Rendered waterfalls/show.html.erb within layouts/application (18.8ms)
+Completed 200 OK in 64ms (Views: 60.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 16:32:39 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (0.5ms)[0m  [1mSELECT "waterfalls".* FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 53ms (Views: 51.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 16:33:03 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (0.5ms)[0m  SELECT "waterfalls".* FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 59ms (Views: 56.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 16:33:03 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 16:33:03 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 16:33:03 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 16:33:03 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:33:03 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:33:03 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:33:03 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 16:33:03 -0800
+
+
+Started GET "/waterfalls/8" for ::1 at 2016-01-31 16:33:04 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWaterfall Load (0.4ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 8]]
+  Rendered waterfalls/show.html.erb within layouts/application (4.4ms)
+Completed 500 Internal Server Error in 12ms (ActiveRecord: 0.4ms)
+
+SyntaxError (/home/aduo3000/waterfalls/app/views/waterfalls/show.html.erb:24: syntax error, unexpected '='
+...all.avatar.url(:medium), class="img-responsive" );@output_bu...
+...                               ^):
+  app/views/waterfalls/show.html.erb:24: syntax error, unexpected '='
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (8.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (40.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (82.1ms)
+
+
+Started GET "/waterfalls/8" for ::1 at 2016-01-31 16:33:05 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 8]]
+  Rendered waterfalls/show.html.erb within layouts/application (3.0ms)
+Completed 500 Internal Server Error in 10ms (ActiveRecord: 0.3ms)
+
+SyntaxError (/home/aduo3000/waterfalls/app/views/waterfalls/show.html.erb:24: syntax error, unexpected '='
+...all.avatar.url(:medium), class="img-responsive" );@output_bu...
+...                               ^):
+  app/views/waterfalls/show.html.erb:24: syntax error, unexpected '='
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (7.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.4ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (65.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (42.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (88.6ms)
+
+
+Started GET "/waterfalls/8" for ::1 at 2016-01-31 16:33:18 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWaterfall Load (0.2ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mComment Load (0.4ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 8]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.7ms)
+  Rendered waterfalls/show.html.erb within layouts/application (17.3ms)
+Completed 200 OK in 83ms (Views: 80.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 16:33:18 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 16:33:18 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 16:33:18 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 16:33:18 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:33:18 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:33:18 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:33:18 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 16:33:18 -0800
+
+
+Started GET "/waterfalls/8" for ::1 at 2016-01-31 16:34:22 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWaterfall Load (0.7ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 8]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.8ms)
+  Rendered waterfalls/show.html.erb within layouts/application (15.2ms)
+Completed 200 OK in 66ms (Views: 61.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 16:34:23 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 16:34:23 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 16:34:23 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 16:34:23 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:34:23 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:34:23 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 16:34:23 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:34:23 -0800
+
+
+Started GET "/waterfalls/8" for ::1 at 2016-01-31 16:34:56 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWaterfall Load (0.3ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 8]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.2ms)
+  Rendered waterfalls/show.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 91ms (Views: 88.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 16:34:56 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 16:34:57 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 16:34:57 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 16:34:57 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:34:57 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:34:57 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:34:57 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 16:34:57 -0800
+
+
+Started GET "/waterfalls/8" for ::1 at 2016-01-31 16:35:25 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"8"}
+  [1m[36mWaterfall Load (0.3ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 8]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 8]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.5ms)
+  Rendered waterfalls/show.html.erb within layouts/application (17.0ms)
+Completed 200 OK in 73ms (Views: 70.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 16:35:25 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 16:35:25 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 16:35:25 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 16:35:26 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:35:26 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:35:26 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:35:26 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 16:35:26 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 16:35:38 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (0.5ms)[0m  [1mSELECT "waterfalls".* FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (6.1ms)
+Completed 200 OK in 50ms (Views: 47.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/waterfalls/10" for ::1 at 2016-01-31 16:35:40 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mWaterfall Load (0.2ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 10]]
+  Rendered comments/_comment.html.erb (1.9ms)
+  Rendered comments/_form.html.erb (4.4ms)
+  Rendered waterfalls/show.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 60ms (Views: 57.7ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/waterfalls/10" for ::1 at 2016-01-31 16:36:09 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"10"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 10]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 10]]
+  Rendered comments/_comment.html.erb (1.1ms)
+  Rendered comments/_form.html.erb (5.6ms)
+  Rendered waterfalls/show.html.erb within layouts/application (19.0ms)
+Completed 200 OK in 74ms (Views: 63.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 16:36:09 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 16:36:09 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 16:36:09 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 16:36:09 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:36:09 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:36:09 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:36:09 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 16:36:09 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 16:48:25 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (0.6ms)[0m  SELECT "waterfalls".* FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 50ms (Views: 48.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 16:48:57 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (0.4ms)[0m  [1mSELECT "waterfalls".* FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 59ms (Views: 56.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 16:48:57 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 16:48:57 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 16:48:57 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 16:48:57 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:48:57 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:48:57 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:48:57 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 16:48:57 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 16:49:14 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (2.4ms)[0m  SELECT "waterfalls".* FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 66ms (Views: 61.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 16:49:14 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:49:14 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 16:49:14 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 16:49:14 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 16:49:14 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:49:14 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:49:14 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 16:49:14 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 16:49:17 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (0.8ms)[0m  [1mSELECT "waterfalls".* FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 80ms (Views: 78.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 16:49:17 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 16:49:17 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 16:49:17 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 16:49:17 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:49:17 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 16:49:17 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:49:17 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:49:17 -0800
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-01-31 16:49:45 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (10.7ms)
+  Rendered waterfalls/new.html.erb within layouts/application (12.6ms)
+Completed 200 OK in 61ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-01-31 16:57:20 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Fo++MBl/duYjxh96+5OyDD0/LigrF45fnQ6zg0yrmyhKVRe2Bs/wFnfO0j3cOwOCv+ySi9kJRja4MlqAGLbzlA==", "waterfall"=>{"title"=>"Panther Creek Falls", "text"=>"A rather unique waterfalls in the state of Washington, Panther Creek features numerous skinny horsetails which put together form a visually striking waterfall no matter which section is being viewed.  Located off the Wind River Highway northeast of Carson, Washington on Panther Creek Road, access to the water is an easy walk down a little slope, with a viewpoint on a rail showcasing a great view of the waterfall.  Be sure to bring a map or GPS for this one, the area is not marked and the parking spot is rather small, but believe me, it's worth it.  ", "height"=>"136", "width"=>"100", "drops"=>"3", "tallestDrop"=>"102", "form"=>"Tiered Horsetails", "watershed"=>"Wind River", "stream"=>"Panther Creek", "location"=>"Skamania County", "state"=>"Washington", "visit"=>"true", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb37ae1e0 @tempfile=#<Tempfile:/tmp/RackMultipart20160131-29574-1bkqja5.jpg>, @original_filename="panther-creek.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"panther-creek.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/cd5cd5fa9094139fe73f2bcea301df8920160131-29574-4imfya.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/cd5cd5fa9094139fe73f2bcea301df8920160131-29574-1rtj8qy.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/cd5cd5fa9094139fe73f2bcea301df8920160131-29574-1rtj8qy.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/cd5cd5fa9094139fe73f2bcea301df8920160131-29574-1rtj8qy.jpg[0]' -auto-orient -resize "500x500>" '/tmp/2b6c3b3b9f7f21786b794c99679d2e0020160131-29574-w0fdys'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/cd5cd5fa9094139fe73f2bcea301df8920160131-29574-1rtj8qy.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/cd5cd5fa9094139fe73f2bcea301df8920160131-29574-1rtj8qy.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/cd5cd5fa9094139fe73f2bcea301df8920160131-29574-1rtj8qy.jpg[0]' -auto-orient -resize "200x200>" '/tmp/2b6c3b3b9f7f21786b794c99679d2e0020160131-29574-u39bhd'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/cd5cd5fa9094139fe73f2bcea301df8920160131-29574-3jzc1y.jpg'
+  [1m[36mSQL (1.8ms)[0m  [1mINSERT INTO "waterfalls" ("title", "text", "height", "width", "drops", "tallestDrop", "form", "watershed", "stream", "location", "state", "visit", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Panther Creek Falls"], ["text", "A rather unique waterfalls in the state of Washington, Panther Creek features numerous skinny horsetails which put together form a visually striking waterfall no matter which section is being viewed.  Located off the Wind River Highway northeast of Carson, Washington on Panther Creek Road, access to the water is an easy walk down a little slope, with a viewpoint on a rail showcasing a great view of the waterfall.  Be sure to bring a map or GPS for this one, the area is not marked and the parking spot is rather small, but believe me, it's worth it.  "], ["height", 136], ["width", 100], ["drops", 3], ["tallestDrop", 102], ["form", "Tiered Horsetails"], ["watershed", "Wind River"], ["stream", "Panther Creek"], ["location", "Skamania County"], ["state", "Washington"], ["visit", "t"], ["avatar_file_name", "panther-creek.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 123350], ["avatar_updated_at", "2016-02-01 00:57:20.490119"], ["created_at", "2016-02-01 00:57:20.832909"], ["updated_at", "2016-02-01 00:57:20.832909"]]
+  [1m[35m (26.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/waterfalls/25
+Completed 302 Found in 424ms (ActiveRecord: 28.7ms)
+
+
+Started GET "/waterfalls/25" for ::1 at 2016-01-31 16:57:20 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[36mWaterfall Load (0.5ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 25]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 25]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.6ms)
+  Rendered waterfalls/show.html.erb within layouts/application (11.6ms)
+Completed 200 OK in 67ms (Views: 63.4ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 16:58:04 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (0.5ms)[0m  [1mSELECT "waterfalls".* FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/waterfalls/25" for ::1 at 2016-01-31 16:58:17 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 25]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 25]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.3ms)
+  Rendered waterfalls/show.html.erb within layouts/application (12.1ms)
+Completed 200 OK in 60ms (Views: 57.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/waterfalls/25" for ::1 at 2016-01-31 16:58:32 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 25]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 25]]
+  Rendered collection (0.1ms)
+  Rendered comments/_form.html.erb (5.1ms)
+  Rendered waterfalls/show.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 76ms (Views: 73.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 16:58:32 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 16:58:32 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 16:58:32 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 16:58:32 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:58:32 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:58:32 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 16:58:32 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 16:58:32 -0800
+
+
+Started GET "/waterfalls/25" for ::1 at 2016-01-31 17:00:06 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 25]]
+  [1m[36mComment Load (4.5ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 25]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.2ms)
+  Rendered waterfalls/show.html.erb within layouts/application (16.7ms)
+Completed 200 OK in 70ms (Views: 60.3ms | ActiveRecord: 4.8ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 17:00:06 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 17:00:06 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:00:06 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 17:00:06 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 17:00:06 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:00:06 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:00:06 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 17:00:06 -0800
+
+
+Started GET "/waterfalls/25" for ::1 at 2016-01-31 17:00:43 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mWaterfall Load (0.2ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 25]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 25]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.1ms)
+  Rendered waterfalls/show.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 61ms (Views: 58.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 17:00:43 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 17:00:43 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 17:00:43 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 17:00:43 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:00:43 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:00:43 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:00:43 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 17:00:43 -0800
+
+
+Started GET "/waterfalls/25" for ::1 at 2016-01-31 17:01:27 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mWaterfall Load (0.2ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 25]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 25]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.6ms)
+  Rendered waterfalls/show.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 73ms (Views: 70.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 17:01:27 -0800
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 17:01:27 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 17:01:27 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 17:01:27 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:01:27 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:01:27 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:01:27 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 17:01:27 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 17:01:28 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (0.5ms)[0m  SELECT "waterfalls".* FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 53ms (Views: 50.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 17:02:02 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (0.7ms)[0m  [1mSELECT "waterfalls".* FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (9.6ms)
+Completed 200 OK in 56ms (Views: 53.6ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 17:02:02 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 17:02:02 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 17:02:02 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 17:02:02 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:02:02 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:02:02 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:02:02 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 17:02:02 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 17:02:04 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (0.6ms)[0m  SELECT "waterfalls".* FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (11.8ms)
+Completed 200 OK in 67ms (Views: 60.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 17:02:04 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 17:02:04 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 17:02:04 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 17:02:04 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:02:04 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:02:04 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:02:04 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 17:02:04 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 17:02:25 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (0.9ms)[0m  [1mSELECT "waterfalls".* FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (10.1ms)
+Completed 200 OK in 72ms (Views: 69.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 17:02:25 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 17:02:25 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 17:02:25 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 17:02:25 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:02:25 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:02:25 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:02:25 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 17:02:25 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 17:02:27 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (0.8ms)[0m  SELECT "waterfalls".* FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 62ms (Views: 59.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 17:02:27 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 17:02:28 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 17:02:28 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 17:02:28 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:02:28 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:02:28 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:02:28 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 17:02:28 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 17:03:11 -0800
+Processing by WaterfallsController#index as HTML
+  Rendered waterfalls/index.html.erb within layouts/application (3.2ms)
+Completed 500 Internal Server Error in 9ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/aduo3000/waterfalls/app/views/waterfalls/index.html.erb:15: syntax error, unexpected tLABEL, expecting ')'
+...fall.avatar.url(:thumb)  class: "img-responsive big-picture"...
+...                               ^):
+  app/views/waterfalls/index.html.erb:15: syntax error, unexpected tLABEL, expecting ')'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (19.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (3.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (69.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_markup.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (1.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/console.js.erb within layouts/javascript (41.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/main.js.erb within layouts/javascript (1.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.2.1/lib/web_console/templates/index.html.erb (88.8ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-01-31 17:03:21 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (0.6ms)[0m  [1mSELECT "waterfalls".* FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (12.7ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/assets/application.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-01-31 17:03:21 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-01-31 17:03:21 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-01-31 17:03:21 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-01-31 17:03:21 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:03:21 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-01-31 17:03:21 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:03:21 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-01-31 17:03:21 -0800
+
+
+Started GET "/waterfalls/25" for ::1 at 2016-01-31 17:03:26 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"25"}
+  [1m[35mWaterfall Load (0.2ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 25]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 25]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (13.4ms)
+  Rendered waterfalls/show.html.erb within layouts/application (21.2ms)
+Completed 200 OK in 73ms (Views: 69.3ms | ActiveRecord: 0.4ms)
