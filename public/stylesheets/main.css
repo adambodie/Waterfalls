@@ -1,6 +1,7 @@
 
 body {
-	background-color: lightblue;
+  background-image: url("../images/background.jpg");
+  background-size: cover;
   color: #333;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
@@ -69,7 +70,12 @@ border-bottom: 1px solid black;
 }
 
 tr:hover {
-	background-color: lightgray;
+	background-color: lightgrey;
+	opacity: 0.5;
+}
+
+td:hover {
+color: black;
 }
 .data-confirm {
 	margin: 20px;
@@ -122,4 +128,21 @@ tr:hover {
 
 #nineteen-pic, #twenty-pic, #twentyone-pic, #twentytwo-pic, #twentythree-pic, #twentyfour-pic {
 	z-index: 16;
+}
+
+.comments {
+	border-top: 1px solid black;
+}
+
+.waterfall-title {
+color: white;
+font-size: 2em;
+
+}
+.description {
+	color: white;
+}
+
+.jumbotron {
+	color: black;
 }

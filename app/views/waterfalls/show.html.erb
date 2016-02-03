@@ -1,24 +1,25 @@
-<div class="container-fluid">
-	<div class="page">
 		<div class="jumbotron">
 			<h1>
 	  			<strong><%= @waterfall.title %></strong>
 			</h1>
 		</div>
+
+<div class="container">
+	<div class="page description">
  		<div class="row">
  			<div class="col-md-6">
-				<p><%= @waterfall.text %></p>
-				<p><strong>Height:</strong> <%= @waterfall.height %> feet</p>
-				<p><strong>Average width:</strong> <%= @waterfall.width %> feet</p>
-				<p><strong>Drops:</strong> <%= @waterfall.drops %></p>
-				<p><strong>Tallest drop:</strong> <%= @waterfall.tallestDrop %> feet</p>		
-				<p><strong>Waterfall form:</strong> <%= @waterfall.form %></p>
-				<p><strong>Watershed:</strong> <%= @waterfall.watershed %></p>
-				<p><strong>Stream:</strong> <%= @waterfall.stream %></p>
-				<p><strong>Location:</strong> <%= @waterfall.location %></p>
-				<p><strong>State:</strong> <%= @waterfall.state %></p>
-				<p><strong>Visited:</strong> <%= @waterfall.visit %></p>
-				
+ 					<p><strong>Summary:</strong></p>
+					<p><%= @waterfall.text %></p>
+					<p><strong>Height:</strong> <%= @waterfall.height %> feet</p>
+					<p><strong>Average width:</strong> <%= @waterfall.width %> feet</p>
+					<p><strong>Drops:</strong> <%= @waterfall.drops %></p>
+					<p><strong>Tallest drop:</strong> <%= @waterfall.tallestDrop %> feet</p>		
+					<p><strong>Waterfall form:</strong> <%= @waterfall.form %></p>
+					<p><strong>Watershed:</strong> <%= @waterfall.watershed %></p>
+					<p><strong>Stream:</strong> <%= @waterfall.stream %></p>
+					<p><strong>Location:</strong> <%= @waterfall.location %></p>
+					<p><strong>State:</strong> <%= @waterfall.state %></p>
+					<p><strong>Visited:</strong> <%= @waterfall.visit %></p>
 			</div>
  			<div class="col-md-6">
 				<%= image_tag @waterfall.avatar.url(:medium), class:"img-responsive big-picture" %>
@@ -26,7 +27,7 @@
 			
 		</div>
 		
-		<div class ="row">
+		<div class ="row comments">
  			<div class="col-sm-6">
 				<h3>Comments</h3>
 				<%= render @waterfall.comments %>
