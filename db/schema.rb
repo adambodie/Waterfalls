@@ -23,6 +23,13 @@ ActiveRecord::Schema.define(version: 20160131234139) do
 
   add_index "comments", ["waterfall_id"], name: "index_comments_on_waterfall_id"
 
+  create_table "pictures", force: :cascade do |t|
+    t.integer  "post_id"
+    t.string   "avatar"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "waterfalls", force: :cascade do |t|
     t.string   "title"
     t.text     "text"

@@ -19,7 +19,11 @@
 					<p><strong>Stream:</strong> <%= @waterfall.stream %></p>
 					<p><strong>Location:</strong> <%= @waterfall.location %></p>
 					<p><strong>State:</strong> <%= @waterfall.state %></p>
-					<p><strong>Visited:</strong> <%= @waterfall.visit %></p>
+					<% if @waterfall.visit == true %>					
+						<p><strong>Visited:</strong> Yes</p>
+					<% else %>
+						<p><strong>Visited:</strong> No</p>
+					<% end %>
 			</div>
  			<div class="col-md-6">
 				<%= image_tag @waterfall.avatar.url(:medium), class:"img-responsive big-picture" %>

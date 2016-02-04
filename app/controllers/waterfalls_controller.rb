@@ -3,7 +3,7 @@ class WaterfallsController < ApplicationController
 	http_basic_authenticate_with name: "aduo3000", password: "ZMxnCb$0", except: [:index, :show]
   	
   	def index
-    	@waterfalls = Waterfall.all
+    	@waterfalls = Waterfall.all.page(params["page"])
   	end  	
   	
   	def show
