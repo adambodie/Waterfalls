@@ -15,10 +15,12 @@
       	<td class="waterfall-title"><%= waterfall.title %></td>
       	<td><%= image_tag waterfall.avatar.url(:thumb),  class: "img-responsive big-picture"%></td>
       	<td><%= link_to 'Show', waterfall_path(waterfall) %></td>
-      	<td><%= link_to 'Edit', edit_waterfall_path(waterfall) %></td>
-      	<td><%= link_to 'Destroy', waterfall_path(waterfall),
-      	        method: :delete,
-         	     data: { confirm: 'Are you sure?' } %></td>
+      	<% if admin_signed_in? %>
+	      	<td><%= link_to 'Edit', edit_waterfall_path(waterfall) %></td>
+	      	<td><%= link_to 'Destroy', waterfall_path(waterfall),
+   	   	        method: :delete,
+      	   	     data: { confirm: 'Are you sure?' } %></td>
+			<% end %>    	
     	</tr>
   	<% end %>
 
