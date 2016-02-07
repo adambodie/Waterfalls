@@ -43,7 +43,9 @@
 				<%= render 'comments/form' %>
 			</div>
 		</div>
-		<%= link_to 'Edit', edit_waterfall_path(@waterfall) %> |
-		<%= link_to 'Back', waterfalls_path %>
+		<% if admin_signed_in? %>
+			<%= link_to 'Edit', edit_waterfall_path(@waterfall), class: "waterfall-title" %>|
+		<% end %>
+		<%= link_to 'Back', waterfalls_path, class: "waterfall-title"  %>
 	</div>
 </div>

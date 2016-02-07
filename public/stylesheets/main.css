@@ -2,7 +2,7 @@
 body {
   background-image: url("../images/background.jpg");
   background-size: cover;
-  color: #333;
+  color: black;
   font-family: verdana, arial, helvetica, sans-serif;
   font-size: 13px;
   line-height: 18px;
@@ -36,48 +36,12 @@ h1 {
 text-align: center;
 font-weight: bold;
 }
-th, td, .page {
-	padding: 30px;
 
-}
-
-th {
-	font-size: 2em;
-}
-
-td {
-	font-size: 1.5em;
-}
-
-.page a {
-	color: black;
-	border: 5px groove white;
-	background-color: white;
-	padding: 10px;
-	margin: 20px;
-}
-
-.page {
-	padding: 10px;
-	margin: 20px;
-}
 a:hover {
-	background-color: gray;
 	color: white;
 	text-decoration: none;
 }
-tr {
-border-bottom: 1px solid black;
-}
 
-tr:hover {
-	background-color: lightgrey;
-	opacity: 0.5;
-}
-
-td:hover {
-color: black;
-}
 .data-confirm {
 	margin: 20px;
 }
@@ -131,21 +95,3 @@ color: black;
 	z-index: 16;
 }
 
-.comments {
-	border-top: 1px solid black;
-}
-
-.waterfall-title {
-color: white;
-font-size: 2em;
-
-}
-.description {
-	color: white;
-}
-
-.jumbotron {
-	color: black;
-	padding: 2px;
-	
-}
