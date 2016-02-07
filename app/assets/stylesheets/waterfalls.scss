@@ -1,20 +1,25 @@
 // Place all the styles related to the waterfalls controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+.waterfall {
+	border-bottom: 1px solid black;
+	h4 {
+		a {
+			color: black;		
+		}	
+	}
+	&:hover {
+		background-color: gray;
+		opacity: 0.7;
+		color: black;
+	}
+	.btn {
+		margin-top: 20px;	
+	}
+}
+
 .comments {
 	border-top: 1px solid black;
-}
-
-.waterfall-title {
-color: black;
-
-}
-.description {
-	color: white;
-}
-
-.jumbotron {
-	color: black;
 }
 
 .page {
@@ -22,11 +27,6 @@ color: black;
 	margin: 20px;
 }
 
-.row {
-	border-bottom: 1px solid black;
-}
-
 .form {
 	margin-left: 20px;
-
 }

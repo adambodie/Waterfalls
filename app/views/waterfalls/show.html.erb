@@ -1,11 +1,7 @@
-		<div class="jumbotron">
-			<h1>
-	  			<strong><%= @waterfall.title %></strong>
-			</h1>
-		</div>
+<h1><strong><%= @waterfall.title %></strong></h1>
 
 <div class="container">
-	<div class="page description">
+	<div class="page">
  		<div class="row">
  			<div class="col-md-6">
  					<p><strong>Summary:</strong></p>
@@ -44,8 +40,8 @@
 			</div>
 		</div>
 		<% if admin_signed_in? %>
-			<%= link_to 'Edit', edit_waterfall_path(@waterfall), class: "waterfall-title" %>|
+			<%= link_to 'Edit', edit_waterfall_path(@waterfall), class: "waterfall-title btn btn-primary" %>
 		<% end %>
-		<%= link_to 'Back', waterfalls_path, class: "waterfall-title"  %>
+		<%= link_to 'Back', waterfalls_path, class: "waterfall-title btn btn-primary"  %>
 	</div>
 </div>
