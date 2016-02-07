@@ -40606,3 +40606,3494 @@ Processing by WaterfallsController#show as HTML
   Rendered comments/_form.html.erb (6.4ms)
   Rendered waterfalls/show.html.erb within layouts/application (22.4ms)
 Completed 200 OK in 68ms (Views: 64.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-07 09:57:32 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (562.5ms)
+Completed 200 OK in 740ms (Views: 710.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 09:57:51 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"sQZUA+iEzYcObDDponRqtFKKHyjMcZYH11WVQtiJPIFEEDw8739Za4sxqczuC1fKneUinHaEt84/s9hU/9MvbQ=="}
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (2.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (109.1ms)
+Completed 200 OK in 238ms (Views: 168.5ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 09:58:13 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 77ms (Views: 74.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-36359502000e9e385971d27eb71d7361da099a0d81f1d9e738a4c35a91a88424.css?body=1" for ::1 at 2016-02-07 09:58:13 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 09:58:13 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 09:58:13 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 09:58:13 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 09:58:13 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 09:58:13 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 09:58:13 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 09:58:13 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 09:58:30 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 61ms (Views: 58.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-36359502000e9e385971d27eb71d7361da099a0d81f1d9e738a4c35a91a88424.css?body=1" for ::1 at 2016-02-07 09:58:30 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 09:58:30 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 09:58:30 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 09:58:30 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 09:58:30 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 09:58:30 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 09:58:30 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 09:58:30 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 09:58:43 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (6.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 83ms (Views: 75.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-36359502000e9e385971d27eb71d7361da099a0d81f1d9e738a4c35a91a88424.css?body=1" for ::1 at 2016-02-07 09:58:44 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 09:58:44 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 09:58:44 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 09:58:44 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 09:58:44 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 09:58:44 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 09:58:44 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 09:58:44 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:04:33 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::SessionsController#new as HTML
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (3.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (87.6ms)
+Completed 200 OK in 786ms (Views: 724.9ms | ActiveRecord: 1.1ms)
+
+
+Started GET "/assets/application.self-36359502000e9e385971d27eb71d7361da099a0d81f1d9e738a4c35a91a88424.css?body=1" for ::1 at 2016-02-07 10:04:34 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:04:34 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:04:34 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:04:34 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:04:34 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:04:34 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:04:34 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:04:34 -0800
+
+
+Started POST "/admins/sign_in" for ::1 at 2016-02-07 10:07:22 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hxpTVQ58kq1RXFGffht12UUcblPQusevoXO8JobqB4lyDDtqCYcGQdQByLoyZEininNT52pP5mZJlfEwobAUZQ==", "admin"=>{"email"=>"aduo3000@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mAdmin Load (0.6ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."email" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["email", "aduo3000@yahoo.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.8ms)[0m  UPDATE "admins" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "admins"."id" = ?  [["last_sign_in_at", "2016-02-07 01:09:33.865799"], ["current_sign_in_at", "2016-02-07 18:07:22.924733"], ["sign_in_count", 6], ["updated_at", "2016-02-07 18:07:22.926972"], ["id", 1]]
+  [1m[36m (47.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 277ms (ActiveRecord: 53.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-07 10:07:23 -0800
+Processing by WelcomeController#index as HTML
+  [1m[35mAdmin Load (0.7ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered welcome/index.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 53ms (Views: 50.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-07 10:07:36 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36m (1.9ms)[0m  [1mSELECT COUNT(*) FROM "waterfalls"[0m
+  [1m[35mWaterfall Load (0.7ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/index.html.erb within layouts/application (87.2ms)
+Completed 200 OK in 211ms (Views: 186.1ms | ActiveRecord: 3.7ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-07 10:11:28 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35m (0.3ms)[0m  SELECT COUNT(*) FROM "waterfalls"
+  [1m[36mWaterfall Load (1.2ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.4ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/index.html.erb within layouts/application (57.4ms)
+Completed 200 OK in 117ms (Views: 108.6ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/assets/application.self-36359502000e9e385971d27eb71d7361da099a0d81f1d9e738a4c35a91a88424.css?body=1" for ::1 at 2016-02-07 10:11:28 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:11:28 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:11:28 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:11:28 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:11:29 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:11:29 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:11:29 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:11:29 -0800
+
+
+Started GET "/admins/sign_out" for ::1 at 2016-02-07 10:11:39 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"OT7VHno0HPqKr5OQh8+xWWjxMEAfkUF84SYv0CJzJiNbMmPiD3FrpxRsE5gxTnLGu93TpE2UHaZb6ZMJwo914Q=="}
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 24ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-02-07 10:11:39 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (10.4ms)
+Completed 200 OK in 70ms (Views: 68.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:11:40 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"gHM56d65vCjoPdwyHqqZIl/2oHZJYOUv2I4YYLQYj5qMIy+t5jrkG3cfpI1CFmCodxL0TrGFH6JFM1MUrO7C5w=="}
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (1.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/sessions/new.html.erb within layouts/application (11.7ms)
+Completed 200 OK in 83ms (Views: 80.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:11:59 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (1.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (17.1ms)
+Completed 200 OK in 93ms (Views: 90.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:12:09 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 77ms (Views: 72.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-36359502000e9e385971d27eb71d7361da099a0d81f1d9e738a4c35a91a88424.css?body=1" for ::1 at 2016-02-07 10:12:09 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:12:09 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:12:09 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:12:09 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:12:09 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:12:09 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:12:09 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:12:09 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:12:11 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 72ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-36359502000e9e385971d27eb71d7361da099a0d81f1d9e738a4c35a91a88424.css?body=1" for ::1 at 2016-02-07 10:12:11 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:12:11 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:12:11 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:12:11 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:12:11 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:12:11 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:12:11 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:12:11 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:12:57 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/shared/_links.html.erb (0.9ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/devise-3.5.6/app/views/devise/registrations/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 72ms (Views: 70.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-36359502000e9e385971d27eb71d7361da099a0d81f1d9e738a4c35a91a88424.css?body=1" for ::1 at 2016-02-07 10:12:58 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:12:58 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:12:58 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:12:58 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:12:58 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:12:58 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:12:58 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:12:58 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:14:23 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (2.9ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (80.1ms)
+Completed 200 OK in 771ms (Views: 714.3ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-36359502000e9e385971d27eb71d7361da099a0d81f1d9e738a4c35a91a88424.css?body=1" for ::1 at 2016-02-07 10:14:24 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:14:24 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:14:24 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:14:24 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:14:24 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:14:24 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:14:24 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:14:24 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:14:31 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 70ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-36359502000e9e385971d27eb71d7361da099a0d81f1d9e738a4c35a91a88424.css?body=1" for ::1 at 2016-02-07 10:14:31 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:14:31 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:14:31 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:14:31 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:14:31 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:14:31 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:14:31 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:14:31 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:16:15 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.6ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 3310ms (Views: 3308.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ded2293724992addc04415d4879e54f013508db413ccf954c98f78d5dfa735b1.css?body=1" for ::1 at 2016-02-07 10:16:18 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:16:18 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:16:18 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:16:18 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:16:18 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:16:18 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:16:18 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:16:18 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:16:40 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 1520ms (Views: 1518.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f3ddede1b76b2a0040b2e3a8a70a683c6b7ca83f66753dedce1ce84d777c48de.css?body=1" for ::1 at 2016-02-07 10:16:42 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:16:42 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:16:42 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:16:42 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:16:42 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:16:42 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:16:42 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:16:42 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:17:07 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (2.8ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 1645ms (Views: 1641.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f3ddede1b76b2a0040b2e3a8a70a683c6b7ca83f66753dedce1ce84d777c48de.css?body=1" for ::1 at 2016-02-07 10:17:08 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:17:09 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:17:09 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:17:09 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:17:09 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:17:09 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:17:09 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:17:09 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:17:22 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/registrations/new.html.erb within layouts/application (6.7ms)
+Completed 500 Internal Server Error in 32ms (ActiveRecord: 0.0ms)
+
+SyntaxError (/home/aduo3000/waterfalls/app/views/admins/registrations/new.html.erb:26: syntax error, unexpected keyword_class, expecting ')'
+...pend=( f.submit "Sign up" class: "btn btn-primary");@output_...
+...                               ^):
+  app/views/admins/registrations/new.html.erb:26: syntax error, unexpected keyword_class, expecting ')'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_source.erb (29.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (9.3ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/diagnostics.html.erb within rescues/layout (125.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (86.5ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.6ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (1.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (186.3ms)
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:17:30 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 63ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f3ddede1b76b2a0040b2e3a8a70a683c6b7ca83f66753dedce1ce84d777c48de.css?body=1" for ::1 at 2016-02-07 10:17:30 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:17:30 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:17:30 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:17:30 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:17:30 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:17:30 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:17:30 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:17:30 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:18:13 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (2.8ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 61ms (Views: 58.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f3ddede1b76b2a0040b2e3a8a70a683c6b7ca83f66753dedce1ce84d777c48de.css?body=1" for ::1 at 2016-02-07 10:18:13 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:18:13 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:18:13 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:18:13 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:18:13 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:18:13 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:18:13 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:18:13 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:19:14 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (12.2ms)
+Completed 200 OK in 86ms (Views: 84.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f3ddede1b76b2a0040b2e3a8a70a683c6b7ca83f66753dedce1ce84d777c48de.css?body=1" for ::1 at 2016-02-07 10:19:14 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:19:14 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:19:14 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:19:14 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:19:14 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:19:14 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:19:14 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:19:14 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:26:07 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.6ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (7.5ms)
+Completed 200 OK in 65ms (Views: 62.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f3ddede1b76b2a0040b2e3a8a70a683c6b7ca83f66753dedce1ce84d777c48de.css?body=1" for ::1 at 2016-02-07 10:26:08 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:26:08 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:26:08 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:26:08 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:26:08 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:26:08 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:26:08 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:26:08 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:26:12 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.1ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (13.9ms)
+Completed 200 OK in 70ms (Views: 64.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:26:50 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (3.3ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f3ddede1b76b2a0040b2e3a8a70a683c6b7ca83f66753dedce1ce84d777c48de.css?body=1" for ::1 at 2016-02-07 10:26:51 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:26:51 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:26:51 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:26:51 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:26:51 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:26:51 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:26:51 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:26:51 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:27:52 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (2.6ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 71ms (Views: 69.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f3ddede1b76b2a0040b2e3a8a70a683c6b7ca83f66753dedce1ce84d777c48de.css?body=1" for ::1 at 2016-02-07 10:27:52 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:27:52 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:27:52 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:27:52 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:27:52 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:27:52 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:27:52 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:27:52 -0800
+
+
+Started POST "/admins/sign_in" for ::1 at 2016-02-07 10:28:01 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pq6/tWK44c42EBj3oTXCID8KLH6xQqjiLwhZltBcdEuq/qnxWju5/akyYEj9iTuqF+54RkmnUm+ytRLiyKo5Ng==", "admin"=>{"email"=>"aduo3000@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mAdmin Load (0.5ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."email" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["email", "aduo3000@yahoo.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.0ms)[0m  UPDATE "admins" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "admins"."id" = ?  [["last_sign_in_at", "2016-02-07 18:07:22.924733"], ["current_sign_in_at", "2016-02-07 18:28:01.299479"], ["sign_in_count", 7], ["updated_at", "2016-02-07 18:28:01.301836"], ["id", 1]]
+  [1m[36m (57.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 254ms (ActiveRecord: 58.9ms)
+
+
+Started GET "/" for ::1 at 2016-02-07 10:28:01 -0800
+Processing by WelcomeController#index as HTML
+  [1m[35mAdmin Load (0.6ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered welcome/index.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 62ms (Views: 60.2ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-07 10:28:03 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "waterfalls"[0m
+  [1m[35mWaterfall Load (0.6ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/index.html.erb within layouts/application (79.9ms)
+Completed 200 OK in 142ms (Views: 123.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-07 10:30:48 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35m (0.4ms)[0m  SELECT COUNT(*) FROM "waterfalls"
+  [1m[36mWaterfall Load (0.7ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.4ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/index.html.erb within layouts/application (53.5ms)
+Completed 200 OK in 105ms (Views: 101.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/assets/application.self-f3ddede1b76b2a0040b2e3a8a70a683c6b7ca83f66753dedce1ce84d777c48de.css?body=1" for ::1 at 2016-02-07 10:30:48 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:30:48 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:30:48 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:30:48 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:30:49 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:30:49 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:30:49 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:30:49 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-07 10:32:42 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36m (0.3ms)[0m  [1mSELECT COUNT(*) FROM "waterfalls"[0m
+  [1m[35mWaterfall Load (0.7ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/index.html.erb within layouts/application (49.6ms)
+Completed 200 OK in 1533ms (Views: 1530.0ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/assets/application.self-cd602ea17866b4157b96ec1312985627ffc9fc5f0ea8cff6b1ba0358b4e2c6d8.css?body=1" for ::1 at 2016-02-07 10:32:44 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:32:44 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:32:44 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:32:44 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:32:44 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:32:44 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:32:44 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:32:44 -0800
+
+
+Started GET "/waterfalls/24" for ::1 at 2016-02-07 10:32:47 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mWaterfall Load (0.4ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 24]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 24]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (29.2ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (82.5ms)
+Completed 200 OK in 147ms (Views: 129.4ms | ActiveRecord: 1.5ms)
+
+
+Started GET "/waterfalls/24" for ::1 at 2016-02-07 10:35:09 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[36mWaterfall Load (1.5ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 24]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 24]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.3ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (17.5ms)
+Completed 200 OK in 87ms (Views: 82.7ms | ActiveRecord: 1.9ms)
+
+
+Started GET "/assets/application.self-cd602ea17866b4157b96ec1312985627ffc9fc5f0ea8cff6b1ba0358b4e2c6d8.css?body=1" for ::1 at 2016-02-07 10:35:09 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:35:09 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:35:09 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:35:09 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:35:09 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:35:09 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:35:09 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:35:09 -0800
+
+
+Started GET "/waterfalls/24" for ::1 at 2016-02-07 10:36:11 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"24"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 24]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 24]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.1ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (13.2ms)
+Completed 200 OK in 1501ms (Views: 1496.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/assets/application.self-d11b16f4fce535337bc3e785ec6161a79650eb52f877e661c46543196c8caebb.css?body=1" for ::1 at 2016-02-07 10:36:12 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:36:12 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:36:13 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:36:13 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:36:13 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:36:13 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:36:13 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:36:13 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-07 10:38:31 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36m (0.4ms)[0m  [1mSELECT COUNT(*) FROM "waterfalls"[0m
+  [1m[35mWaterfall Load (0.8ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/index.html.erb within layouts/application (49.5ms)
+Completed 200 OK in 97ms (Views: 94.2ms | ActiveRecord: 1.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-07 10:38:37 -0800
+Processing by WelcomeController#index as HTML
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered welcome/index.html.erb within layouts/application (11.3ms)
+Completed 200 OK in 82ms (Views: 80.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/admins/sign_out" for ::1 at 2016-02-07 10:38:39 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"zrnG2uORdcqYCxFobR8selURiTnlT9Xh5dRIqsbYjPIWeFzDLa2k9Z6dzlt78uJHZmKffmm33t0JjUKALkuLgQ=="}
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.3ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 14ms (ActiveRecord: 0.7ms)
+
+
+Started GET "/" for ::1 at 2016-02-07 10:38:39 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 55ms (Views: 54.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:38:40 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"vTFCyQ1c75FuThIoDWnidHtlLNYrF6C5BdJLSFQGUmBlwwms/XCLuV1N8+lvln6Ou/hYYYbMnj2RI7CzQ/LS8w=="}
+  Rendered admins/shared/_links.html.erb (0.9ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 63ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:39:19 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 75ms (Views: 72.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d11b16f4fce535337bc3e785ec6161a79650eb52f877e661c46543196c8caebb.css?body=1" for ::1 at 2016-02-07 10:39:19 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:39:19 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:39:19 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:39:19 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:39:19 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:39:19 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:39:19 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:39:19 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:40:26 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 1463ms (Views: 1460.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-590bad224a33c657ade969ba4af518e5f833a3798d7d4317997eb68757750d81.css?body=1" for ::1 at 2016-02-07 10:40:28 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:40:28 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:40:28 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:40:28 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:40:28 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:40:28 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:40:28 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:40:28 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:40:41 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 1472ms (Views: 1470.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-289b5154d1a9e900d1c366520dea76a63872e4c5df307f7578fc7394933a80d7.css?body=1" for ::1 at 2016-02-07 10:40:42 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:40:42 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:40:42 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:40:42 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:40:42 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:40:42 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:40:42 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:40:42 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:40:58 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 1535ms (Views: 1532.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-00b2345b1e47a845d5de031a8171cc8ea876cddbd779b5b044ee315a10ba32e5.css?body=1" for ::1 at 2016-02-07 10:41:00 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:41:00 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:41:00 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:41:00 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:41:00 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:41:00 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:41:00 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:41:00 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:42:10 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.2ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (21.4ms)
+Completed 200 OK in 1488ms (Views: 1485.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d70ce63819e7e1b152363e4758e5ddb9005e3c82994123e740d06828c975fd27.css?body=1" for ::1 at 2016-02-07 10:42:12 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:42:12 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:42:12 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:42:12 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:42:12 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:42:12 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:42:12 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:42:12 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:42:31 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.2ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (8.6ms)
+Completed 200 OK in 1545ms (Views: 1540.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-268e3c5706ab7245c36a2e34e82c6e9c1300c882412f55311e3b3e19359cc3a9.css?body=1" for ::1 at 2016-02-07 10:42:33 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:42:33 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:42:33 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:42:33 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:42:33 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:42:33 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:42:33 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:42:33 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:42:44 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.9ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 1637ms (Views: 1631.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ad912fc6dafe5d2fe9cca40c60f0d6b1a8a86151c3239c87b7d7889460b69b1f.css?body=1" for ::1 at 2016-02-07 10:42:46 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:42:46 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:42:46 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:42:46 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:42:46 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:42:46 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:42:46 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:42:46 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:42:56 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.1ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 1462ms (Views: 1460.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-afbe72ad214c9ecb8f6a28f0d2d82c961e9c018e22303442d6bea1d20e63051b.css?body=1" for ::1 at 2016-02-07 10:42:58 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:42:58 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:42:58 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:42:58 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:42:58 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:42:58 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:42:58 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:42:58 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:43:22 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 1502ms (Views: 1499.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c32396e8ae5f599a0f9f50cfd979d5432c064b71ed430d36c0f52acc577aa92f.css?body=1" for ::1 at 2016-02-07 10:43:24 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:43:24 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:43:24 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:43:24 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:43:24 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:43:24 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:43:24 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:43:24 -0800
+
+
+Started POST "/admins/sign_in" for ::1 at 2016-02-07 10:44:26 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"q4aRoxpoMEwPDhGNsBq5KCrger3Y1ZFV4CA20jlpy31zdNrG6kRUZDwN8EzS5SXS6n0OCnUOr9F00c0pLp1L7g==", "admin"=>{"email"=>"aduo3000@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mAdmin Load (0.4ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."email" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["email", "aduo3000@yahoo.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (0.9ms)[0m  UPDATE "admins" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "admins"."id" = ?  [["last_sign_in_at", "2016-02-07 18:28:01.299479"], ["current_sign_in_at", "2016-02-07 18:44:26.588656"], ["sign_in_count", 8], ["updated_at", "2016-02-07 18:44:26.590808"], ["id", 1]]
+  [1m[36m (25.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 181ms (ActiveRecord: 27.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-07 10:44:26 -0800
+Processing by WelcomeController#index as HTML
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered welcome/index.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 57ms (Views: 55.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-07 10:45:14 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36m (0.2ms)[0m  [1mSELECT COUNT(*) FROM "waterfalls"[0m
+  [1m[35mWaterfall Load (0.6ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/index.html.erb within layouts/application (55.2ms)
+Completed 200 OK in 113ms (Views: 109.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/admins/sign_out" for ::1 at 2016-02-07 10:45:19 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"uT7BDyrrNjfW5vJsbblrHyOctXalAoBD2qdcMvYRPy8AmspopgIgO/aOlf/UucPt6O2VOTiNDpZjvaaRZDYQwA=="}
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.2ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 10ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-02-07 10:45:19 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 58ms (Views: 56.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:45:20 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"QqWQBoijyyj+jBNnRlQx2a/rry9lIyJXagaCVQQ9QW85j22X3q39S/Tj85oM5H56/xQgvMlC1SgV12AyeJiUgQ=="}
+  Rendered admins/shared/_links.html.erb (1.0ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 64ms (Views: 61.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:46:01 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 1543ms (Views: 1540.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9792b1292dda67a8e1fc70c2cefd43542f8212b9f44562177ed723ee31b6c73f.css?body=1" for ::1 at 2016-02-07 10:46:03 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:46:03 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:46:03 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:46:03 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:46:03 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:46:03 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:46:03 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:46:03 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 10:46:23 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.9ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 77ms (Views: 75.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c32396e8ae5f599a0f9f50cfd979d5432c064b71ed430d36c0f52acc577aa92f.css?body=1" for ::1 at 2016-02-07 10:46:23 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:46:23 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:46:23 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:46:23 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:46:23 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:46:23 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:46:23 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:46:23 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:46:24 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 55ms (Views: 53.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:47:16 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 1470ms (Views: 1468.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b32583f759e9abfc603297f73aab9e787d71ea1820a53ff98506a1a89acfdb5c.css?body=1" for ::1 at 2016-02-07 10:47:17 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:47:17 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:47:17 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:47:17 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:47:17 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:47:17 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:47:17 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:47:17 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:47:34 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.9ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 1511ms (Views: 1507.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-09bf2a791c0a8f6daaeb45e4cca3f426afe684b6c5cfdd54a3a7a12e0481788d.css?body=1" for ::1 at 2016-02-07 10:47:36 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:47:36 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:47:36 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:47:36 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:47:36 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:47:36 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:47:36 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:47:36 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:48:09 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 1471ms (Views: 1468.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a93fdc9bcb13abe6390e20bb17682f8bc05fbe0ef7c2efa0d1b242eb95bb5edb.css?body=1" for ::1 at 2016-02-07 10:48:11 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:48:11 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:48:11 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:48:11 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:48:11 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:48:11 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:48:11 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:48:11 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:48:33 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 1650ms (Views: 1648.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-25e3a724f9995b6cd1a446598b49a3cf035875c79a3b55560ce8358d7a32f4a2.css?body=1" for ::1 at 2016-02-07 10:48:35 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:48:35 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:48:35 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:48:35 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:48:35 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:48:35 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:48:35 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:48:35 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:48:46 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (7.8ms)
+Completed 200 OK in 1820ms (Views: 1818.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f545d38f450a569d1256be742a09aa9dbd9979e5c2c3311e3c0f0da75486f27a.css?body=1" for ::1 at 2016-02-07 10:48:48 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:48:48 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:48:48 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:48:49 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:48:49 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:48:49 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:48:49 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:48:49 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:49:15 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 1515ms (Views: 1512.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9ca272b54ebab42ef1d5ffad2d7bcd756b531c3ee3d6ee28993344bc6420b09e.css?body=1" for ::1 at 2016-02-07 10:49:16 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:49:16 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:49:16 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:49:17 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:49:17 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:49:17 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:49:17 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:49:17 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:51:00 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 77ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9ca272b54ebab42ef1d5ffad2d7bcd756b531c3ee3d6ee28993344bc6420b09e.css?body=1" for ::1 at 2016-02-07 10:51:00 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:51:00 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:51:00 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:51:00 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:51:00 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:51:00 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:51:00 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:51:00 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:51:22 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.7ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (16.4ms)
+Completed 200 OK in 1554ms (Views: 1551.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2d9e2bdd63044f40bc224597ed5a1858cbfa5bd6509ccc2b7f2726aba5419f06.css?body=1" for ::1 at 2016-02-07 10:51:23 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:51:23 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:51:23 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:51:23 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:51:23 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:51:23 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:51:23 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:51:24 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:51:43 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.6ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 1535ms (Views: 1530.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6a1e41ff064626eb331f2342d2b562f8ff90fdac9ab603c1bed6925ce28c1706.css?body=1" for ::1 at 2016-02-07 10:51:45 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:51:45 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:51:45 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:51:45 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:51:45 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:51:45 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:51:45 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:51:45 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:52:36 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 1458ms (Views: 1456.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0e74edcfec5864461232aab2fc42de9da827ca39512a56e88579bbb2d0db7c7e.css?body=1" for ::1 at 2016-02-07 10:52:38 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:52:38 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:52:38 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:52:38 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:52:38 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:52:38 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:52:38 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:52:38 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:52:54 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (13.0ms)
+Completed 200 OK in 1500ms (Views: 1498.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c4cd8de00ea0b55b8af93f5f4d7a0a93c033bf6c378403daa4eccfe3e3f981c6.css?body=1" for ::1 at 2016-02-07 10:52:56 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:52:56 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:52:56 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:52:56 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:52:56 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:52:56 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:52:56 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:52:56 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:53:04 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (6.5ms)
+Completed 200 OK in 1482ms (Views: 1479.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0bd9c35bb5278c0c50a128f6e962394ce959264f62d810d22d454f924836dba7.css?body=1" for ::1 at 2016-02-07 10:53:06 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:53:06 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:53:06 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:53:06 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:53:06 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:53:06 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:53:06 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:53:06 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:53:31 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.1ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (11.9ms)
+Completed 200 OK in 1564ms (Views: 1562.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-84e88e97283e2c79fa83a732ac735a578942261c0117db7e8c5e5e20abec2fc2.css?body=1" for ::1 at 2016-02-07 10:53:33 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:53:33 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:53:33 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:53:33 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:53:33 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:53:33 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:53:33 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:53:33 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:53:45 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 1469ms (Views: 1467.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-075137520d661c03e26873c71a519f275991df33c3e55a2e8d0fe301dea43a9d.css?body=1" for ::1 at 2016-02-07 10:53:47 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:53:47 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:53:47 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:53:47 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:53:47 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:53:47 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:53:47 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:53:47 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:54:09 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (3.6ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (23.9ms)
+Completed 200 OK in 1815ms (Views: 1812.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-dc396c909a7c008baf6a0e2be842421b896830a4d167f2dcc49efe2faff6e643.css?body=1" for ::1 at 2016-02-07 10:54:11 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:54:11 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:54:11 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:54:11 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:54:11 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:54:11 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:54:11 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:54:11 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:54:54 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.4ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (5.8ms)
+Completed 200 OK in 1574ms (Views: 1571.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-707472c7c1f2d83c44252653becbd807f16adc9044125406fd173dc9d87772e6.css?body=1" for ::1 at 2016-02-07 10:54:56 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:54:56 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:54:56 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:54:56 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:54:56 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:54:56 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:54:56 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:54:56 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:55:06 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 1486ms (Views: 1479.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-6e782df131a522bd3281a51d29fe349fbc28b3550cc5c8aa306f69dd879e56d1.css?body=1" for ::1 at 2016-02-07 10:55:08 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:55:08 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:55:08 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:55:08 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:55:08 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:55:08 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:55:08 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:55:08 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:55:19 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 1539ms (Views: 1537.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0f85030d7fe1f404e8de12c4d9b1e76f98173872c17520c77b5aeaea8abf2f88.css?body=1" for ::1 at 2016-02-07 10:55:21 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:55:21 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:55:21 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:55:21 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:55:21 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:55:21 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:55:21 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:55:21 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:55:44 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 1474ms (Views: 1472.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-899244cbc660a970a7397c7fd73726fef577e852f7caaf53b32d0cd503607154.css?body=1" for ::1 at 2016-02-07 10:55:45 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:55:45 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:55:46 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:55:46 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:55:46 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:55:46 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:55:46 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:55:46 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:56:06 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (9.1ms)
+Completed 200 OK in 1481ms (Views: 1478.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7bafbbc099220077394decd8ec62a226df3d7537c7ad6102b28725a9d4ff943e.css?body=1" for ::1 at 2016-02-07 10:56:08 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:56:08 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:56:08 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:56:08 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:56:08 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:56:08 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:56:08 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:56:08 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:56:18 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (11.5ms)
+Completed 200 OK in 1539ms (Views: 1536.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-45811ad5b17b5216fa902582baf1fd1f7fd3e23aed35d0739e3914ce04d1d79c.css?body=1" for ::1 at 2016-02-07 10:56:20 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:56:20 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:56:20 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:56:20 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:56:20 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:56:20 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:56:20 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:56:20 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:57:31 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (6.8ms)
+Completed 200 OK in 1521ms (Views: 1518.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-119e36df6c7fcba2c451eacbc89986f33d8f5b9f042cb4313344d5654185467e.css?body=1" for ::1 at 2016-02-07 10:57:33 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:57:33 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:57:33 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:57:33 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:57:33 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:57:33 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:57:33 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:57:33 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:57:53 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.6ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (7.1ms)
+Completed 200 OK in 1482ms (Views: 1480.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a021079e1298e24f7ee0dea38ff7f6dd37ebdb45a7d854933ed71f2bf8085839.css?body=1" for ::1 at 2016-02-07 10:57:54 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:57:54 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:57:54 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:57:54 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:57:54 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:57:54 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:57:54 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:57:54 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:58:12 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.9ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 1545ms (Views: 1541.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c05dece78fef71efcaa1132f17f9a0ab41c12474616400f2dbaba2a1df5f51f8.css?body=1" for ::1 at 2016-02-07 10:58:14 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:58:14 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:58:14 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:58:14 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:58:14 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:58:14 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:58:14 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:58:14 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:58:51 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.6ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (8.0ms)
+Completed 200 OK in 1448ms (Views: 1446.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b35150d6fa505c62adf9c1357bc07ef5b29d9c86f1a0b18d90ccc7ce07070eac.css?body=1" for ::1 at 2016-02-07 10:58:53 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:58:53 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:58:53 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:58:53 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:58:53 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:58:53 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:58:53 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:58:53 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:59:21 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.4ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (8.5ms)
+Completed 200 OK in 72ms (Views: 69.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b35150d6fa505c62adf9c1357bc07ef5b29d9c86f1a0b18d90ccc7ce07070eac.css?body=1" for ::1 at 2016-02-07 10:59:21 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:59:21 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:59:21 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:59:21 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:59:21 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:59:21 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:59:21 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:59:21 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:59:33 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (25.2ms)
+Completed 200 OK in 1537ms (Views: 1534.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9a11adcf580e97338c53599c7ca2c60b6284061769897406bcbf7520a7dc70ee.css?body=1" for ::1 at 2016-02-07 10:59:34 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:59:34 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:59:34 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:59:34 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:59:34 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:59:34 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:59:34 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:59:34 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 10:59:53 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.6ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 1461ms (Views: 1459.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c99bc857bf7bc4df8c64a99f55b3d95364e212f4f4eb5b5d6393359a7d848a3b.css?body=1" for ::1 at 2016-02-07 10:59:55 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 10:59:55 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 10:59:55 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 10:59:55 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:59:55 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:59:55 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 10:59:55 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 10:59:55 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 11:00:33 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 1472ms (Views: 1469.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-1e608c695e157894144144613a7b4b23a37a6ae3a292bd08e764e8e7d8915bab.css?body=1" for ::1 at 2016-02-07 11:00:34 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:00:35 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:00:35 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:00:35 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:00:35 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:00:35 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:00:35 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:00:35 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 11:01:18 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (3.8ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (11.1ms)
+Completed 200 OK in 1550ms (Views: 1548.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9207a7f4c3b82cdf667420e8e7e6bb3aad73579e9f09f38257e85531b358e829.css?body=1" for ::1 at 2016-02-07 11:01:20 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:01:20 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:01:20 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:01:20 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:01:20 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:01:20 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:01:20 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:01:20 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 11:01:46 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 1535ms (Views: 1532.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-d72e7aa0c160fe0943e094663b7f94e6c204299c1ecbbfa5201d23e600c80e8f.css?body=1" for ::1 at 2016-02-07 11:01:48 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:01:48 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:01:48 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:01:48 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:01:48 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:01:48 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:01:48 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:01:48 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 11:02:01 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.4ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (10.8ms)
+Completed 200 OK in 1541ms (Views: 1536.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-25ac5e47c4f4c701cca3c579142ea6bb603dcfa5b92aa288756fb6b5a181c821.css?body=1" for ::1 at 2016-02-07 11:02:03 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:02:03 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:02:03 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:02:03 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:02:03 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:02:03 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:02:03 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:02:03 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 11:02:13 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.6ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (9.7ms)
+Completed 200 OK in 1553ms (Views: 1551.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-49f5b3f9bd9aa1744d374db73fa922631e9c9b95c86d251f42c2971290c4b3f1.css?body=1" for ::1 at 2016-02-07 11:02:15 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:02:15 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:02:15 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:02:15 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:02:15 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:02:15 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:02:15 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:02:15 -0800
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 11:02:31 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (7.6ms)
+Completed 200 OK in 1493ms (Views: 1491.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-539aa153723ff3fd9b66d19c2f6119bbb086425ab6072cef85127f296fcb5180.css?body=1" for ::1 at 2016-02-07 11:02:33 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:02:33 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:02:33 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:02:33 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:02:33 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:02:33 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:02:33 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:02:33 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:03:28 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 69ms (Views: 66.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:04:15 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.1ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (9.9ms)
+Completed 200 OK in 1521ms (Views: 1517.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-f1b45c9e1935905f8259ab3bf8f8d2b1e12f001a0f29bad4f790fd9fdbf075aa.css?body=1" for ::1 at 2016-02-07 11:04:16 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:04:16 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:04:16 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:04:16 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:04:16 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:04:16 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:04:16 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:04:16 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:04:48 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.1ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (10.6ms)
+Completed 200 OK in 1550ms (Views: 1545.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-3d236071ce67de873f8b8a7ed5d154dfe1573527dde1be136dd45ab9c62013d9.css?body=1" for ::1 at 2016-02-07 11:04:50 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:04:50 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:04:50 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:04:50 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:04:50 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:04:50 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:04:50 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:04:50 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:05:43 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 1498ms (Views: 1495.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-14156b0f88dd74e7823a82eba1245d25e9ff3bfaf3751e10f0ef2be9b9d693db.css?body=1" for ::1 at 2016-02-07 11:05:44 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:05:44 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:05:44 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:05:44 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:05:44 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:05:44 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:05:44 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:05:44 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:06:09 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 1511ms (Views: 1507.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2356a8050d2dc2af1777cf2e60a4ef97155f1bf8d70e9f23bae1f2e6b3789a1d.css?body=1" for ::1 at 2016-02-07 11:06:10 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:06:10 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:06:10 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:06:11 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:06:11 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:06:11 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:06:11 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:06:11 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:06:23 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 1565ms (Views: 1559.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-ef4b586fcbdce628c9d02078ec60ec16b38bf7f3154205b01f85336504ae1111.css?body=1" for ::1 at 2016-02-07 11:06:25 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:06:25 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:06:25 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:06:25 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:06:25 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:06:25 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:06:25 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:06:25 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:13:18 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.1ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (8.9ms)
+Completed 200 OK in 1475ms (Views: 1471.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-71f6a60e7a1ed10ea0d3f79641452f7b7b8ed0855de6ff1b17b37c8750aacfba.css?body=1" for ::1 at 2016-02-07 11:13:20 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:13:20 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:13:20 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:13:20 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:13:20 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:13:20 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:13:20 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:13:20 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:13:55 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.9ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 1476ms (Views: 1472.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-0c0ff24763d7a54b5c5aeb852744618111d08d364ede2abb790d5e13d8e1e40f.css?body=1" for ::1 at 2016-02-07 11:13:56 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:13:57 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:13:57 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:13:57 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:13:57 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:13:57 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:13:57 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:13:57 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:14:20 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.2ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (8.4ms)
+Completed 200 OK in 1543ms (Views: 1538.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-58077e93bdcfdbddbfe1ef6aa2e895cd7838b5e283ccd4e72a44f9574d969580.css?body=1" for ::1 at 2016-02-07 11:14:22 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:14:22 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:14:22 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:14:22 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:14:22 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:14:22 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:14:22 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:14:22 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:15:14 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.2ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (7.4ms)
+Completed 200 OK in 1499ms (Views: 1496.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8a67c883048e6f87a75980824f4bb36d6a9f91bb11c5ddcbe469221f12891027.css?body=1" for ::1 at 2016-02-07 11:15:16 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:15:16 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:15:16 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:15:16 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:15:16 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:15:16 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:15:16 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:15:16 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:15:58 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (10.7ms)
+Completed 200 OK in 1536ms (Views: 1533.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e189915b2b7968e481d501737440dee86c76e816a6020c1944ebe738a0c34da5.css?body=1" for ::1 at 2016-02-07 11:16:00 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:16:00 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:16:00 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:16:00 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:16:00 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:16:00 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:16:00 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:16:00 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:16:56 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.0ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (7.9ms)
+Completed 200 OK in 63ms (Views: 60.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e189915b2b7968e481d501737440dee86c76e816a6020c1944ebe738a0c34da5.css?body=1" for ::1 at 2016-02-07 11:16:56 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:16:56 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:16:57 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:16:57 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:16:57 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:16:57 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:16:57 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:16:57 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:17:07 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.3ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (10.2ms)
+Completed 200 OK in 1499ms (Views: 1495.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-9f081afd1cc4626cfe6ecf173b374f3eb6cd06a5dc52d7598d9d5679dfd7a90c.css?body=1" for ::1 at 2016-02-07 11:17:08 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:17:08 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:17:08 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:17:08 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:17:08 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:17:08 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:17:08 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:17:08 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:17:35 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.9ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (10.0ms)
+Completed 200 OK in 1563ms (Views: 1559.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b3435138f696d4acf91dcd5527bb93de0fc2fc36a9f686740a4cbeb2353b3f7e.css?body=1" for ::1 at 2016-02-07 11:17:37 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:17:37 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:17:37 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:17:37 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:17:37 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:17:37 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:17:37 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:17:37 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:18:29 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (9.3ms)
+Completed 200 OK in 1479ms (Views: 1476.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-c2857ccf2e67f06258032827596eedae2eaeaa773ee475943f9138440bc0071b.css?body=1" for ::1 at 2016-02-07 11:18:31 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:18:31 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:18:31 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:18:31 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:18:31 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:18:31 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:18:31 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:18:31 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:18:59 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.4ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (8.2ms)
+Completed 200 OK in 1509ms (Views: 1506.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-e890d2ee02ef750bad216341ad7911330e899c3d9ede5915530e8d7f77fdfd8f.css?body=1" for ::1 at 2016-02-07 11:19:01 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:19:01 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:19:01 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:19:01 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:19:01 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:19:01 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:19:01 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:19:01 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:19:49 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.9ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (7.3ms)
+Completed 200 OK in 1563ms (Views: 1560.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-8967ab458aa6fb8a5fc3c98ee1185acb39ab42e5869d8eb21cc48bf00ea4f97e.css?body=1" for ::1 at 2016-02-07 11:19:51 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:19:51 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:19:51 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:19:51 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:19:51 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:19:51 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:19:51 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:19:51 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:20:18 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.6ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 1589ms (Views: 1578.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-78872eedd2d12046217266baeb998766afba7dd053691d195696ec349ed7d36d.css?body=1" for ::1 at 2016-02-07 11:20:20 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:20:20 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:20:20 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:20:20 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:20:20 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:20:20 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:20:20 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:20:20 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:24:11 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.0ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (9.0ms)
+Completed 200 OK in 1523ms (Views: 1520.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-4f56aed154b15c15069d387094465269037f057cee4020b577bae28e1ab6564c.css?body=1" for ::1 at 2016-02-07 11:24:13 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:24:13 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:24:13 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:24:13 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:24:13 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:24:13 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:24:13 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:24:13 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:24:27 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 1562ms (Views: 1559.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-7331e89e6b6a0a1ba672e9ab77fafc0eb18e139983bb7b7496b98cd510a866d8.css?body=1" for ::1 at 2016-02-07 11:24:29 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:24:29 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:24:29 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:24:29 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:24:29 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:24:29 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:24:29 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:24:29 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:24:57 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.1ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 1501ms (Views: 1498.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-96655d6dfb7b4c2dfbcba09149893a7076dee2708c44825fc95339f1782bcd75.css?body=1" for ::1 at 2016-02-07 11:24:59 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:24:59 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:24:59 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:24:59 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:24:59 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:24:59 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:24:59 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:24:59 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:25:09 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.1ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (7.7ms)
+Completed 200 OK in 1565ms (Views: 1562.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-2e393504b741397a5589940e72466f557a9fd53dae27d53277e00f483db0e9a0.css?body=1" for ::1 at 2016-02-07 11:25:11 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:25:11 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:25:11 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:25:11 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:25:11 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:25:11 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:25:11 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:25:11 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:25:18 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (8.7ms)
+Completed 200 OK in 1577ms (Views: 1574.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5c7d00c4f6286f4801e25eb45b5f70d3235b22960dd418801298531f154e565d.css?body=1" for ::1 at 2016-02-07 11:25:20 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:25:20 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:25:20 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:25:20 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:25:20 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:25:20 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:25:20 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:25:20 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:25:42 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (11.2ms)
+Completed 200 OK in 84ms (Views: 77.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5c7d00c4f6286f4801e25eb45b5f70d3235b22960dd418801298531f154e565d.css?body=1" for ::1 at 2016-02-07 11:25:42 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:25:43 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:25:43 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:25:43 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:25:43 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:25:43 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:25:43 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:25:43 -0800
+
+
+Started GET "/admins/password/new" for ::1 at 2016-02-07 11:25:46 -0800
+Processing by Devise::PasswordsController#new as HTML
+  Rendered admins/shared/_links.html.erb (2.4ms)
+  Rendered admins/passwords/new.html.erb within layouts/application (8.1ms)
+Completed 200 OK in 61ms (Views: 59.5ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/password/new" for ::1 at 2016-02-07 11:26:15 -0800
+Processing by Devise::PasswordsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.0ms)
+  Rendered admins/passwords/new.html.erb within layouts/application (6.7ms)
+Completed 200 OK in 60ms (Views: 58.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5c7d00c4f6286f4801e25eb45b5f70d3235b22960dd418801298531f154e565d.css?body=1" for ::1 at 2016-02-07 11:26:15 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:26:15 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:26:15 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:26:15 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:26:15 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:26:15 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:26:15 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:26:15 -0800
+
+
+Started GET "/admins/password/new" for ::1 at 2016-02-07 11:26:38 -0800
+Processing by Devise::PasswordsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.9ms)
+  Rendered admins/passwords/new.html.erb within layouts/application (7.0ms)
+Completed 200 OK in 68ms (Views: 65.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5c7d00c4f6286f4801e25eb45b5f70d3235b22960dd418801298531f154e565d.css?body=1" for ::1 at 2016-02-07 11:26:38 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:26:38 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:26:38 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:26:38 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:26:38 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:26:38 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:26:38 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:26:38 -0800
+
+
+Started GET "/admins/password/new" for ::1 at 2016-02-07 11:26:59 -0800
+Processing by Devise::PasswordsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.1ms)
+  Rendered admins/passwords/new.html.erb within layouts/application (10.3ms)
+Completed 200 OK in 157ms (Views: 155.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5c7d00c4f6286f4801e25eb45b5f70d3235b22960dd418801298531f154e565d.css?body=1" for ::1 at 2016-02-07 11:26:59 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:26:59 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:26:59 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:26:59 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:26:59 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:26:59 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:26:59 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:26:59 -0800
+
+
+Started GET "/admins/password/new" for ::1 at 2016-02-07 11:27:29 -0800
+Processing by Devise::PasswordsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/passwords/new.html.erb within layouts/application (66.4ms)
+Completed 200 OK in 127ms (Views: 121.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-5c7d00c4f6286f4801e25eb45b5f70d3235b22960dd418801298531f154e565d.css?body=1" for ::1 at 2016-02-07 11:27:29 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:27:29 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:27:29 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:27:29 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:27:29 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:27:29 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:27:29 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:27:29 -0800
+
+
+Started GET "/admins/password/new" for ::1 at 2016-02-07 11:28:05 -0800
+Processing by Devise::PasswordsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.9ms)
+  Rendered admins/passwords/new.html.erb within layouts/application (5.5ms)
+Completed 200 OK in 1488ms (Views: 1486.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-619c0458bd85831d49b30235fe64fbb78860889eaf019fc0176d121da750859b.css?body=1" for ::1 at 2016-02-07 11:28:06 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:28:07 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:28:07 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:28:07 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:28:07 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:28:07 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:28:07 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:28:07 -0800
+
+
+Started GET "/admins/password/new" for ::1 at 2016-02-07 11:28:16 -0800
+Processing by Devise::PasswordsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.1ms)
+  Rendered admins/passwords/new.html.erb within layouts/application (6.4ms)
+Completed 200 OK in 1505ms (Views: 1503.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-b36bb6ff910455b430c12fcac1d57c87d56142430c388edbdac518074744fb0b.css?body=1" for ::1 at 2016-02-07 11:28:17 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:28:17 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:28:18 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:28:18 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:28:18 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:28:18 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:28:18 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:28:18 -0800
+
+
+Started GET "/admins/password/new" for ::1 at 2016-02-07 11:28:32 -0800
+Processing by Devise::PasswordsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/passwords/new.html.erb within layouts/application (5.9ms)
+Completed 200 OK in 1518ms (Views: 1516.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-167e2e683d8e95c660951d494136c77e2971f077fa9baefd906b5309aef5dc2c.css?body=1" for ::1 at 2016-02-07 11:28:34 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:28:34 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:28:34 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:28:34 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:28:34 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:28:34 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:28:34 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:28:34 -0800
+
+
+Started GET "/admins/password/new" for ::1 at 2016-02-07 11:28:42 -0800
+Processing by Devise::PasswordsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/passwords/new.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 1492ms (Views: 1490.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-81d5570a99105a311d99da5797ca664a21533b505b4d9ee92a565c016837cc17.css?body=1" for ::1 at 2016-02-07 11:28:43 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:28:43 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:28:43 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:28:44 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:28:44 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:28:44 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:28:44 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:28:44 -0800
+
+
+Started GET "/admins/password/new" for ::1 at 2016-02-07 11:29:09 -0800
+Processing by Devise::PasswordsController#new as HTML
+  Rendered admins/shared/_links.html.erb (1.1ms)
+  Rendered admins/passwords/new.html.erb within layouts/application (6.0ms)
+Completed 200 OK in 1501ms (Views: 1499.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-824c5aebcb2e4644d21dd43760e6aefbcf3435cd150e8a1e9f0f521ab7e2d1e5.css?body=1" for ::1 at 2016-02-07 11:29:11 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:29:11 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:29:11 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:29:11 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:29:11 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:29:11 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:29:11 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:29:11 -0800
+
+
+Started GET "/admins/password/edit" for ::1 at 2016-02-07 11:29:15 -0800
+Processing by Devise::PasswordsController#edit as HTML
+Redirected to http://localhost:3000/admins/sign_in
+Filter chain halted as :assert_reset_token_passed rendered or redirected
+Completed 302 Found in 10ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-07 11:29:15 -0800
+Processing by Devise::SessionsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.8ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (9.8ms)
+Completed 200 OK in 62ms (Views: 59.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 11:31:39 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.5ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (6.9ms)
+Completed 200 OK in 60ms (Views: 57.8ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 11:32:19 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.7ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (8.3ms)
+Completed 200 OK in 1589ms (Views: 1586.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-a54763bd9e78ededf72be1b7c17a9b41d65e2cf65a08b037bef66ae6ec338991.css?body=1" for ::1 at 2016-02-07 11:32:21 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-07 11:32:21 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:32:21 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-07 11:32:21 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-07 11:32:21 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:32:21 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-07 11:32:21 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-07 11:32:21 -0800
+
+
+Started GET "/admins" for ::1 at 2016-02-07 11:33:02 -0800
+
+ActionController::RoutingError (No route matches [GET] "/admins"):
+  actionpack (4.2.4) lib/action_dispatch/middleware/debug_exceptions.rb:21:in `call'
+  web-console (2.3.0) lib/web_console/middleware.rb:28:in `block in call'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `catch'
+  web-console (2.3.0) lib/web_console/middleware.rb:18:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/show_exceptions.rb:30:in `call'
+  railties (4.2.4) lib/rails/rack/logger.rb:38:in `call_app'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `block in call'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `block in tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:26:in `tagged'
+  activesupport (4.2.4) lib/active_support/tagged_logging.rb:68:in `tagged'
+  railties (4.2.4) lib/rails/rack/logger.rb:20:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/request_id.rb:21:in `call'
+  rack (1.6.4) lib/rack/methodoverride.rb:22:in `call'
+  rack (1.6.4) lib/rack/runtime.rb:18:in `call'
+  activesupport (4.2.4) lib/active_support/cache/strategy/local_cache_middleware.rb:28:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  actionpack (4.2.4) lib/action_dispatch/middleware/static.rb:116:in `call'
+  rack (1.6.4) lib/rack/sendfile.rb:113:in `call'
+  railties (4.2.4) lib/rails/engine.rb:518:in `call'
+  railties (4.2.4) lib/rails/application.rb:165:in `call'
+  rack (1.6.4) lib/rack/lock.rb:17:in `call'
+  rack (1.6.4) lib/rack/content_length.rb:15:in `call'
+  rack (1.6.4) lib/rack/handler/webrick.rb:88:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:138:in `service'
+  /usr/local/lib/ruby/2.2.0/webrick/httpserver.rb:94:in `run'
+  /usr/local/lib/ruby/2.2.0/webrick/server.rb:294:in `block in start_thread'
+
+
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_trace.html.erb (3.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_route.html.erb (5.2ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/routes/_table.html.erb (7.1ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/_request_and_response.html.erb (2.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_dispatch/middleware/templates/rescues/routing_error.html.erb within rescues/layout (120.0ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_markup.html.erb (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_inner_console_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/_prompt_box_markup.html.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/style.css.erb within layouts/inlined_string (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/console.js.erb within layouts/javascript (41.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/main.js.erb within layouts/javascript (0.7ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/error_page.js.erb within layouts/javascript (0.8ms)
+  Rendered /usr/local/lib/ruby/gems/2.2.0/gems/web-console-2.3.0/lib/web_console/templates/index.html.erb (88.0ms)
+
+
+Started GET "/admins/cancel" for ::1 at 2016-02-07 11:33:18 -0800
+Processing by Devise::RegistrationsController#cancel as HTML
+Redirected to http://localhost:3000/admins/sign_up
+Completed 302 Found in 3ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_up" for ::1 at 2016-02-07 11:33:18 -0800
+Processing by Devise::RegistrationsController#new as HTML
+  Rendered admins/shared/_links.html.erb (0.4ms)
+  Rendered admins/registrations/new.html.erb within layouts/application (5.7ms)
+Completed 200 OK in 62ms (Views: 60.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-07 11:33:54 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (9.2ms)
+Completed 200 OK in 62ms (Views: 60.4ms | ActiveRecord: 0.0ms)

@@ -1,0 +1,40 @@
+$width: 300px;
+
+.admin {
+	padding: 20px;
+	max-width: $width;
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+	h2 {
+		text-align: center;
+		font-weight: bold;
+		width: $width;	
+	}
+	.field { 
+		font-size: 1.3em;
+		input {
+			border-radius: 10px;
+			height: 30px;
+			width: $width;
+			padding: 10px;
+		}
+		label {
+			margin-top: 20px;
+			margin-bottom: 20px;
+			width: $width;
+		}
+	}
+	#admin_remember_me {
+		width: $width/10;
+		margin-top: 20px;
+	}
+
+	.btn {
+		margin-top: 10px;
+		margin-bottom: 10px;
+		width: $width;
+		border-radius: 2px;
+		height: 34px;	
+	}
+}

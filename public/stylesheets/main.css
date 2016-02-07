@@ -3,7 +3,7 @@ body {
   background-image: url("../images/background.jpg");
   background-size: cover;
   color: black;
-  font-family: verdana, arial, helvetica, sans-serif;
+  font-family: 'Ubuntu', sans-serif;
   font-size: 13px;
   line-height: 18px;
 }

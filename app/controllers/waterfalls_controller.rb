@@ -22,6 +22,7 @@ class WaterfallsController < ApplicationController
 		@waterfall = Waterfall.new(waterfall_params)
  
   		if @waterfall.save
+  			flash[:notice] = "Saved"
   			redirect_to @waterfall
   		else
   			render 'new'
