@@ -1,18 +1,17 @@
 <div class="container">
 	<div class="page">
 	<div class="row waterfall">
-		<% paginate @waterfalls %>	
 			<div class="col-xs-5">
-   				<h4>Name</h4>
+   				<h4><%= sort_link(@q, :title) %></h4>
    		</div>
 			<div class="col-xs-2">
-					<h4>State</h4>			
+					<h4><%= sort_link(@q, :state) %></h4>
 			</div>
 			<div class="col-xs-1">
-					<h4>Height</h4>			
+					<h4><%= sort_link(@q, :height, default_order: :desc) %></h4>		
 			</div>
 			<div class="col-xs-1">
-					<h4>Avg. Width</h4>			
+					<h4><%= sort_link(@q, :width, default_order: :desc) %></h4>		
 			</div>
 	</div>
 
@@ -28,10 +27,10 @@
       			<h4><%= waterfall.state%></h4>
       		</div>
       		<div class="col-xs-1">		
-      			<h4><%= waterfall.height%></h4>
+      			<h4><%= waterfall.height%> feet</h4>
       		</div>
       		<div class="col-xs-1">		
-      			<h4><%= waterfall.width%></h4>
+      			<h4><%= waterfall.width%> feet</h4>
       		</div>
       		<% if admin_signed_in? %>
       			<div class="col-xs-3">	
