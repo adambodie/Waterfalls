@@ -48526,3 +48526,176 @@ Processing by WaterfallsController#index as HTML
   [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
   Rendered waterfalls/index.html.erb within layouts/application (76.9ms)
 Completed 200 OK in 180ms (Views: 174.6ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-09 19:22:52 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.7ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (182.9ms)
+Completed 200 OK in 9835ms (Views: 9785.3ms | ActiveRecord: 3.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 19:23:02 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 158ms (Views: 156.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/admin.self-42186a5c2476bc775e88ca3cb2136c6b603b2169b573b62733b1a2b5fac9278a.css?body=1" for ::1 at 2016-02-09 19:23:02 -0800
+
+
+Started GET "/assets/application.self-fe7f796cac0a1915c4d1e999d8482f609107d15fa7b5490e33754865878e037a.css?body=1" for ::1 at 2016-02-09 19:23:02 -0800
+
+
+Started GET "/assets/waterfalls.self-1432a232cca61ceb795c0da4bfbf1f3a6c93b46e26dd849ee231ee64fe4ea7d9.css?body=1" for ::1 at 2016-02-09 19:23:02 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 19:23:02 -0800
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 19:23:02 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 19:23:02 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 19:23:02 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 19:23:02 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 19:23:02 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 19:23:02 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 19:23:02 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 19:23:02 -0800
+
+
+Started GET "/" for ::1 at 2016-02-09 19:23:07 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.6ms)
+Completed 200 OK in 81ms (Views: 79.7ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-09 19:23:08 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.6ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (69.1ms)
+Completed 200 OK in 147ms (Views: 142.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 19:23:12 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (18.3ms)
+Completed 200 OK in 124ms (Views: 122.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-09 19:23:14 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"m9B3wbDRBVhsOATXfUikO0aSIoYTPophaLw59B4KDoeZgzWq9bVHqPhvGXeYu2Lz6Ut7OGsi6MFWu2ninJshag=="}
+  Rendered admins/shared/_links.html.erb (10.0ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (62.8ms)
+Completed 200 OK in 224ms (Views: 169.3ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-09 19:24:32 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"OHrHmgijw+dWRA/726C/nb8MY04+t2xLgYeVFokcPP86KYXxTceBF8ITEls+U3lVENU68EarDuu/gMUAC40TEg=="}
+  Rendered admins/shared/_links.html.erb (0.9ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (9.5ms)
+Completed 200 OK in 105ms (Views: 102.4ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/admins/sign_in" for ::1 at 2016-02-09 19:24:34 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"+zk3+EebAaQZzGOeN3ggs6F0AG5JiEy66dE1Rm/Fvkz5anWTAv9DVI2bfj7Si+Z7Dq1Z0DGULhrX1mVQ7VSRoQ==", "admin"=>{"email"=>"aduo3000@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mAdmin Load (0.9ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."email" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["email", "aduo3000@yahoo.com"]]
+  [1m[36m (0.8ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.4ms)[0m  UPDATE "admins" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "admins"."id" = ?  [["last_sign_in_at", "2016-02-10 02:24:10.599041"], ["current_sign_in_at", "2016-02-10 03:24:35.168087"], ["sign_in_count", 12], ["updated_at", "2016-02-10 03:24:35.170834"], ["id", 1]]
+  [1m[36m (99.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 333ms (ActiveRecord: 105.6ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 19:24:35 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (7.2ms)
+  [1m[35mAdmin Load (0.5ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 74ms (Views: 72.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-09 19:24:37 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (1.9ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (48.2ms)
+Completed 200 OK in 116ms (Views: 109.6ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/admins/sign_out" for ::1 at 2016-02-09 19:24:39 -0800
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"znuihyKH4ucDZ8fpBV3CETehgzA3s+VB0t92Hv3sBtrLSZQ/z+votommudoXC7MbuR5gaRRSwkKzuWcIAhzozA=="}
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35m (0.1ms)[0m  commit transaction
+Redirected to http://localhost:3000/
+Completed 302 Found in 15ms (ActiveRecord: 0.6ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 19:24:39 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (6.6ms)
+Completed 200 OK in 75ms (Views: 74.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-09 19:26:24 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.3ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (475.8ms)
+Completed 200 OK in 681ms (Views: 656.9ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-fe7f796cac0a1915c4d1e999d8482f609107d15fa7b5490e33754865878e037a.css?body=1" for ::1 at 2016-02-09 19:26:25 -0800
+
+
+Started GET "/assets/admin.self-42186a5c2476bc775e88ca3cb2136c6b603b2169b573b62733b1a2b5fac9278a.css?body=1" for ::1 at 2016-02-09 19:26:25 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 19:26:25 -0800
+
+
+Started GET "/assets/waterfalls.self-1432a232cca61ceb795c0da4bfbf1f3a6c93b46e26dd849ee231ee64fe4ea7d9.css?body=1" for ::1 at 2016-02-09 19:26:25 -0800
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-09 19:26:25 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-09 19:26:25 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-09 19:26:25 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-09 19:26:25 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 19:26:25 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 19:26:25 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-09 19:26:25 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-09 19:26:25 -0800
