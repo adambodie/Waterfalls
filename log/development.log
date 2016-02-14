@@ -49320,3 +49320,1881 @@ Processing by WaterfallsController#index as HTML
   [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
   Rendered waterfalls/index.html.erb within layouts/application (39.9ms)
 Completed 200 OK in 116ms (Views: 110.3ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/" for ::1 at 2016-02-14 12:34:47 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.8ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (5.3ms)
+Completed 200 OK in 802ms (Views: 771.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-14 12:34:51 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+Completed 200 OK in 113ms (Views: 112.0ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-fe7f796cac0a1915c4d1e999d8482f609107d15fa7b5490e33754865878e037a.css?body=1" for ::1 at 2016-02-14 12:34:52 -0800
+
+
+Started GET "/assets/admin.self-42186a5c2476bc775e88ca3cb2136c6b603b2169b573b62733b1a2b5fac9278a.css?body=1" for ::1 at 2016-02-14 12:34:52 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-14 12:34:52 -0800
+
+
+Started GET "/assets/waterfalls.self-1432a232cca61ceb795c0da4bfbf1f3a6c93b46e26dd849ee231ee64fe4ea7d9.css?body=1" for ::1 at 2016-02-14 12:34:52 -0800
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-14 12:34:52 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-14 12:34:52 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-14 12:34:52 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-14 12:34:52 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:34:52 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-14 12:34:52 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:34:52 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:34:52 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:34:55 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (4.9ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (185.0ms)
+Completed 200 OK in 355ms (Views: 312.5ms | ActiveRecord: 6.3ms)
+
+
+Started GET "/waterfalls/32" for ::1 at 2016-02-14 12:35:04 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"32"}
+  [1m[35mWaterfall Load (0.5ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 32]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 32]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (49.7ms)
+  Rendered waterfalls/show.html.erb within layouts/application (102.4ms)
+Completed 200 OK in 203ms (Views: 172.4ms | ActiveRecord: 1.3ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:35:39 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.4ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.6ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (54.1ms)
+Completed 200 OK in 145ms (Views: 127.8ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/assets/application.self-fe7f796cac0a1915c4d1e999d8482f609107d15fa7b5490e33754865878e037a.css?body=1" for ::1 at 2016-02-14 12:35:39 -0800
+
+
+Started GET "/assets/admin.self-42186a5c2476bc775e88ca3cb2136c6b603b2169b573b62733b1a2b5fac9278a.css?body=1" for ::1 at 2016-02-14 12:35:39 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-14 12:35:39 -0800
+
+
+Started GET "/assets/waterfalls.self-1432a232cca61ceb795c0da4bfbf1f3a6c93b46e26dd849ee231ee64fe4ea7d9.css?body=1" for ::1 at 2016-02-14 12:35:39 -0800
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-14 12:35:39 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-14 12:35:39 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-14 12:35:39 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-14 12:35:40 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:35:40 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:35:40 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:35:40 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-14 12:35:40 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:36:13 -0800
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.9ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (177.6ms)
+Completed 200 OK in 924ms (Views: 856.8ms | ActiveRecord: 3.8ms)
+
+
+Started GET "/assets/application.self-fe7f796cac0a1915c4d1e999d8482f609107d15fa7b5490e33754865878e037a.css?body=1" for ::1 at 2016-02-14 12:36:14 -0800
+
+
+Started GET "/assets/admin.self-42186a5c2476bc775e88ca3cb2136c6b603b2169b573b62733b1a2b5fac9278a.css?body=1" for ::1 at 2016-02-14 12:36:14 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-14 12:36:14 -0800
+
+
+Started GET "/assets/waterfalls.self-1432a232cca61ceb795c0da4bfbf1f3a6c93b46e26dd849ee231ee64fe4ea7d9.css?body=1" for ::1 at 2016-02-14 12:36:14 -0800
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-14 12:36:14 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-14 12:36:14 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-14 12:36:14 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-14 12:36:14 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:36:14 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:36:14 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-14 12:36:15 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:36:15 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:36:53 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.9ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (77.4ms)
+Completed 200 OK in 195ms (Views: 190.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/assets/application.self-fe7f796cac0a1915c4d1e999d8482f609107d15fa7b5490e33754865878e037a.css?body=1" for ::1 at 2016-02-14 12:36:53 -0800
+
+
+Started GET "/assets/admin.self-42186a5c2476bc775e88ca3cb2136c6b603b2169b573b62733b1a2b5fac9278a.css?body=1" for ::1 at 2016-02-14 12:36:53 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-14 12:36:53 -0800
+
+
+Started GET "/assets/waterfalls.self-1432a232cca61ceb795c0da4bfbf1f3a6c93b46e26dd849ee231ee64fe4ea7d9.css?body=1" for ::1 at 2016-02-14 12:36:53 -0800
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-14 12:36:53 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-14 12:36:53 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-14 12:36:53 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-14 12:36:53 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-14 12:36:53 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:36:54 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:36:54 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:36:54 -0800
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:37:30 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.6ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (70.4ms)
+Completed 200 OK in 169ms (Views: 164.6ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/application.self-fe7f796cac0a1915c4d1e999d8482f609107d15fa7b5490e33754865878e037a.css?body=1" for ::1 at 2016-02-14 12:37:31 -0800
+
+
+Started GET "/assets/admin.self-42186a5c2476bc775e88ca3cb2136c6b603b2169b573b62733b1a2b5fac9278a.css?body=1" for ::1 at 2016-02-14 12:37:31 -0800
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-14 12:37:31 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-14 12:37:31 -0800
+
+
+Started GET "/assets/waterfalls.self-1432a232cca61ceb795c0da4bfbf1f3a6c93b46e26dd849ee231ee64fe4ea7d9.css?body=1" for ::1 at 2016-02-14 12:37:31 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-14 12:37:31 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-14 12:37:31 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-14 12:37:31 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:37:31 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:37:31 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:37:31 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-14 12:37:31 -0800
+
+
+Started GET "/" for ::1 at 2016-02-14 12:37:37 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.7ms)
+Completed 200 OK in 73ms (Views: 71.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/" for ::1 at 2016-02-14 12:37:49 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.8ms)
+Completed 200 OK in 136ms (Views: 134.4ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/assets/application.self-fe7f796cac0a1915c4d1e999d8482f609107d15fa7b5490e33754865878e037a.css?body=1" for ::1 at 2016-02-14 12:37:50 -0800
+
+
+Started GET "/assets/admin.self-42186a5c2476bc775e88ca3cb2136c6b603b2169b573b62733b1a2b5fac9278a.css?body=1" for ::1 at 2016-02-14 12:37:50 -0800
+
+
+Started GET "/assets/comments.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-14 12:37:50 -0800
+
+
+Started GET "/assets/waterfalls.self-1432a232cca61ceb795c0da4bfbf1f3a6c93b46e26dd849ee231ee64fe4ea7d9.css?body=1" for ::1 at 2016-02-14 12:37:50 -0800
+
+
+Started GET "/assets/welcome.self-e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855.css?body=1" for ::1 at 2016-02-14 12:37:50 -0800
+
+
+Started GET "/assets/jquery.self-c64a74367bda6ef8b860f19e74df08927ca99d2be2ac934e9e92d5fd361e0da4.js?body=1" for ::1 at 2016-02-14 12:37:50 -0800
+
+
+Started GET "/assets/comments.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:37:50 -0800
+
+
+Started GET "/assets/jquery_ujs.self-d602bdfe68ffc63b9f9cc512872aa3cfff046228a0a36e90dd476e8ef54c1b09.js?body=1" for ::1 at 2016-02-14 12:37:50 -0800
+
+
+Started GET "/assets/waterfalls.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:37:50 -0800
+
+
+Started GET "/assets/turbolinks.self-c37727e9bd6b2735da5c311aa83fead54ed0be6cc8bd9a65309e9c5abe2cbfff.js?body=1" for ::1 at 2016-02-14 12:37:50 -0800
+
+
+Started GET "/assets/welcome.self-877aef30ae1b040ab8a3aba4e3e309a11d7f2612f44dde450b5c157aa5f95c05.js?body=1" for ::1 at 2016-02-14 12:37:50 -0800
+
+
+Started GET "/assets/application.self-3b8dabdc891efe46b9a144b400ad69e37d7e5876bdc39dee783419a69d7ca819.js?body=1" for ::1 at 2016-02-14 12:37:50 -0800
+
+
+Started GET "/admins/sign_in" for ::1 at 2016-02-14 12:40:58 -0800
+Processing by Devise::SessionsController#new as HTML
+  Parameters: {"authenticity_token"=>"wqTTpQ0jTfXh6NrF2laNsGqRS82RdlWnKtJYZ1Lx/kFXvJx2ttczrj2tBsf9oRjjX1tR5A/EmM/Lu/Dy+GFb8A=="}
+  Rendered admins/shared/_links.html.erb (3.0ms)
+  Rendered admins/sessions/new.html.erb within layouts/application (39.1ms)
+Completed 200 OK in 152ms (Views: 121.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/admins/sign_in" for ::1 at 2016-02-14 12:41:00 -0800
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"6gu5HphGdyT3mgEYrpPUo76QWI9rPjfwjCf17lt0muB/E/bNI7IJfyvf3RqJZEHwi1pCpvWM+phtTl178eQ/UQ==", "admin"=>{"email"=>"aduo3000@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[35mAdmin Load (0.9ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."email" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["email", "aduo3000@yahoo.com"]]
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (4.1ms)[0m  UPDATE "admins" SET "last_sign_in_at" = ?, "current_sign_in_at" = ?, "sign_in_count" = ?, "updated_at" = ? WHERE "admins"."id" = ?  [["last_sign_in_at", "2016-02-13 22:46:36.218266"], ["current_sign_in_at", "2016-02-14 20:41:00.400395"], ["sign_in_count", 15], ["updated_at", "2016-02-14 20:41:00.402813"], ["id", 1]]
+  [1m[36m (125.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/
+Completed 302 Found in 365ms (ActiveRecord: 130.4ms)
+
+
+Started GET "/" for ::1 at 2016-02-14 12:41:00 -0800
+Processing by WelcomeController#index as HTML
+  Rendered welcome/index.html.erb within layouts/application (0.1ms)
+  [1m[35mAdmin Load (0.6ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 85ms (Views: 82.6ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:41:03 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (1.6ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (56.3ms)
+Completed 200 OK in 146ms (Views: 140.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:41:07 -0800
+Processing by WaterfallsController#new as HTML
+Filter chain halted as #<Proc:0xba3925e0@/usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:41:09 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (36.8ms)
+  Rendered waterfalls/new.html.erb within layouts/application (44.6ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 144ms (Views: 142.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:46:20 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BdX9bLlgP3ejMpFU0PSXA7PAPa+9UGYXaT//FTaSPa0LJtsZVa2KN3kFiNJgEscm/L8HtlRB0vdP1ofpWS3oKQ==", "waterfall"=>{"title"=>"Wiesendanger Falls", "text"=>"For those visiting Multnomah Falls, a hike to the top of the falls is often the destination for those who are looking for a hike.  But there's much more beyond the top awaiting Multnomah Creek.  Wiesendanger Falls is one such place to visit along Multnomah Creek.  Though nothing will ever compare to Multnomah Falls, Wiesendanger Falls is a nice plunge down Multnomah Creek that is worth the visit.", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb4b071b0 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-1iqdvk0.jpg>, @original_filename="wiesendanger.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"wiesendanger.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Filter chain halted as #<Proc:0xba3925e0@/usr/local/lib/ruby/gems/2.2.0/gems/actionpack-4.2.4/lib/action_controller/metal/http_authentication.rb:69> rendered or redirected
+Completed 401 Unauthorized in 2ms (ActiveRecord: 0.0ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:46:20 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"BdX9bLlgP3ejMpFU0PSXA7PAPa+9UGYXaT//FTaSPa0LJtsZVa2KN3kFiNJgEscm/L8HtlRB0vdP1ofpWS3oKQ==", "waterfall"=>{"title"=>"Wiesendanger Falls", "text"=>"For those visiting Multnomah Falls, a hike to the top of the falls is often the destination for those who are looking for a hike.  But there's much more beyond the top awaiting Multnomah Creek.  Wiesendanger Falls is one such place to visit along Multnomah Creek.  Though nothing will ever compare to Multnomah Falls, Wiesendanger Falls is a nice plunge down Multnomah Creek that is worth the visit.", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb4a1f610 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-al9sgt.jpg>, @original_filename="wiesendanger.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"wiesendanger.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/03990160334e56ae62be5483e6962f2b20160214-22006-18dnp8x.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/03990160334e56ae62be5483e6962f2b20160214-22006-zh0pwy.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/03990160334e56ae62be5483e6962f2b20160214-22006-zh0pwy.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/03990160334e56ae62be5483e6962f2b20160214-22006-zh0pwy.jpg[0]' -auto-orient -resize "500x500>" '/tmp/b366e31f78d2434967f8c3277663aaa020160214-22006-15cx1hh'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/03990160334e56ae62be5483e6962f2b20160214-22006-zh0pwy.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/03990160334e56ae62be5483e6962f2b20160214-22006-zh0pwy.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/03990160334e56ae62be5483e6962f2b20160214-22006-zh0pwy.jpg[0]' -auto-orient -resize "200x200>" '/tmp/b366e31f78d2434967f8c3277663aaa020160214-22006-1hjjza2'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/03990160334e56ae62be5483e6962f2b20160214-22006-3wo7og.jpg'
+  [1m[35mSQL (1.7ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Wiesendanger Falls"], ["text", "For those visiting Multnomah Falls, a hike to the top of the falls is often the destination for those who are looking for a hike.  But there's much more beyond the top awaiting Multnomah Creek.  Wiesendanger Falls is one such place to visit along Multnomah Creek.  Though nothing will ever compare to Multnomah Falls, Wiesendanger Falls is a nice plunge down Multnomah Creek that is worth the visit."], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "wiesendanger.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 85262], ["avatar_updated_at", "2016-02-14 20:46:20.689969"], ["created_at", "2016-02-14 20:46:21.184385"], ["updated_at", "2016-02-14 20:46:21.184385"]]
+  [1m[36m (21.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/64
+Completed 302 Found in 563ms (ActiveRecord: 22.9ms)
+
+
+Started GET "/waterfalls/64" for ::1 at 2016-02-14 12:46:21 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"64"}
+  [1m[35mWaterfall Load (0.7ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 64]]
+  [1m[36mComment Load (0.3ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 64]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (26.0ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (72.4ms)
+Completed 200 OK in 156ms (Views: 145.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:46:26 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (2.0ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (46.6ms)
+Completed 200 OK in 135ms (Views: 128.1ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:46:36 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (16.0ms)
+  Rendered waterfalls/new.html.erb within layouts/application (18.5ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 94ms (Views: 92.5ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:47:20 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Haoaokv5wTUesVG+CGDCvfT186o4+u65B2U/QAvPzgQTWTzXpzR0dcSGSDi4hpKYu4rJs9HrWlkhjEe8ZHAbgA==", "waterfall"=>{"title"=>"Cabin Creek Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb4b0e458 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-1us8xzk.JPG>, @original_filename="cabin-creek.JPG", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"cabin-creek.JPG\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/65bb2c6582a84b67dee60cd717c51bf920160214-22006-1yjxl65.JPG'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/65bb2c6582a84b67dee60cd717c51bf920160214-22006-134wqge.JPG'
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered waterfalls/_form.html.erb (23.8ms)
+  Rendered waterfalls/new.html.erb within layouts/application (28.9ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 144ms (Views: 103.5ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:47:57 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"33NO8070YJqFi4LVAJIQpf9KaWtKNE10HquVogceKBPRgGiGojnV2l+8m1OwdECAsDVTcqMl+ZQ4Qu1eaKH9lw==", "waterfall"=>{"title"=>"Cabin Creek Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb55e3aa8 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-auputb.jpg>, @original_filename="cabin-creek.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"cabin-creek.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/65bb2c6582a84b67dee60cd717c51bf920160214-22006-zr033w.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/65bb2c6582a84b67dee60cd717c51bf920160214-22006-1oht2ha.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/65bb2c6582a84b67dee60cd717c51bf920160214-22006-1oht2ha.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/65bb2c6582a84b67dee60cd717c51bf920160214-22006-1oht2ha.jpg[0]' -auto-orient -resize "500x500>" '/tmp/1b2c8dc809e7cb40b3fec9156af5570c20160214-22006-85hpb1'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/65bb2c6582a84b67dee60cd717c51bf920160214-22006-1oht2ha.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/65bb2c6582a84b67dee60cd717c51bf920160214-22006-1oht2ha.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/65bb2c6582a84b67dee60cd717c51bf920160214-22006-1oht2ha.jpg[0]' -auto-orient -resize "200x200>" '/tmp/1b2c8dc809e7cb40b3fec9156af5570c20160214-22006-10t58nx'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/65bb2c6582a84b67dee60cd717c51bf920160214-22006-16rjc9p.jpg'
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Cabin Creek Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "cabin-creek.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 106858], ["avatar_updated_at", "2016-02-14 20:47:57.606830"], ["created_at", "2016-02-14 20:47:57.923667"], ["updated_at", "2016-02-14 20:47:57.923667"]]
+  [1m[35m (31.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/waterfalls/65
+Completed 302 Found in 401ms (ActiveRecord: 33.3ms)
+
+
+Started GET "/waterfalls/65" for ::1 at 2016-02-14 12:47:58 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"65"}
+  [1m[36mWaterfall Load (0.4ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 65]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 65]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.8ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (14.7ms)
+Completed 200 OK in 111ms (Views: 106.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:48:03 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (2.7ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (79.5ms)
+Completed 200 OK in 188ms (Views: 181.6ms | ActiveRecord: 3.6ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:49:32 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (19.2ms)
+  Rendered waterfalls/new.html.erb within layouts/application (21.1ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 130ms (Views: 128.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:49:48 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"9S84/XEZNGx4VdHGvoQlrnrwpPim1RyFQ3Isr8+HTFD73B6IndSBLKJiyEAOYnWLNY+e4U/EqGVlm1RToDiZ1A==", "waterfall"=>{"title"=>"Cape Horn Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb52526c8 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-q5foez.jpg>, @original_filename="cape-horn.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"cape-horn.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/bbf505054015412f66d723c15a07cd6e20160214-22006-rxttub.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/bbf505054015412f66d723c15a07cd6e20160214-22006-dphdhq.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/bbf505054015412f66d723c15a07cd6e20160214-22006-dphdhq.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/bbf505054015412f66d723c15a07cd6e20160214-22006-dphdhq.jpg[0]' -auto-orient -resize "500x500>" '/tmp/757534b0c4a9945f8ce281904491f75120160214-22006-o06847'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/bbf505054015412f66d723c15a07cd6e20160214-22006-dphdhq.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/bbf505054015412f66d723c15a07cd6e20160214-22006-dphdhq.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/bbf505054015412f66d723c15a07cd6e20160214-22006-dphdhq.jpg[0]' -auto-orient -resize "200x200>" '/tmp/757534b0c4a9945f8ce281904491f75120160214-22006-1ha9qk1'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/bbf505054015412f66d723c15a07cd6e20160214-22006-1tk3i1h.jpg'
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Cape Horn Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "cape-horn.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 49478], ["avatar_updated_at", "2016-02-14 20:49:48.292408"], ["created_at", "2016-02-14 20:49:48.610489"], ["updated_at", "2016-02-14 20:49:48.610489"]]
+  [1m[35m (19.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/waterfalls/66
+Completed 302 Found in 394ms (ActiveRecord: 21.2ms)
+
+
+Started GET "/waterfalls/66" for ::1 at 2016-02-14 12:49:48 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"66"}
+  [1m[36mWaterfall Load (0.4ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 66]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 66]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (6.8ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (16.5ms)
+Completed 200 OK in 126ms (Views: 121.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:49:54 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.9ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (76.0ms)
+Completed 200 OK in 158ms (Views: 152.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:49:59 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (13.7ms)
+  Rendered waterfalls/new.html.erb within layouts/application (15.4ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 92ms (Views: 90.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:50:15 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"A5TiOJywKLqlrfhEwabunmOSSSIpHSAmLGaGwAFqD74NZ8RNcH2d+n+a4cJxQL67LO1zO8AMlMYKj/48btXaOg==", "waterfall"=>{"title"=>"Drake Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb4e86c98 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-1kyovjj.jpg>, @original_filename="drake.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"drake.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/3ac75a6d60271efab41eb1747d17261920160214-22006-n4b66h.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/3ac75a6d60271efab41eb1747d17261920160214-22006-fz8szh.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/3ac75a6d60271efab41eb1747d17261920160214-22006-fz8szh.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/3ac75a6d60271efab41eb1747d17261920160214-22006-fz8szh.jpg[0]' -auto-orient -resize "500x500>" '/tmp/56433bd2a2836c8f0b25da3757b7d69320160214-22006-ursvs6'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/3ac75a6d60271efab41eb1747d17261920160214-22006-fz8szh.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/3ac75a6d60271efab41eb1747d17261920160214-22006-fz8szh.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/3ac75a6d60271efab41eb1747d17261920160214-22006-fz8szh.jpg[0]' -auto-orient -resize "200x200>" '/tmp/56433bd2a2836c8f0b25da3757b7d69320160214-22006-h311yp'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/3ac75a6d60271efab41eb1747d17261920160214-22006-1iaqure.jpg'
+  [1m[36mSQL (1.2ms)[0m  [1mINSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Drake Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "drake.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 118859], ["avatar_updated_at", "2016-02-14 20:50:15.686947"], ["created_at", "2016-02-14 20:50:16.067130"], ["updated_at", "2016-02-14 20:50:16.067130"]]
+  [1m[35m (96.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/waterfalls/67
+Completed 302 Found in 525ms (ActiveRecord: 97.7ms)
+
+
+Started GET "/waterfalls/67" for ::1 at 2016-02-14 12:50:16 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"67"}
+  [1m[36mWaterfall Load (0.3ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 67]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 67]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.9ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 107ms (Views: 103.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:50:19 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.6ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.4ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (50.5ms)
+Completed 200 OK in 131ms (Views: 126.2ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:50:22 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (14.8ms)
+  Rendered waterfalls/new.html.erb within layouts/application (16.7ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 93ms (Views: 90.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:50:38 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"zGq+XNJn+Xf2TQPM7OKD/zWEvj75Ui8hcIfbeKhA1qnCmZgpPqpMNyx6GkpcBNPaevuEJxBDm8FWbqOEx/8DLQ==", "waterfall"=>{"title"=>"Frenchie Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb48c9e68 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-1ojboim.jpg>, @original_filename="frenchie.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"frenchie.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/7f2411abc9fa9bd7b474d6ed36b81e3720160214-22006-ff4xui.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/7f2411abc9fa9bd7b474d6ed36b81e3720160214-22006-sec6m6.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/7f2411abc9fa9bd7b474d6ed36b81e3720160214-22006-sec6m6.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/7f2411abc9fa9bd7b474d6ed36b81e3720160214-22006-sec6m6.jpg[0]' -auto-orient -resize "500x500>" '/tmp/f5ff8449458185940ec3ae6f5dc769a920160214-22006-cw2zge'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/7f2411abc9fa9bd7b474d6ed36b81e3720160214-22006-sec6m6.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/7f2411abc9fa9bd7b474d6ed36b81e3720160214-22006-sec6m6.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/7f2411abc9fa9bd7b474d6ed36b81e3720160214-22006-sec6m6.jpg[0]' -auto-orient -resize "200x200>" '/tmp/f5ff8449458185940ec3ae6f5dc769a920160214-22006-yw1zqq'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/7f2411abc9fa9bd7b474d6ed36b81e3720160214-22006-u9qpkk.jpg'
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Frenchie Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "frenchie.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 100085], ["avatar_updated_at", "2016-02-14 20:50:38.251496"], ["created_at", "2016-02-14 20:50:38.563162"], ["updated_at", "2016-02-14 20:50:38.563162"]]
+  [1m[35m (29.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/waterfalls/68
+Completed 302 Found in 390ms (ActiveRecord: 30.7ms)
+
+
+Started GET "/waterfalls/68" for ::1 at 2016-02-14 12:50:38 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"68"}
+  [1m[36mWaterfall Load (0.4ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 68]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 68]]
+  Rendered collection (0.1ms)
+  Rendered comments/_form.html.erb (5.0ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (14.6ms)
+Completed 200 OK in 109ms (Views: 105.2ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:50:42 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (2.0ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (50.0ms)
+Completed 200 OK in 123ms (Views: 117.4ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:50:45 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (24.6ms)
+  Rendered waterfalls/new.html.erb within layouts/application (26.3ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 100ms (Views: 98.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:50:58 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"a7kOTtDM6zJkWYWLcNlxV2I1dAXW2XGPrEjBKq/ReltlSig7PAFecr5unA3APyFyLUpOHD/IxW+KobnWwG6v3w==", "waterfall"=>{"title"=>"Husum Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb43e0700 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-1s5hnfb.jpg>, @original_filename="husum.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"husum.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/00cda017e3a9fb8ef4036d66fac38bbd20160214-22006-f3ocvo.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/00cda017e3a9fb8ef4036d66fac38bbd20160214-22006-pjnhg2.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/00cda017e3a9fb8ef4036d66fac38bbd20160214-22006-pjnhg2.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/00cda017e3a9fb8ef4036d66fac38bbd20160214-22006-pjnhg2.jpg[0]' -auto-orient -resize "500x500>" '/tmp/844028b215ba845cd97b5bb1024778d920160214-22006-ac98uf'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/00cda017e3a9fb8ef4036d66fac38bbd20160214-22006-pjnhg2.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/00cda017e3a9fb8ef4036d66fac38bbd20160214-22006-pjnhg2.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/00cda017e3a9fb8ef4036d66fac38bbd20160214-22006-pjnhg2.jpg[0]' -auto-orient -resize "200x200>" '/tmp/844028b215ba845cd97b5bb1024778d920160214-22006-4clfox'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/00cda017e3a9fb8ef4036d66fac38bbd20160214-22006-163op9i.jpg'
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Husum Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "husum.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 109234], ["avatar_updated_at", "2016-02-14 20:50:58.419135"], ["created_at", "2016-02-14 20:50:58.877046"], ["updated_at", "2016-02-14 20:50:58.877046"]]
+  [1m[35m (16.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/waterfalls/69
+Completed 302 Found in 526ms (ActiveRecord: 17.8ms)
+
+
+Started GET "/waterfalls/69" for ::1 at 2016-02-14 12:50:58 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"69"}
+  [1m[36mWaterfall Load (0.5ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 69]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 69]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.7ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 104ms (Views: 100.0ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:51:03 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.5ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (51.3ms)
+Completed 200 OK in 126ms (Views: 121.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/waterfalls?page=5" for ::1 at 2016-02-14 12:51:07 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[36mWaterfall Load (2.3ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 40[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (55.8ms)
+Completed 200 OK in 142ms (Views: 135.8ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:51:12 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (13.6ms)
+  Rendered waterfalls/new.html.erb within layouts/application (15.9ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 99ms (Views: 97.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:51:32 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2GtQT1gGXhfBTwLEGM2N0mq9lrLlZCQDbI1wmuKBA2rWmHY6tMvrVxt4G0KoK933JcKsqwx1kONKZAhmjT7W7g==", "waterfall"=>{"title"=>"Majestic Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb4ade968 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-1ddvulu.jpg>, @original_filename="majestic.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"majestic.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/d0cf41590d8f49d4e742d059607dd71820160214-22006-g5p5sr.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/d0cf41590d8f49d4e742d059607dd71820160214-22006-qlqscv.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/d0cf41590d8f49d4e742d059607dd71820160214-22006-qlqscv.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/d0cf41590d8f49d4e742d059607dd71820160214-22006-qlqscv.jpg[0]' -auto-orient -resize "500x500>" '/tmp/3bfbe3756b4bbbfb9e6db2af5315243620160214-22006-gu2njr'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/d0cf41590d8f49d4e742d059607dd71820160214-22006-qlqscv.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/d0cf41590d8f49d4e742d059607dd71820160214-22006-qlqscv.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/d0cf41590d8f49d4e742d059607dd71820160214-22006-qlqscv.jpg[0]' -auto-orient -resize "200x200>" '/tmp/3bfbe3756b4bbbfb9e6db2af5315243620160214-22006-ffreot'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/d0cf41590d8f49d4e742d059607dd71820160214-22006-kv221n.jpg'
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Majestic Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "majestic.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 84300], ["avatar_updated_at", "2016-02-14 20:51:32.804009"], ["created_at", "2016-02-14 20:51:33.193199"], ["updated_at", "2016-02-14 20:51:33.193199"]]
+  [1m[36m (21.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/70
+Completed 302 Found in 462ms (ActiveRecord: 22.5ms)
+
+
+Started GET "/waterfalls/70" for ::1 at 2016-02-14 12:51:33 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"70"}
+  [1m[35mWaterfall Load (0.4ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 70]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 70]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (6.0ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (20.4ms)
+Completed 200 OK in 123ms (Views: 119.8ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:51:36 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (1.6ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (49.9ms)
+Completed 200 OK in 145ms (Views: 139.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:51:39 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (12.4ms)
+  Rendered waterfalls/new.html.erb within layouts/application (14.9ms)
+  [1m[35mAdmin Load (0.4ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 113ms (Views: 110.4ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:51:56 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"l7PQiEdfv+alJ1zfdwSBMMEwGC6SKGVsV/Z9Lp5oDVGZQPb9q5IKpn8QRVnH4tEVjk8iN3s50YxxHwXS8dfY1Q==", "waterfall"=>{"title"=>"Mill Creek Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb5340e68 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-ir4uvg.jpg>, @original_filename="mill-creek.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"mill-creek.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/c4e5512afcd7e2703117724a0e80fd0920160214-22006-hhb9u3.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/c4e5512afcd7e2703117724a0e80fd0920160214-22006-5wlhxz.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/c4e5512afcd7e2703117724a0e80fd0920160214-22006-5wlhxz.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/c4e5512afcd7e2703117724a0e80fd0920160214-22006-5wlhxz.jpg[0]' -auto-orient -resize "500x500>" '/tmp/e65a6c5f2d18276ce4bb9e649d35678a20160214-22006-17dvzzz'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/c4e5512afcd7e2703117724a0e80fd0920160214-22006-5wlhxz.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/c4e5512afcd7e2703117724a0e80fd0920160214-22006-5wlhxz.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/c4e5512afcd7e2703117724a0e80fd0920160214-22006-5wlhxz.jpg[0]' -auto-orient -resize "200x200>" '/tmp/e65a6c5f2d18276ce4bb9e649d35678a20160214-22006-19j05ay'
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/c4e5512afcd7e2703117724a0e80fd0920160214-22006-13vxsvf.jpg'
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Mill Creek Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "mill-creek.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 74683], ["avatar_updated_at", "2016-02-14 20:51:56.962777"], ["created_at", "2016-02-14 20:51:57.281251"], ["updated_at", "2016-02-14 20:51:57.281251"]]
+  [1m[36m (18.0ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/71
+Completed 302 Found in 388ms (ActiveRecord: 19.6ms)
+
+
+Started GET "/waterfalls/71" for ::1 at 2016-02-14 12:51:57 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"71"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 71]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 71]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.6ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (15.4ms)
+Completed 200 OK in 161ms (Views: 154.3ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:52:10 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (2.5ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (60.3ms)
+Completed 200 OK in 163ms (Views: 157.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:52:16 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (29.6ms)
+  Rendered waterfalls/new.html.erb within layouts/application (31.9ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 113ms (Views: 110.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:52:33 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"MP3f19efm24j2P99B6oJvXEgeSOu3aC24y3/g5aRC24+DvmiO1IuLvnv5vu3TFmYPl9DOkfMFFbFxId/+S7e6g==", "waterfall"=>{"title"=>"Mist Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb4782238 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-ky45no.jpg>, @original_filename="mist.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"mist.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/33e16c8a3da401a5625838638cc5634b20160214-22006-rv80i1.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/33e16c8a3da401a5625838638cc5634b20160214-22006-nnyekj.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/33e16c8a3da401a5625838638cc5634b20160214-22006-nnyekj.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/33e16c8a3da401a5625838638cc5634b20160214-22006-nnyekj.jpg[0]' -auto-orient -resize "500x500>" '/tmp/2d903f266b18eacf9b6a573254c6f35920160214-22006-1qnd8l9'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/33e16c8a3da401a5625838638cc5634b20160214-22006-nnyekj.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/33e16c8a3da401a5625838638cc5634b20160214-22006-nnyekj.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/33e16c8a3da401a5625838638cc5634b20160214-22006-nnyekj.jpg[0]' -auto-orient -resize "200x200>" '/tmp/2d903f266b18eacf9b6a573254c6f35920160214-22006-9k194j'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/33e16c8a3da401a5625838638cc5634b20160214-22006-dard4z.jpg'
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Mist Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "mist.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 76427], ["avatar_updated_at", "2016-02-14 20:52:33.583062"], ["created_at", "2016-02-14 20:52:33.933651"], ["updated_at", "2016-02-14 20:52:33.933651"]]
+  [1m[36m (33.8ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/72
+Completed 302 Found in 444ms (ActiveRecord: 35.3ms)
+
+
+Started GET "/waterfalls/72" for ::1 at 2016-02-14 12:52:34 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"72"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 72]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 72]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.8ms)
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (14.0ms)
+Completed 200 OK in 96ms (Views: 92.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:52:36 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (1.4ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (57.8ms)
+Completed 200 OK in 139ms (Views: 135.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:52:48 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (13.5ms)
+  Rendered waterfalls/new.html.erb within layouts/application (15.9ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 99ms (Views: 97.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:53:47 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"J+vpFMwwmIHRajkxKAEoDLVDwwNeve6JogBkoUO0fgopGM9hIP0twQtdILeY53gp+jz5GresWmmE6RxdLAurjg==", "waterfall"=>{"title"=>"Pothole Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb3eb4ec0 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-j4feif.jpg>, @original_filename="potholes.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"potholes.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/67c9534ffabec240ee544b59b257feed20160214-22006-187yt6p.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/67c9534ffabec240ee544b59b257feed20160214-22006-1w68630.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/67c9534ffabec240ee544b59b257feed20160214-22006-1w68630.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/67c9534ffabec240ee544b59b257feed20160214-22006-1w68630.jpg[0]' -auto-orient -resize "500x500>" '/tmp/db978fd97c044cc5cb1b8a51e637884820160214-22006-723zgn'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/67c9534ffabec240ee544b59b257feed20160214-22006-1w68630.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/67c9534ffabec240ee544b59b257feed20160214-22006-1w68630.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/67c9534ffabec240ee544b59b257feed20160214-22006-1w68630.jpg[0]' -auto-orient -resize "200x200>" '/tmp/db978fd97c044cc5cb1b8a51e637884820160214-22006-qu4zjr'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/67c9534ffabec240ee544b59b257feed20160214-22006-1kskslr.jpg'
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Pothole Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "potholes.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 163743], ["avatar_updated_at", "2016-02-14 20:53:47.652720"], ["created_at", "2016-02-14 20:53:48.030465"], ["updated_at", "2016-02-14 20:53:48.030465"]]
+  [1m[36m (18.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/73
+Completed 302 Found in 475ms (ActiveRecord: 19.6ms)
+
+
+Started GET "/waterfalls/73" for ::1 at 2016-02-14 12:53:48 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"73"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 73]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 73]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.7ms)
+  [1m[35mAdmin Load (1.0ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (18.0ms)
+Completed 200 OK in 145ms (Views: 140.8ms | ActiveRecord: 1.6ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:53:51 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (1.5ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (53.9ms)
+Completed 200 OK in 134ms (Views: 129.6ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:53:55 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (11.3ms)
+  Rendered waterfalls/new.html.erb within layouts/application (13.2ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 92ms (Views: 90.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:54:20 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"K8CBnybnYEfEmHd9o4+mjPkJ1HUGdp80ldQVwqbPm4UlM6fqyirVBx6vbvsTafaptnbubO9nK9SzPW0+yXBOAQ==", "waterfall"=>{"title"=>"Starvation Creek Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb3e8c3a8 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-1ji3rez.jpg>, @original_filename="starvation-creek.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"starvation-creek.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/d509f1b03bafa7da3c9bbd85a3d1827920160214-22006-pa8kks.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/d509f1b03bafa7da3c9bbd85a3d1827920160214-22006-1aykgih.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/d509f1b03bafa7da3c9bbd85a3d1827920160214-22006-1aykgih.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/d509f1b03bafa7da3c9bbd85a3d1827920160214-22006-1aykgih.jpg[0]' -auto-orient -resize "500x500>" '/tmp/28d66cbe00a777126aad6fdff3380ddb20160214-22006-ii0rq5'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/d509f1b03bafa7da3c9bbd85a3d1827920160214-22006-1aykgih.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/d509f1b03bafa7da3c9bbd85a3d1827920160214-22006-1aykgih.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/d509f1b03bafa7da3c9bbd85a3d1827920160214-22006-1aykgih.jpg[0]' -auto-orient -resize "200x200>" '/tmp/28d66cbe00a777126aad6fdff3380ddb20160214-22006-3s8qpk'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/d509f1b03bafa7da3c9bbd85a3d1827920160214-22006-150952r.jpg'
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Starvation Creek Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "starvation-creek.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 77718], ["avatar_updated_at", "2016-02-14 20:54:20.721678"], ["created_at", "2016-02-14 20:54:21.027119"], ["updated_at", "2016-02-14 20:54:21.027119"]]
+  [1m[36m (99.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/74
+Completed 302 Found in 473ms (ActiveRecord: 101.1ms)
+
+
+Started GET "/waterfalls/74" for ::1 at 2016-02-14 12:54:21 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"74"}
+  [1m[35mWaterfall Load (0.4ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 74]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 74]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (6.4ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (14.9ms)
+Completed 200 OK in 104ms (Views: 97.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:54:32 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (1.7ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (47.1ms)
+Completed 200 OK in 120ms (Views: 114.3ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:54:36 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (11.9ms)
+  Rendered waterfalls/new.html.erb within layouts/application (13.9ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 93ms (Views: 90.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:54:54 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"DIOshWCDhvkeG/01NAgIrUbQ1oF/1UT8zFXtDmxHoycCcIrwjE4zucQs5LOE7liICa/smJbE8BzqvJXyA/h2ow==", "waterfall"=>{"title"=>"", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb9243a00 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-kq9w12.jpg>, @original_filename="twin.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"twin.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-rjhtky.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-qjokd8.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-qjokd8.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-qjokd8.jpg[0]' -auto-orient -resize "500x500>" '/tmp/9bdab2e48c2da4261003ff9ad384ddf820160214-22006-db74tw'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-qjokd8.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-qjokd8.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-qjokd8.jpg[0]' -auto-orient -resize "200x200>" '/tmp/9bdab2e48c2da4261003ff9ad384ddf820160214-22006-qiaqam'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-1gsawrv.jpg'
+  [1m[35m (0.2ms)[0m  rollback transaction
+  Rendered waterfalls/_form.html.erb (13.4ms)
+  Rendered waterfalls/new.html.erb within layouts/application (15.0ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 521ms (Views: 134.4ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:55:10 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"uDmvKEJeIkWoNfO9qeLVDoauzl/8nF+v/5JN4MFYSre2yoldrpOXBXIC6jsZBIUrydH0RhWN60/ZezUcruefMw==", "waterfall"=>{"title"=>"Twin Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb3fb19e8 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-fud6hm.jpg>, @original_filename="twin.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"twin.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-njs9ao.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-1erx3d5.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-1erx3d5.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-1erx3d5.jpg[0]' -auto-orient -resize "500x500>" '/tmp/827e768b8b826cc0fb352539924ca2f120160214-22006-emmn92'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-1erx3d5.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-1erx3d5.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-1erx3d5.jpg[0]' -auto-orient -resize "200x200>" '/tmp/827e768b8b826cc0fb352539924ca2f120160214-22006-10vw7ks'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/f8a6d9182acfae3133fd1f1153f6770720160214-22006-1h60yks.jpg'
+  [1m[36mSQL (1.5ms)[0m  [1mINSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Twin Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "twin.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 193263], ["avatar_updated_at", "2016-02-14 20:55:10.112385"], ["created_at", "2016-02-14 20:55:10.480518"], ["updated_at", "2016-02-14 20:55:10.480518"]]
+  [1m[35m (31.3ms)[0m  commit transaction
+Redirected to http://localhost:3000/waterfalls/75
+Completed 302 Found in 456ms (ActiveRecord: 33.0ms)
+
+
+Started GET "/waterfalls/75" for ::1 at 2016-02-14 12:55:10 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"75"}
+  [1m[36mWaterfall Load (0.3ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 75]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 75]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.0ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 94ms (Views: 90.6ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:55:14 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.6ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (50.2ms)
+Completed 200 OK in 125ms (Views: 119.7ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:55:20 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (14.8ms)
+  Rendered waterfalls/new.html.erb within layouts/application (17.4ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 116ms (Views: 113.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:55:46 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"OBrxqITZTSsfx5zHJ2As3Hbd6Ns5RuCRP0KU4WgLSy826dfdaBT4a8XwhUGXhnz5OaLSwtBXVHEZq+wdB7Seqw==", "waterfall"=>{"title"=>"Watson Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb439a218 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-6w2n0r.jpg>, @original_filename="watson.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"watson.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/4190908d675abc6c2e3931c01c92a6ca20160214-22006-1wkikmg.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/4190908d675abc6c2e3931c01c92a6ca20160214-22006-13eglys.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/4190908d675abc6c2e3931c01c92a6ca20160214-22006-13eglys.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/4190908d675abc6c2e3931c01c92a6ca20160214-22006-13eglys.jpg[0]' -auto-orient -resize "500x500>" '/tmp/b202bda7d3c674e1addb20eb4ed3a54b20160214-22006-59os5q'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/4190908d675abc6c2e3931c01c92a6ca20160214-22006-13eglys.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/4190908d675abc6c2e3931c01c92a6ca20160214-22006-13eglys.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/4190908d675abc6c2e3931c01c92a6ca20160214-22006-13eglys.jpg[0]' -auto-orient -resize "200x200>" '/tmp/b202bda7d3c674e1addb20eb4ed3a54b20160214-22006-dbvtoj'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/4190908d675abc6c2e3931c01c92a6ca20160214-22006-1p29j0l.jpg'
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Watson Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "watson.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 134915], ["avatar_updated_at", "2016-02-14 20:55:46.672429"], ["created_at", "2016-02-14 20:55:46.980795"], ["updated_at", "2016-02-14 20:55:46.980795"]]
+  [1m[35m (105.0ms)[0m  commit transaction
+Redirected to http://localhost:3000/waterfalls/76
+Completed 302 Found in 472ms (ActiveRecord: 106.3ms)
+
+
+Started GET "/waterfalls/76" for ::1 at 2016-02-14 12:55:47 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"76"}
+  [1m[36mWaterfall Load (0.3ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 76]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 76]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.7ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (15.3ms)
+Completed 200 OK in 100ms (Views: 96.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:55:50 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.5ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (54.1ms)
+Completed 200 OK in 133ms (Views: 125.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/waterfalls?page=2" for ::1 at 2016-02-14 12:55:54 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"2"}
+  [1m[36mWaterfall Load (1.8ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 10[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (60.4ms)
+Completed 200 OK in 149ms (Views: 144.7ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:56:03 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (17.8ms)
+  Rendered waterfalls/new.html.erb within layouts/application (21.7ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 103ms (Views: 101.3ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:56:29 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"xsAv+wPHKooBX27wXEyj6glMMrbwNVYG6YodZg9mxKjIMwmO7wqfyttod3bsqvPPRjMIrxkk4ubPY2WaYNkRLA==", "waterfall"=>{"title"=>"Upper Waikani Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb49e23e0 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-ic5m9n.jpg>, @original_filename="upper-waikani.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"upper-waikani.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/32b810dbbc6e1849a3960048be52e8a020160214-22006-q7gwgc.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/32b810dbbc6e1849a3960048be52e8a020160214-22006-1vu79hm.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/32b810dbbc6e1849a3960048be52e8a020160214-22006-1vu79hm.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/32b810dbbc6e1849a3960048be52e8a020160214-22006-1vu79hm.jpg[0]' -auto-orient -resize "500x500>" '/tmp/d44a64e15c6d379358cffc04712f3e9620160214-22006-1pmtr97'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/32b810dbbc6e1849a3960048be52e8a020160214-22006-1vu79hm.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/32b810dbbc6e1849a3960048be52e8a020160214-22006-1vu79hm.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/32b810dbbc6e1849a3960048be52e8a020160214-22006-1vu79hm.jpg[0]' -auto-orient -resize "200x200>" '/tmp/d44a64e15c6d379358cffc04712f3e9620160214-22006-9nqdke'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/32b810dbbc6e1849a3960048be52e8a020160214-22006-17c1uog.jpg'
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Upper Waikani Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "upper-waikani.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 157237], ["avatar_updated_at", "2016-02-14 20:56:29.118099"], ["created_at", "2016-02-14 20:56:29.513680"], ["updated_at", "2016-02-14 20:56:29.513680"]]
+  [1m[36m (43.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/77
+Completed 302 Found in 520ms (ActiveRecord: 44.5ms)
+
+
+Started GET "/waterfalls/77" for ::1 at 2016-02-14 12:56:29 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"77"}
+  [1m[35mWaterfall Load (0.5ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 77]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 77]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.4ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (14.5ms)
+Completed 200 OK in 104ms (Views: 100.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:56:32 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (2.1ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (71.5ms)
+Completed 200 OK in 170ms (Views: 164.8ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/waterfalls?page=3" for ::1 at 2016-02-14 12:56:36 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"3"}
+  [1m[35mWaterfall Load (2.0ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 20
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.6ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (68.9ms)
+Completed 200 OK in 169ms (Views: 163.4ms | ActiveRecord: 2.8ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:56:45 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (18.3ms)
+  Rendered waterfalls/new.html.erb within layouts/application (21.0ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 144ms (Views: 140.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:57:11 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.4ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (70.2ms)
+Completed 200 OK in 176ms (Views: 171.4ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/waterfalls?page=4" for ::1 at 2016-02-14 12:57:14 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"4"}
+  [1m[36mWaterfall Load (1.8ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 30[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (78.7ms)
+Completed 200 OK in 153ms (Views: 147.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:57:22 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (11.0ms)
+  Rendered waterfalls/new.html.erb within layouts/application (12.8ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 90ms (Views: 87.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:57:36 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (1.9ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (53.4ms)
+Completed 200 OK in 128ms (Views: 122.6ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/waterfalls?page=5" for ::1 at 2016-02-14 12:57:38 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[35mWaterfall Load (3.3ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 40
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (54.9ms)
+Completed 200 OK in 144ms (Views: 137.9ms | ActiveRecord: 4.0ms)
+
+
+Started GET "/waterfalls?page=6" for ::1 at 2016-02-14 12:57:46 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"6"}
+  [1m[36mWaterfall Load (1.8ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 50[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (41.4ms)
+Completed 200 OK in 113ms (Views: 108.2ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:57:51 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (12.4ms)
+  Rendered waterfalls/new.html.erb within layouts/application (14.7ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 93ms (Views: 91.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:58:10 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"5uH9j62VI0GZWJZIiR1jGYLLp6cm7qsKvnmdAdTDrHnoEtv6QViWAUNvj845+zM8zbSdvs//H+qYkOX9u3x5/Q==", "waterfall"=>{"title"=>"Wahkeena Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb4eb6338 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-16t4gya.jpg>, @original_filename="wahkeena.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"wahkeena.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/88cb4686d7273c282a4ba4bbdad12b9a20160214-22006-urehgs.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/88cb4686d7273c282a4ba4bbdad12b9a20160214-22006-yyu1s6.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/88cb4686d7273c282a4ba4bbdad12b9a20160214-22006-yyu1s6.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/88cb4686d7273c282a4ba4bbdad12b9a20160214-22006-yyu1s6.jpg[0]' -auto-orient -resize "500x500>" '/tmp/a76b8ed0feb3216a65f9838dec9e358720160214-22006-xkkfcr'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/88cb4686d7273c282a4ba4bbdad12b9a20160214-22006-yyu1s6.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/88cb4686d7273c282a4ba4bbdad12b9a20160214-22006-yyu1s6.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/88cb4686d7273c282a4ba4bbdad12b9a20160214-22006-yyu1s6.jpg[0]' -auto-orient -resize "200x200>" '/tmp/a76b8ed0feb3216a65f9838dec9e358720160214-22006-1nicnsq'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/88cb4686d7273c282a4ba4bbdad12b9a20160214-22006-17yn18j.jpg'
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Wahkeena Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "wahkeena.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 100551], ["avatar_updated_at", "2016-02-14 20:58:10.834551"], ["created_at", "2016-02-14 20:58:11.179446"], ["updated_at", "2016-02-14 20:58:11.179446"]]
+  [1m[36m (30.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/78
+Completed 302 Found in 430ms (ActiveRecord: 31.9ms)
+
+
+Started GET "/waterfalls/78" for ::1 at 2016-02-14 12:58:11 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"78"}
+  [1m[35mWaterfall Load (0.4ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 78]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 78]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (6.1ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (16.1ms)
+Completed 200 OK in 101ms (Views: 97.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:58:14 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (1.3ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (62.7ms)
+Completed 200 OK in 142ms (Views: 135.3ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/waterfalls?page=5" for ::1 at 2016-02-14 12:58:17 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[35mWaterfall Load (1.8ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 40
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (60.4ms)
+Completed 200 OK in 139ms (Views: 134.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:58:22 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (18.0ms)
+  Rendered waterfalls/new.html.erb within layouts/application (20.1ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 106ms (Views: 104.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:58:30 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"1gVL6HWbN7s/XKg8CmuBxNM18VTmRa1jmHPuslwdQZ3Y9m2dmVaC++Vrsbq6jdHhnErLTQ9UGYO+mpZOM6KUGQ==", "waterfall"=>{"title"=>"", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xba09fc90 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-1o7urwx.jpg>, @original_filename="sahalie.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"sahalie.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-1woc56d.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-1rgel1t.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-1rgel1t.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-1rgel1t.jpg[0]' -auto-orient -resize "500x500>" '/tmp/66687dfa7f1692c918091cf92b875dda20160214-22006-mgrlhm'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-1rgel1t.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-1rgel1t.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-1rgel1t.jpg[0]' -auto-orient -resize "200x200>" '/tmp/66687dfa7f1692c918091cf92b875dda20160214-22006-erg8i5'
+  [1m[35m (0.1ms)[0m  begin transaction
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-1i51v0t.jpg'
+  [1m[36m (0.2ms)[0m  [1mrollback transaction[0m
+  Rendered waterfalls/_form.html.erb (18.5ms)
+  Rendered waterfalls/new.html.erb within layouts/application (20.7ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 535ms (Views: 112.7ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:58:36 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"3PJmRvq8RDGcPyZPNYMKGw8AnsydIGqKMfqqHXRg1KPSAUAzFnHxcUYIP8mFZVo+QH+k1XQx3moXE9LhG98BJw==", "waterfall"=>{"title"=>"Sahalie Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>""}, "commit"=>"Upload"}
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Sahalie Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["created_at", "2016-02-14 20:58:36.190175"], ["updated_at", "2016-02-14 20:58:36.190175"]]
+  [1m[36m (100.1ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/79
+Completed 302 Found in 121ms (ActiveRecord: 102.1ms)
+
+
+Started GET "/waterfalls/79" for ::1 at 2016-02-14 12:58:36 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"79"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 79]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 79]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.0ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (13.1ms)
+Completed 200 OK in 87ms (Views: 83.7ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/waterfalls/79/edit" for ::1 at 2016-02-14 12:58:38 -0800
+Processing by WaterfallsController#edit as HTML
+  Parameters: {"id"=>"79"}
+  [1m[36mWaterfall Load (0.3ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 79]]
+  Rendered waterfalls/_form.html.erb (11.3ms)
+  Rendered waterfalls/edit.html.erb within layouts/application (14.4ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 97ms (Views: 94.0ms | ActiveRecord: 0.5ms)
+
+
+Started PATCH "/waterfalls/79" for ::1 at 2016-02-14 12:58:45 -0800
+Processing by WaterfallsController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"KClY1UlMqnss5i4NcIjA/o/0ojDjTn/vKpPXRaJw1nUm2n6gpYEfO/bRN4vAbpDbwIuYKQpfyw8Meq+5zc8D8Q==", "waterfall"=>{"title"=>"Sahalie Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb4306138 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-k6c3gm.jpg>, @original_filename="sahalie.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"sahalie.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload", "id"=>"79"}
+  [1m[36mWaterfall Load (0.3ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 79]]
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-1x35col.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-13y9dj8.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-13y9dj8.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-13y9dj8.jpg[0]' -auto-orient -resize "500x500>" '/tmp/6cf0325387feecf406915dcfcfbaf0b520160214-22006-1cnbauc'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-13y9dj8.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-13y9dj8.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-13y9dj8.jpg[0]' -auto-orient -resize "200x200>" '/tmp/6cf0325387feecf406915dcfcfbaf0b520160214-22006-4ha5f4'
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/44d8d37c3a93f27caaea0f93af15bfb820160214-22006-1lftir9.jpg'
+  [1m[36mSQL (1.1ms)[0m  [1mUPDATE "waterfalls" SET "avatar_file_name" = ?, "avatar_content_type" = ?, "avatar_file_size" = ?, "avatar_updated_at" = ?, "updated_at" = ? WHERE "waterfalls"."id" = ?[0m  [["avatar_file_name", "sahalie.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 125795], ["avatar_updated_at", "2016-02-14 20:58:45.776181"], ["updated_at", "2016-02-14 20:58:46.135593"], ["id", 79]]
+  [1m[35m (12.9ms)[0m  commit transaction
+Redirected to http://localhost:3000/waterfalls/79
+Completed 302 Found in 427ms (ActiveRecord: 14.5ms)
+
+
+Started GET "/waterfalls/79" for ::1 at 2016-02-14 12:58:46 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"79"}
+  [1m[36mWaterfall Load (0.3ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 79]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 79]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.1ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (15.6ms)
+Completed 200 OK in 89ms (Views: 85.9ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:58:49 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.7ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (47.7ms)
+Completed 200 OK in 118ms (Views: 112.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/waterfalls?page=5" for ::1 at 2016-02-14 12:58:52 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[36mWaterfall Load (7.6ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 40[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (61.6ms)
+Completed 200 OK in 146ms (Views: 134.1ms | ActiveRecord: 8.2ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:58:56 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (13.1ms)
+  Rendered waterfalls/new.html.erb within layouts/application (17.8ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 128ms (Views: 125.8ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:59:11 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NMh1MrIfsxsBPhUJ6PQ+VdcSLY8akqw1A/x/va2O14U6O1NHXtIGW9sJDI9YEm5wmG0XlvODGNUlFQdBwjECAQ==", "waterfall"=>{"title"=>"Sheppard's Dell Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb200c470 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-18nygms.jpg>, @original_filename="sheppards-dell.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"sheppards-dell.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/410d1ba6465a379c831f627a9613ad8920160214-22006-2inueq.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/410d1ba6465a379c831f627a9613ad8920160214-22006-1mgg1p3.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/410d1ba6465a379c831f627a9613ad8920160214-22006-1mgg1p3.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/410d1ba6465a379c831f627a9613ad8920160214-22006-1mgg1p3.jpg[0]' -auto-orient -resize "500x500>" '/tmp/762d0cbf12c48ac823ce7b650af18d4720160214-22006-tokf7a'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/410d1ba6465a379c831f627a9613ad8920160214-22006-1mgg1p3.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/410d1ba6465a379c831f627a9613ad8920160214-22006-1mgg1p3.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/410d1ba6465a379c831f627a9613ad8920160214-22006-1mgg1p3.jpg[0]' -auto-orient -resize "200x200>" '/tmp/762d0cbf12c48ac823ce7b650af18d4720160214-22006-1h4e55j'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/410d1ba6465a379c831f627a9613ad8920160214-22006-zg788g.jpg'
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Sheppard's Dell Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "sheppards-dell.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 179657], ["avatar_updated_at", "2016-02-14 20:59:11.458271"], ["created_at", "2016-02-14 20:59:11.800543"], ["updated_at", "2016-02-14 20:59:11.800543"]]
+  [1m[36m (38.4ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/80
+Completed 302 Found in 444ms (ActiveRecord: 39.8ms)
+
+
+Started GET "/waterfalls/80" for ::1 at 2016-02-14 12:59:11 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"80"}
+  [1m[35mWaterfall Load (0.4ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 80]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 80]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.0ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (14.1ms)
+Completed 200 OK in 88ms (Views: 84.8ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:59:14 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (2.7ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (51.0ms)
+Completed 200 OK in 128ms (Views: 122.4ms | ActiveRecord: 3.5ms)
+
+
+Started GET "/waterfalls?page=5" for ::1 at 2016-02-14 12:59:17 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[35mWaterfall Load (1.9ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 40
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (53.5ms)
+Completed 200 OK in 119ms (Views: 113.3ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:59:22 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (12.0ms)
+  Rendered waterfalls/new.html.erb within layouts/application (13.9ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 85ms (Views: 83.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 12:59:35 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"s5ujknXTgi9aL4odzGDaCp7h3z5jTHKZM38WDPL/ce29aIXnmR43b4AYk5t8hoov0Z7lJ4pdxnkVlm7wnUCkaQ==", "waterfall"=>{"title"=>"Sioux Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb1891cf0 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-17bdd57.jpg>, @original_filename="sioux-falls.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"sioux-falls.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/f381e8ef678aabf1951f0472f708b99f20160214-22006-1vzrj03.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/f381e8ef678aabf1951f0472f708b99f20160214-22006-vl7r20.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/f381e8ef678aabf1951f0472f708b99f20160214-22006-vl7r20.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/f381e8ef678aabf1951f0472f708b99f20160214-22006-vl7r20.jpg[0]' -auto-orient -resize "500x500>" '/tmp/50d79ffcba6270ac4c7bf5f4e8a02c5620160214-22006-yvwl25'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/f381e8ef678aabf1951f0472f708b99f20160214-22006-vl7r20.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/f381e8ef678aabf1951f0472f708b99f20160214-22006-vl7r20.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/f381e8ef678aabf1951f0472f708b99f20160214-22006-vl7r20.jpg[0]' -auto-orient -resize "200x200>" '/tmp/50d79ffcba6270ac4c7bf5f4e8a02c5620160214-22006-xsivuw'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/f381e8ef678aabf1951f0472f708b99f20160214-22006-akprhy.jpg'
+  [1m[36mSQL (1.3ms)[0m  [1mINSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Sioux Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "sioux-falls.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 170224], ["avatar_updated_at", "2016-02-14 20:59:35.055232"], ["created_at", "2016-02-14 20:59:35.478160"], ["updated_at", "2016-02-14 20:59:35.478160"]]
+  [1m[35m (108.5ms)[0m  commit transaction
+Redirected to http://localhost:3000/waterfalls/81
+Completed 302 Found in 597ms (ActiveRecord: 109.9ms)
+
+
+Started GET "/waterfalls/81" for ::1 at 2016-02-14 12:59:35 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"81"}
+  [1m[36mWaterfall Load (1.1ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 81]]
+  [1m[35mComment Load (0.2ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 81]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.1ms)
+  [1m[36mAdmin Load (0.3ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (15.9ms)
+Completed 200 OK in 132ms (Views: 126.8ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 12:59:39 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.8ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.8ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 153ms (Views: 145.2ms | ActiveRecord: 2.9ms)
+
+
+Started GET "/waterfalls?page=5" for ::1 at 2016-02-14 12:59:42 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[36mWaterfall Load (2.5ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 40[0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (2.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (93.1ms)
+Completed 200 OK in 201ms (Views: 193.7ms | ActiveRecord: 5.2ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 12:59:47 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (19.6ms)
+  Rendered waterfalls/new.html.erb within layouts/application (22.1ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 118ms (Views: 116.7ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 13:00:02 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"cykSHRYjbJCfHLjyaH4BABTNNHZpSoMtUPjVzsTIbp992jRo+u7Z0EUroXTYmFElW7IOb4BbN812Ea0yq3e7Gw==", "waterfall"=>{"title"=>"South Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb4808350 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-10q9qz3.jpg>, @original_filename="south.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"south.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/50fd76e33fe5b9617c5ca99008af890420160214-22006-f6a2cb.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/50fd76e33fe5b9617c5ca99008af890420160214-22006-ywbcl8.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/50fd76e33fe5b9617c5ca99008af890420160214-22006-ywbcl8.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/50fd76e33fe5b9617c5ca99008af890420160214-22006-ywbcl8.jpg[0]' -auto-orient -resize "500x500>" '/tmp/c9f8062b2409980e37abbe0c4e60519620160214-22006-1y5pxt7'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/50fd76e33fe5b9617c5ca99008af890420160214-22006-ywbcl8.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/50fd76e33fe5b9617c5ca99008af890420160214-22006-ywbcl8.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/50fd76e33fe5b9617c5ca99008af890420160214-22006-ywbcl8.jpg[0]' -auto-orient -resize "200x200>" '/tmp/c9f8062b2409980e37abbe0c4e60519620160214-22006-1tm8dwf'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/50fd76e33fe5b9617c5ca99008af890420160214-22006-5epb2c.jpg'
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "South Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "south.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 110011], ["avatar_updated_at", "2016-02-14 21:00:02.595743"], ["created_at", "2016-02-14 21:00:02.897685"], ["updated_at", "2016-02-14 21:00:02.897685"]]
+  [1m[36m (38.3ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/82
+Completed 302 Found in 399ms (ActiveRecord: 39.7ms)
+
+
+Started GET "/waterfalls/82" for ::1 at 2016-02-14 13:00:03 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"82"}
+  [1m[35mWaterfall Load (0.4ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 82]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 82]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.4ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (14.3ms)
+Completed 200 OK in 120ms (Views: 115.8ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 13:00:05 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (1.8ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (50.8ms)
+Completed 200 OK in 137ms (Views: 131.5ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/waterfalls?page=5" for ::1 at 2016-02-14 13:00:08 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[35mWaterfall Load (1.7ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 40
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.4ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (65.9ms)
+Completed 200 OK in 147ms (Views: 141.0ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 13:00:13 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (13.9ms)
+  Rendered waterfalls/new.html.erb within layouts/application (15.9ms)
+  [1m[36mAdmin Load (0.7ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+Completed 200 OK in 111ms (Views: 108.9ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 13:00:33 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hlS+9soYAKYGGC2K7dGs9NFN5T8PdR7ZXoweg+NCjf6Ip5iDJtW15twvNAxdN/zRnjLfJuZkqjl4ZWZ/jP1Yeg==", "waterfall"=>{"title"=>"Tumwater Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb27a1c20 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-headzi.jpg>, @original_filename="tumwater.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"tumwater.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/460c8f0a60e73352e83ed5f84dc8b1c720160214-22006-kj8t64.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/460c8f0a60e73352e83ed5f84dc8b1c720160214-22006-2yjqs.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/460c8f0a60e73352e83ed5f84dc8b1c720160214-22006-2yjqs.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/460c8f0a60e73352e83ed5f84dc8b1c720160214-22006-2yjqs.jpg[0]' -auto-orient -resize "500x500>" '/tmp/fe2f91c6f1f31c658ef41fb8cff9e17620160214-22006-16wbumo'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/460c8f0a60e73352e83ed5f84dc8b1c720160214-22006-2yjqs.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/460c8f0a60e73352e83ed5f84dc8b1c720160214-22006-2yjqs.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/460c8f0a60e73352e83ed5f84dc8b1c720160214-22006-2yjqs.jpg[0]' -auto-orient -resize "200x200>" '/tmp/fe2f91c6f1f31c658ef41fb8cff9e17620160214-22006-pe4mlb'
+  [1m[35m (0.2ms)[0m  begin transaction
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/460c8f0a60e73352e83ed5f84dc8b1c720160214-22006-1sf12g0.jpg'
+  [1m[36mSQL (1.1ms)[0m  [1mINSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["title", "Tumwater Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "tumwater.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 200765], ["avatar_updated_at", "2016-02-14 21:00:33.974511"], ["created_at", "2016-02-14 21:00:34.441351"], ["updated_at", "2016-02-14 21:00:34.441351"]]
+  [1m[35m (36.8ms)[0m  commit transaction
+Redirected to http://localhost:3000/waterfalls/83
+Completed 302 Found in 574ms (ActiveRecord: 38.0ms)
+
+
+Started GET "/waterfalls/83" for ::1 at 2016-02-14 13:00:34 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"83"}
+  [1m[36mWaterfall Load (0.4ms)[0m  [1mSELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1[0m  [["id", 83]]
+  [1m[35mComment Load (0.3ms)[0m  SELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?  [["waterfall_id", 83]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.4ms)
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (13.8ms)
+Completed 200 OK in 97ms (Views: 93.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 13:01:02 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[35mWaterfall Load (1.4ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0
+  [1m[36mAdmin Load (0.8ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (48.9ms)
+Completed 200 OK in 128ms (Views: 122.5ms | ActiveRecord: 2.6ms)
+
+
+Started GET "/waterfalls?page=5" for ::1 at 2016-02-14 13:01:06 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[36mWaterfall Load (1.7ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 40[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (65.1ms)
+Completed 200 OK in 136ms (Views: 130.7ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 13:01:12 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (10.3ms)
+  Rendered waterfalls/new.html.erb within layouts/application (12.3ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 91ms (Views: 86.6ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 13:01:26 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"sUL1Lzculr3NPGeLW7oTuSti5XoZ4k396d4NUZzJeqG/sdNa2+Mj/RcLfg3rXEOcZB3fY/Dz+R3PN3Wt83avJQ==", "waterfall"=>{"title"=>"Toketee Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb2407cf0 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-ls4dgd.jpg>, @original_filename="toketee.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"toketee.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/5e30fd11db93517df64c587fc33da26920160214-22006-11bu7xo.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/5e30fd11db93517df64c587fc33da26920160214-22006-jzlpyy.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/5e30fd11db93517df64c587fc33da26920160214-22006-jzlpyy.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/5e30fd11db93517df64c587fc33da26920160214-22006-jzlpyy.jpg[0]' -auto-orient -resize "500x500>" '/tmp/3e9d6699bab471c2c847cefaf8f5bb3920160214-22006-p63fq7'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/5e30fd11db93517df64c587fc33da26920160214-22006-jzlpyy.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/5e30fd11db93517df64c587fc33da26920160214-22006-jzlpyy.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/5e30fd11db93517df64c587fc33da26920160214-22006-jzlpyy.jpg[0]' -auto-orient -resize "200x200>" '/tmp/3e9d6699bab471c2c847cefaf8f5bb3920160214-22006-12ptowd'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/5e30fd11db93517df64c587fc33da26920160214-22006-1xcpiph.jpg'
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Toketee Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "toketee.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 129597], ["avatar_updated_at", "2016-02-14 21:01:26.503700"], ["created_at", "2016-02-14 21:01:26.812943"], ["updated_at", "2016-02-14 21:01:26.812943"]]
+  [1m[36m (29.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/84
+Completed 302 Found in 393ms (ActiveRecord: 30.9ms)
+
+
+Started GET "/waterfalls/84" for ::1 at 2016-02-14 13:01:26 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"84"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 84]]
+  [1m[36mComment Load (0.4ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 84]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.4ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (12.9ms)
+Completed 200 OK in 85ms (Views: 82.2ms | ActiveRecord: 1.0ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 13:01:29 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (1.6ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (43.3ms)
+Completed 200 OK in 132ms (Views: 127.3ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/waterfalls?page=5" for ::1 at 2016-02-14 13:01:32 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"5"}
+  [1m[35mWaterfall Load (2.1ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 40
+  [1m[36mAdmin Load (0.2ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.7ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (58.6ms)
+Completed 200 OK in 140ms (Views: 134.6ms | ActiveRecord: 3.0ms)
+
+
+Started GET "/waterfalls?page=6" for ::1 at 2016-02-14 13:01:35 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"6"}
+  [1m[36mWaterfall Load (1.9ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 50[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (56.0ms)
+Completed 200 OK in 137ms (Views: 132.1ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 13:01:41 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (16.5ms)
+  Rendered waterfalls/new.html.erb within layouts/application (19.8ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 100ms (Views: 98.0ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 13:01:57 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tZISXPG5NfTyZ4AGVwuIJ4m3lwUbA5lhZ9MqmF58lj67YTQpHXSAtChQmYDn7dgCxsitHPISLYFBOlJkMcNDug==", "waterfall"=>{"title"=>"Upper Latourell Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb51cfa30 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-k4bste.jpg>, @original_filename="upper-latourell.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"upper-latourell.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/79a30fd3d15db930457a1fb5c12dcced20160214-22006-1z4nzv.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/79a30fd3d15db930457a1fb5c12dcced20160214-22006-1sjaktb.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/79a30fd3d15db930457a1fb5c12dcced20160214-22006-1sjaktb.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/79a30fd3d15db930457a1fb5c12dcced20160214-22006-1sjaktb.jpg[0]' -auto-orient -resize "500x500>" '/tmp/8163c23e7e50dcbeb6f59b02d816743920160214-22006-yjmrzh'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/79a30fd3d15db930457a1fb5c12dcced20160214-22006-1sjaktb.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/79a30fd3d15db930457a1fb5c12dcced20160214-22006-1sjaktb.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/79a30fd3d15db930457a1fb5c12dcced20160214-22006-1sjaktb.jpg[0]' -auto-orient -resize "200x200>" '/tmp/8163c23e7e50dcbeb6f59b02d816743920160214-22006-dycrbl'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/79a30fd3d15db930457a1fb5c12dcced20160214-22006-1bwutql.jpg'
+  [1m[35mSQL (1.3ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Upper Latourell Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "upper-latourell.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 160948], ["avatar_updated_at", "2016-02-14 21:01:57.467564"], ["created_at", "2016-02-14 21:01:57.883995"], ["updated_at", "2016-02-14 21:01:57.883995"]]
+  [1m[36m (28.6ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/85
+Completed 302 Found in 508ms (ActiveRecord: 30.1ms)
+
+
+Started GET "/waterfalls/85" for ::1 at 2016-02-14 13:01:57 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"85"}
+  [1m[35mWaterfall Load (0.4ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 85]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 85]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.0ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 97ms (Views: 94.3ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 13:02:00 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (1.5ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.4ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (46.0ms)
+Completed 200 OK in 118ms (Views: 112.9ms | ActiveRecord: 2.2ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 13:02:03 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (10.1ms)
+  Rendered waterfalls/new.html.erb within layouts/application (11.8ms)
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 118ms (Views: 116.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 13:02:21 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"ROiFdRTjxr1QZ5Uar0sgzhVO/8OtUrPYsl2T0eCsd5JKG6MA+C5z/YpQjJwfrXDrWjHF2kRDBziUtOstjxOiFg==", "waterfall"=>{"title"=>"Upper McCord Creek", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb1ba5be0 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-c1tozn.jpg>, @original_filename="upper-mccord-creek.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"upper-mccord-creek.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/8fa03ca5fa3de254cb4b85782bcb59b620160214-22006-1po6qq6.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/8fa03ca5fa3de254cb4b85782bcb59b620160214-22006-1r2hb0w.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/8fa03ca5fa3de254cb4b85782bcb59b620160214-22006-1r2hb0w.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/8fa03ca5fa3de254cb4b85782bcb59b620160214-22006-1r2hb0w.jpg[0]' -auto-orient -resize "500x500>" '/tmp/16b8dad9efc2fd04165299f82b224ddc20160214-22006-1rzt250'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/8fa03ca5fa3de254cb4b85782bcb59b620160214-22006-1r2hb0w.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/8fa03ca5fa3de254cb4b85782bcb59b620160214-22006-1r2hb0w.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/8fa03ca5fa3de254cb4b85782bcb59b620160214-22006-1r2hb0w.jpg[0]' -auto-orient -resize "200x200>" '/tmp/16b8dad9efc2fd04165299f82b224ddc20160214-22006-8euvd9'
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/8fa03ca5fa3de254cb4b85782bcb59b620160214-22006-gj8bhe.jpg'
+  [1m[35mSQL (2.7ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Upper McCord Creek"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "upper-mccord-creek.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 139290], ["avatar_updated_at", "2016-02-14 21:02:21.373943"], ["created_at", "2016-02-14 21:02:21.762428"], ["updated_at", "2016-02-14 21:02:21.762428"]]
+  [1m[36m (33.2ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/86
+Completed 302 Found in 492ms (ActiveRecord: 36.3ms)
+
+
+Started GET "/waterfalls/86" for ::1 at 2016-02-14 13:02:21 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"86"}
+  [1m[35mWaterfall Load (0.4ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 86]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 86]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (5.1ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (14.8ms)
+Completed 200 OK in 113ms (Views: 109.5ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 13:02:23 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (1.5ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (56.7ms)
+Completed 200 OK in 136ms (Views: 129.1ms | ActiveRecord: 2.3ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 13:02:26 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (16.4ms)
+  Rendered waterfalls/new.html.erb within layouts/application (18.3ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 106ms (Views: 103.9ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 13:02:41 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"hm+oveTjf6ouQtk9/YV0p68KMHVGQG60u6Xryw3ztnyInI7ICC7K6vR1wLtNYySC4HUKbK9R2lSdTJM3Ykxj+A==", "waterfall"=>{"title"=>"Upper Multnomah Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb2bdd958 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-bk8kk0.jpg>, @original_filename="upper-multnomah.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"upper-multnomah.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/2cac5cbc75e691c12a1932a7bfd65d6a20160214-22006-18mptak.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/2cac5cbc75e691c12a1932a7bfd65d6a20160214-22006-h8j8xo.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/2cac5cbc75e691c12a1932a7bfd65d6a20160214-22006-h8j8xo.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/2cac5cbc75e691c12a1932a7bfd65d6a20160214-22006-h8j8xo.jpg[0]' -auto-orient -resize "500x500>" '/tmp/669d6bc329558f6a44297d54a59a312120160214-22006-c5fqft'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/2cac5cbc75e691c12a1932a7bfd65d6a20160214-22006-h8j8xo.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/2cac5cbc75e691c12a1932a7bfd65d6a20160214-22006-h8j8xo.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/2cac5cbc75e691c12a1932a7bfd65d6a20160214-22006-h8j8xo.jpg[0]' -auto-orient -resize "200x200>" '/tmp/669d6bc329558f6a44297d54a59a312120160214-22006-o46cpc'
+  [1m[36m (0.3ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/2cac5cbc75e691c12a1932a7bfd65d6a20160214-22006-1ji1v2d.jpg'
+  [1m[35mSQL (1.4ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Upper Multnomah Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "upper-multnomah.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 118038], ["avatar_updated_at", "2016-02-14 21:02:41.098011"], ["created_at", "2016-02-14 21:02:41.471762"], ["updated_at", "2016-02-14 21:02:41.471762"]]
+  [1m[36m (37.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/87
+Completed 302 Found in 469ms (ActiveRecord: 39.4ms)
+
+
+Started GET "/waterfalls/87" for ::1 at 2016-02-14 13:02:41 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"87"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 87]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 87]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (6.5ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (19.4ms)
+Completed 200 OK in 109ms (Views: 105.5ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 13:02:46 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (2.4ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.6ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (51.1ms)
+Completed 200 OK in 131ms (Views: 124.4ms | ActiveRecord: 3.2ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 13:02:49 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (13.0ms)
+  Rendered waterfalls/new.html.erb within layouts/application (15.4ms)
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 102ms (Views: 98.5ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 13:03:06 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"dWb1HgKAZ24aCy+YmMq76NM4xX4rd+xwY8aMZ8tvGNF7ldNr7k3SLsA8Nh4oLOvNnEf/Z8JmWJBFL/SbpNDNVQ==", "waterfall"=>{"title"=>"Upper North Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb48c98c8 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-ecew9i.jpg>, @original_filename="upper-north.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"upper-north.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/f29fc7004fac1beb10fdaeec06b716ed20160214-22006-1qfrx02.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/f29fc7004fac1beb10fdaeec06b716ed20160214-22006-yqih7k.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/f29fc7004fac1beb10fdaeec06b716ed20160214-22006-yqih7k.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/f29fc7004fac1beb10fdaeec06b716ed20160214-22006-yqih7k.jpg[0]' -auto-orient -resize "500x500>" '/tmp/aeaee5c6af67db3f58aebf4b822ed73720160214-22006-1ukozms'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/f29fc7004fac1beb10fdaeec06b716ed20160214-22006-yqih7k.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/f29fc7004fac1beb10fdaeec06b716ed20160214-22006-yqih7k.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/f29fc7004fac1beb10fdaeec06b716ed20160214-22006-yqih7k.jpg[0]' -auto-orient -resize "200x200>" '/tmp/aeaee5c6af67db3f58aebf4b822ed73720160214-22006-e3etuk'
+  [1m[36m (0.4ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/f29fc7004fac1beb10fdaeec06b716ed20160214-22006-1iqqcxi.jpg'
+  [1m[35mSQL (1.6ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Upper North Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "upper-north.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 119977], ["avatar_updated_at", "2016-02-14 21:03:06.604450"], ["created_at", "2016-02-14 21:03:06.923415"], ["updated_at", "2016-02-14 21:03:06.923415"]]
+  [1m[36m (35.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/88
+Completed 302 Found in 413ms (ActiveRecord: 37.8ms)
+
+
+Started GET "/waterfalls/88" for ::1 at 2016-02-14 13:03:07 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"88"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 88]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 88]]
+  Rendered collection (0.1ms)
+  Rendered comments/_form.html.erb (5.1ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (14.2ms)
+Completed 200 OK in 112ms (Views: 107.9ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 13:03:14 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (1.6ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (48.6ms)
+Completed 200 OK in 137ms (Views: 131.8ms | ActiveRecord: 2.4ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 13:03:17 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (13.2ms)
+  Rendered waterfalls/new.html.erb within layouts/application (15.1ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 89ms (Views: 85.1ms | ActiveRecord: 0.2ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 13:03:38 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"2q8aeMSpA7ndHtjCcReiQqR4Tf4yoD7nmtBGgeZXneDUXDwNKGS2+QcpwUTB8fJn6wd359uxige8OT59iehIZA==", "waterfall"=>{"title"=>"Wah Gwin Gwin Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb2517100 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-1x52mzc.jpg>, @original_filename="wah-gwin-gwin.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"wah-gwin-gwin.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/c1c030c5b41ceffc64cfd698e51a3f3e20160214-22006-1yva4fh.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/c1c030c5b41ceffc64cfd698e51a3f3e20160214-22006-29wfz5.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/c1c030c5b41ceffc64cfd698e51a3f3e20160214-22006-29wfz5.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/c1c030c5b41ceffc64cfd698e51a3f3e20160214-22006-29wfz5.jpg[0]' -auto-orient -resize "500x500>" '/tmp/25f2ce205c75a7e88ae25c36f80db45720160214-22006-8jybt3'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/c1c030c5b41ceffc64cfd698e51a3f3e20160214-22006-29wfz5.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/c1c030c5b41ceffc64cfd698e51a3f3e20160214-22006-29wfz5.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/c1c030c5b41ceffc64cfd698e51a3f3e20160214-22006-29wfz5.jpg[0]' -auto-orient -resize "200x200>" '/tmp/25f2ce205c75a7e88ae25c36f80db45720160214-22006-1k3xe10'
+  [1m[36m (0.1ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/c1c030c5b41ceffc64cfd698e51a3f3e20160214-22006-14tv579.jpg'
+  [1m[35mSQL (1.1ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Wah Gwin Gwin Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "wah-gwin-gwin.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 156979], ["avatar_updated_at", "2016-02-14 21:03:38.801376"], ["created_at", "2016-02-14 21:03:39.122182"], ["updated_at", "2016-02-14 21:03:39.122182"]]
+  [1m[36m (101.5ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/89
+Completed 302 Found in 476ms (ActiveRecord: 102.7ms)
+
+
+Started GET "/waterfalls/89" for ::1 at 2016-02-14 13:03:39 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"89"}
+  [1m[35mWaterfall Load (0.4ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 89]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 89]]
+  Rendered collection (0.0ms)
+  Rendered comments/_form.html.erb (4.1ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (12.3ms)
+Completed 200 OK in 79ms (Views: 76.0ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 13:03:41 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (1.6ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.4ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (43.5ms)
+Completed 200 OK in 148ms (Views: 142.1ms | ActiveRecord: 2.5ms)
+
+
+Started GET "/waterfalls/new" for ::1 at 2016-02-14 13:03:44 -0800
+Processing by WaterfallsController#new as HTML
+  Rendered waterfalls/_form.html.erb (12.5ms)
+  Rendered waterfalls/new.html.erb within layouts/application (14.4ms)
+  [1m[35mAdmin Load (0.3ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+Completed 200 OK in 105ms (Views: 103.1ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/waterfalls" for ::1 at 2016-02-14 13:03:59 -0800
+Processing by WaterfallsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"UQhinrJFCyr5FHINAQ0GHDUf98MnGZjHtAuSacktnTVf+0TrXoi+aiMja4ux61Y5emDN2s4ILCeS4uqVppJIsQ==", "waterfall"=>{"title"=>"Wahclella Falls", "text"=>"", "height"=>"", "width"=>"", "drops"=>"", "tallestDrop"=>"", "form"=>"", "watershed"=>"", "stream"=>"", "location"=>"", "state"=>"", "visit"=>"", "avatar"=>#<ActionDispatch::Http::UploadedFile:0xb1b29e78 @tempfile=#<Tempfile:/tmp/RackMultipart20160214-22006-1dvavof.jpg>, @original_filename="wahclella.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"waterfall[avatar]\"; filename=\"wahclella.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Upload"}
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/897cd76be17b3e16c6650cf4cd6c15a920160214-22006-201ob1.jpg'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/897cd76be17b3e16c6650cf4cd6c15a920160214-22006-vzn9da.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/897cd76be17b3e16c6650cf4cd6c15a920160214-22006-vzn9da.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/897cd76be17b3e16c6650cf4cd6c15a920160214-22006-vzn9da.jpg[0]' -auto-orient -resize "500x500>" '/tmp/2090780c7c0159b892f0604b2de67f6620160214-22006-1oxpcau'
+Command :: PATH=/usr/local/bin/:$PATH; identify -format '%wx%h,%[exif:orientation]' '/tmp/897cd76be17b3e16c6650cf4cd6c15a920160214-22006-vzn9da.jpg[0]' 2>/dev/null
+Command :: PATH=/usr/local/bin/:$PATH; identify -format %m '/tmp/897cd76be17b3e16c6650cf4cd6c15a920160214-22006-vzn9da.jpg[0]'
+Command :: PATH=/usr/local/bin/:$PATH; convert '/tmp/897cd76be17b3e16c6650cf4cd6c15a920160214-22006-vzn9da.jpg[0]' -auto-orient -resize "200x200>" '/tmp/2090780c7c0159b892f0604b2de67f6620160214-22006-1hnpsr9'
+  [1m[36m (0.2ms)[0m  [1mbegin transaction[0m
+Command :: PATH=/usr/local/bin/:$PATH; file -b --mime '/tmp/897cd76be17b3e16c6650cf4cd6c15a920160214-22006-1gqg9yh.jpg'
+  [1m[35mSQL (1.2ms)[0m  INSERT INTO "waterfalls" ("title", "text", "form", "watershed", "stream", "location", "state", "avatar_file_name", "avatar_content_type", "avatar_file_size", "avatar_updated_at", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)  [["title", "Wahclella Falls"], ["text", ""], ["form", ""], ["watershed", ""], ["stream", ""], ["location", ""], ["state", ""], ["avatar_file_name", "wahclella.jpg"], ["avatar_content_type", "image/jpeg"], ["avatar_file_size", 99565], ["avatar_updated_at", "2016-02-14 21:03:59.525537"], ["created_at", "2016-02-14 21:03:59.841380"], ["updated_at", "2016-02-14 21:03:59.841380"]]
+  [1m[36m (17.7ms)[0m  [1mcommit transaction[0m
+Redirected to http://localhost:3000/waterfalls/90
+Completed 302 Found in 384ms (ActiveRecord: 19.1ms)
+
+
+Started GET "/waterfalls/90" for ::1 at 2016-02-14 13:03:59 -0800
+Processing by WaterfallsController#show as HTML
+  Parameters: {"id"=>"90"}
+  [1m[35mWaterfall Load (0.3ms)[0m  SELECT  "waterfalls".* FROM "waterfalls" WHERE "waterfalls"."id" = ? LIMIT 1  [["id", 90]]
+  [1m[36mComment Load (0.2ms)[0m  [1mSELECT "comments".* FROM "comments" WHERE "comments"."waterfall_id" = ?[0m  [["waterfall_id", 90]]
+  Rendered collection (0.1ms)
+  Rendered comments/_form.html.erb (4.3ms)
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  Rendered waterfalls/show.html.erb within layouts/application (13.5ms)
+Completed 200 OK in 93ms (Views: 89.9ms | ActiveRecord: 0.8ms)
+
+
+Started GET "/waterfalls" for ::1 at 2016-02-14 13:04:04 -0800
+Processing by WaterfallsController#index as HTML
+  [1m[36mWaterfall Load (2.0ms)[0m  [1mSELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 0[0m
+  [1m[35mAdmin Load (0.2ms)[0m  SELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1  [["id", 1]]
+  [1m[36m (0.5ms)[0m  [1mSELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"[0m
+  Rendered waterfalls/index.html.erb within layouts/application (48.0ms)
+Completed 200 OK in 138ms (Views: 132.8ms | ActiveRecord: 2.7ms)
+
+
+Started GET "/waterfalls?page=7" for ::1 at 2016-02-14 13:04:07 -0800
+Processing by WaterfallsController#index as HTML
+  Parameters: {"page"=>"7"}
+  [1m[35mWaterfall Load (2.1ms)[0m  SELECT  DISTINCT "waterfalls".* FROM "waterfalls"  ORDER BY title ASC LIMIT 10 OFFSET 60
+  [1m[36mAdmin Load (0.4ms)[0m  [1mSELECT  "admins".* FROM "admins" WHERE "admins"."id" = ?  ORDER BY "admins"."id" ASC LIMIT 1[0m  [["id", 1]]
+  [1m[35m (0.5ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
+  Rendered waterfalls/index.html.erb within layouts/application (44.3ms)
+Completed 200 OK in 119ms (Views: 112.5ms | ActiveRecord: 3.0ms)
