@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160205031907) do
+ActiveRecord::Schema.define(version: 20160215000809) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -40,13 +40,6 @@ ActiveRecord::Schema.define(version: 20160205031907) do
   end
 
   add_index "comments", ["waterfall_id"], name: "index_comments_on_waterfall_id"
-
-  create_table "pictures", force: :cascade do |t|
-    t.integer  "post_id"
-    t.string   "avatar"
-    t.datetime "created_at", null: false
-    t.datetime "updated_at", null: false
-  end
 
   create_table "waterfalls", force: :cascade do |t|
     t.string   "title"

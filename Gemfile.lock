@@ -45,6 +45,11 @@ GEM
       debug_inspector (>= 0.0.1)
     builder (3.2.2)
     byebug (8.2.2)
+    carrierwave (0.10.0)
+      activemodel (>= 3.2.0)
+      activesupport (>= 3.2.0)
+      json (>= 1.7)
+      mime-types (>= 1.16)
     climate_control (0.0.3)
       activesupport (>= 3.0)
     cocaine (0.5.8)
@@ -139,6 +144,7 @@ GEM
       json (~> 1.4)
     responders (2.1.1)
       railties (>= 4.2.0, < 5.1)
+    rmagick (2.15.4)
     sass (3.4.21)
     sass-rails (5.0.4)
       railties (>= 4.0.0, < 5.0)
@@ -182,6 +188,7 @@ PLATFORMS
 DEPENDENCIES
   autoprefixer-rails (>= 5.0)
   byebug
+  carrierwave
   cocaine (~> 0.5.8)
   coffee-rails (~> 4.1.0)
   devise
@@ -191,6 +198,7 @@ DEPENDENCIES
   paperclip (~> 4.3.3)
   rails (= 4.2.4)
   ransack
+  rmagick
   sass-rails (~> 5.0)
   sdoc (~> 0.4.0)
   spring

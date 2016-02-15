@@ -53,10 +53,15 @@ gem "cocaine", "~> 0.5.8"
 #Kaminari
 gem "kaminari"
 
+#Devise
 gem "devise"
 
-#ransack
+#Ransack
 gem 'ransack'
+
+#Carrierwave
+gem 'carrierwave'
+gem 'rmagick'
 
 group :development, :test do
   # Call 'byebug' anywhere in the code to stop execution and get a debugger console

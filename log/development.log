@@ -51198,3 +51198,34 @@ Processing by WaterfallsController#index as HTML
   [1m[35m (0.5ms)[0m  SELECT DISTINCT COUNT(DISTINCT "waterfalls"."id") FROM "waterfalls"
   Rendered waterfalls/index.html.erb within layouts/application (44.3ms)
 Completed 200 OK in 119ms (Views: 112.5ms | ActiveRecord: 3.0ms)
+  [1m[36mActiveRecord::SchemaMigration Load (0.2ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Migrating to DropPictures (20160215000809)
+  [1m[35m (0.2ms)[0m  begin transaction
+  [1m[36m (1.7ms)[0m  [1mDROP TABLE "pictures"[0m
+  [1m[35mSQL (0.9ms)[0m  INSERT INTO "schema_migrations" ("version") VALUES (?)  [["version", "20160215000809"]]
+  [1m[36m (55.2ms)[0m  [1mcommit transaction[0m
+  [1m[35mActiveRecord::SchemaMigration Load (0.3ms)[0m  SELECT "schema_migrations".* FROM "schema_migrations"
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admins_on_reset_password_token' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admins_on_reset_password_token' AND type='index'
+[0m
+  [1m[35m (0.2ms)[0m              SELECT sql
+            FROM sqlite_master
+            WHERE name='index_admins_on_email' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_admins_on_email' AND type='index'
+
+  [1m[36m (0.2ms)[0m  [1m            SELECT sql
+            FROM sqlite_master
+            WHERE name='index_comments_on_waterfall_id' AND type='index'
+            UNION ALL
+            SELECT sql
+            FROM sqlite_temp_master
+            WHERE name='index_comments_on_waterfall_id' AND type='index'
+[0m
