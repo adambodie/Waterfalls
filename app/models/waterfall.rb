@@ -1,6 +1,7 @@
 class Waterfall < ActiveRecord::Base
 	paginates_per 10
 	has_many :comments, dependent: :destroy
+	has_many :pictures
 	validates :title, presence: true,
                     length: { minimum: 5 }
   has_attached_file :avatar, :styles => { :medium => "500x500>", :thumb => "200x200>" }, :default_url => "/images/:style/missing.png"

@@ -21,14 +21,21 @@
 						<p><strong>Visited:</strong> No</p>
 					<% end %>
 			</div>
- 			
+ 			<div class="col-md-6 carousel">
+ 			<a href="../images/<%=@waterfall.imageName%>.jpg" >			
 				<%= image_tag @waterfall.avatar.url(:medium), class:"img-responsive big-picture" %>
-			</div>
-			
+			</a>			
+			</div>			
 		</div>
-		<div class="row other-pictures">
-  			<div id="pics"></div>
-  		</div>
+		<div class="row carousel">
+		<% for i in (2..5) do %>
+				<div class="col-sm-3 small-picture">
+					<a href="../images/<%=@waterfall.imageName%><%= i %>.jpg" class="img-responsive">
+					<img src="../images/<%=@waterfall.imageName%><%= i %>.jpg" class="img-responsive">
+					</a>
+				</div>
+		<% end %>	
+		</div>		
 		<div class ="row comments">
  			<div class="col-sm-6">
 				<h3>Comments</h3>

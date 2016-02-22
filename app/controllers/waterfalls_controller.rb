@@ -48,7 +48,7 @@ class WaterfallsController < ApplicationController
 	end
   	private
   		def waterfall_params
-    		params.require(:waterfall).permit(:title, :text, :height, :width, :drops, :tallestDrop, :form, :watershed, :stream, :location, :state, :visit, :avatar)
+    		params.require(:waterfall).permit(:title, :text, :height, :width, :drops, :tallestDrop, :form, :watershed, :stream, :location, :state, :visit, :avatar, :imageName)
   		end
 end
 

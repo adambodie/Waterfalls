@@ -1,6 +1,6 @@
 <div class="form">
 <%= form_for @waterfall, url: @waterfalls_path, :html => { :multipart => true } do |f| %>
-
+<div class="row">
   <% if @waterfall.errors.any? %>
     <div id="error_explanation">
       <h2>
@@ -14,7 +14,6 @@
       </ul>
     </div>
   <% end %>
- 
   <p>
     <%= f.label :title %><br>
     <%= f.text_field :title, autocomplete: 'off' %>
@@ -22,56 +21,89 @@
  
   <p>
     <%= f.label :text %><br>
-    <%= f.text_area :text, size: "60x10" , autocomplete: 'off' %>
+    <%= f.text_area :text, size: "70x5" , autocomplete: 'off' %>
   </p>
- 
-  <p>
-    <%= f.label :height %><br>
-    <%= f.text_field :height, autocomplete: 'off' %>
-  </p> 
-
-  <p>
-    <%= f.label :width %><br>
-    <%= f.text_field :width, autocomplete: 'off' %>
-  </p>
-    <p>
-    <%= f.label :drops %><br>
-    <%= f.text_field :drops, autocomplete: 'off' %>
-  </p>
-    <p>
-    <%= f.label :tallestDrop %><br>
-    <%= f.text_field :tallestDrop , autocomplete: 'off'%>
-  </p>
-    <p>
-    <%= f.label :form %><br>
-    <%= f.text_field :form , autocomplete: 'off'%>
-  </p>
-  <p>
-    <%= f.label :watershed %><br>
-    <%= f.text_field :watershed , autocomplete: 'off'%>
-  </p>
-  <p>
-    <%= f.label :stream %><br>
-    <%= f.text_field :stream, autocomplete: 'off' %>
-  </p>
-    <p>
-    <%= f.label :location %><br>
-    <%= f.text_field :location, autocomplete: 'off' %>
-  </p>
-    <p>
-    <%= f.label :state %><br>
-    <%= f.text_field :state, autocomplete: 'off' %>
-  </p> 
-   <p>
-    <%= f.label :visit %><br>
-    <%= f.text_field :visit, autocomplete: 'off' %>
-  </p>
- 
+  </div>
+  	<div class="row">
+ 		<div class="col-md-3">
+  			<p>
+    			<%= f.label :height %><br>
+    			<%= f.text_field :height, autocomplete: 'off' %>
+  			</p> 
+		</div>
+	 	<div class="col-md-3">
+  			<p>
+   		 	<%= f.label :width %><br>
+    			<%= f.text_field :width, autocomplete: 'off' %>
+  			</p>
+  		</div>
+   	<div class="col-md-3">
+    		<p>
+    			<%= f.label :drops %><br>
+    			<%= f.text_field :drops, autocomplete: 'off' %>
+  			</p>
+  		</div>
+  	</div>
+  	<div class="row">
+ 		<div class="col-md-3">  	  		
+    		<p>
+    			<%= f.label :tallestDrop %><br>
+    			<%= f.text_field :tallestDrop , autocomplete: 'off'%>
+  			</p>
+    	</div>
+ 		<div class="col-md-3">      	
+    		<p>
+    			<%= f.label :form %><br>
+    			<%= f.text_field :form , autocomplete: 'off'%>
+  			</p>
+		</div>
+	</div>
+  	<div class="row">
+ 		<div class="col-md-3">	  
+  			<p>
+    			<%= f.label :watershed %><br>
+    			<%= f.text_field :watershed , autocomplete: 'off'%>
+  			</p>
+  		</div>
+	 	<div class="col-md-3">	  
+			<p>
+    			<%= f.label :stream %><br>
+    			<%= f.text_field :stream, autocomplete: 'off' %>
+  			</p>
+  		</div>
+ 		<div class="col-md-3">
+ 			<p>
+    			<%= f.label :location %><br>
+    			<%= f.text_field :location, autocomplete: 'off' %>
+  			</p>
+		</div>
+	</div>
+  	<div class="row">
+ 		<div class="col-md-3">	    
+    		<p>
+    			<%= f.label :state %><br>
+    			<%= f.text_field :state, autocomplete: 'off' %>
+  			</p> 
+		</div>
+	 <div class="col-md-3">		
+	 	<p>
+    		<%= f.label :visit %><br>
+    		<%= f.text_field :visit, autocomplete: 'off' %>
+  		</p>
+	</div>
+	<div class="col-md-3">		   
+   	<p>
+    		<%= f.label :imageName %><br>
+    		<%= f.text_field :imageName, autocomplete: 'off' %>
+  		</p>
+  	</div>
+  </div>	 
  <p>
 		<%= f.file_field :avatar%>  
  </p>
-  <p>
-    <%= f.submit "Upload", class: "btn btn-primary" %>
-  </p><br>
+  	<p>
+   	<%= f.submit "Upload", class: "btn btn-primary" %>
+  		<%= link_to 'Back', waterfalls_path, class: "waterfall-title btn btn-primary"  %>
+	</p>  	
 <% end %>
 </div>

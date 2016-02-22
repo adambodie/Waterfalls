@@ -1,5 +1,14 @@
 <div class="container">
 	<div class="page">
+	<% if admin_signed_in? %>
+		<%= link_to 'New', new_waterfall_path(), class: "btn btn-primary" %>
+	<% end %>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<%= paginate @waterfalls %>
+			</div>
+		</div>	
 	<div class="row waterfall">
 			<div class="col-xs-5">
    				<h4><%= sort_link(@q, :title) %></h4>
@@ -45,9 +54,12 @@
 			</div>   	
   			<% end %>
 
-	<%= paginate @waterfalls %>
-			<% if admin_signed_in? %>
-				<%= link_to 'New', new_waterfall_path(), class: "btn btn-primary" %>
-			<% end %>
+		<div class="row">
+			<div class="col-md-3"></div>
+			<div class="col-md-6">
+				<%= paginate @waterfalls %>
+			</div>
+		</div>
+
 	</div> 
 </div>
