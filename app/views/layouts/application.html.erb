@@ -22,7 +22,7 @@
   
   <%= csrf_meta_tags %>
 </head>
-<body>
+<body data-vide-bg="../videos/background.mp4" data-vide-options="loop: true, muted: true">
     <nav class="navbar navbar-default navbar-static-top">
       <div class="container">
         <div class="navbar-header">
@@ -38,6 +38,7 @@
           <ul class="nav navbar-nav">
             <li><%= link_to('Home', root_path) %></li>
             <li><%= link_to 'Waterfalls', controller: '/waterfalls' %></li>
+            <li><%= link_to 'Blog', controller: '/posts' %></li>
             <% if admin_signed_in? %>
 					<li><%= link_to('Log Out', destroy_admin_session_path, :method => :get) %></li>
 				<% else %>
@@ -54,9 +55,11 @@
 <%= javascript_include_tag "https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"'data-turbolinks-track' => true %> 
 <%= javascript_include_tag "https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js" %>
 <%= javascript_include_tag "jquery.sticky"%>
+<%= javascript_include_tag "jquery.vide.min" %>  
 <%= javascript_include_tag "sticky" %>
 <%= javascript_include_tag "animation" %>
 <%= javascript_include_tag "overlay" %>  
+
 
 </body>
 </html>

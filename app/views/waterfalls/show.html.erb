@@ -28,7 +28,10 @@
 			</div>			
 		</div>
 		<div class="row carousel">
-		<% for i in (2..5) do %>
+		<% if @waterfall.index != 0 %>
+			<h4>Additional Pictures</h4>
+		<% end %>
+		<% for i in (2..(@waterfall.index + 1)) do %>
 				<div class="col-sm-3 small-picture">
 					<a href="../images/<%=@waterfall.imageName%><%= i %>.jpg" class="img-responsive">
 					<img src="../images/<%=@waterfall.imageName%><%= i %>.jpg" class="img-responsive">

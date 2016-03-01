@@ -11,7 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20160219014737) do
+ActiveRecord::Schema.define(version: 20160228224227) do
 
   create_table "admins", force: :cascade do |t|
     t.string   "email",                  default: "", null: false
@@ -51,6 +51,13 @@ ActiveRecord::Schema.define(version: 20160219014737) do
 
   add_index "pictures", ["waterfall_id"], name: "index_pictures_on_waterfall_id"
 
+  create_table "posts", force: :cascade do |t|
+    t.string   "title"
+    t.text     "text"
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
+
   create_table "waterfalls", force: :cascade do |t|
     t.string   "title"
     t.text     "text"
@@ -72,6 +79,7 @@ ActiveRecord::Schema.define(version: 20160219014737) do
     t.boolean  "visit"
     t.string   "avatar"
     t.string   "imageName"
+    t.integer  "index"
   end
 
 end
