@@ -1,4 +1,4 @@
-<div class="container">
+<div class="container-fluid">
 	<div class="page">
 	<% if admin_signed_in? %>
 		<%= link_to 'New', new_waterfall_path(), class: "btn btn-primary" %>
@@ -10,52 +10,58 @@
 			</div>
 		</div>	
 	<div class="row waterfall">
-			<div class="col-xs-4">
-   				<h4><%= sort_link(@q, :title) %></h4>
+			<div class="col-sm-4">
+   				<h4 class="waterfall-title"><%= sort_link(@q, :title) %></h4>
    		</div>
-			<div class="col-xs-2">
+			<div class="col-sm-2 other">
 					<h4><%= sort_link(@q, :location) %></h4>
 			</div>	
-			<div class="col-xs-1">
+			<div class="col-sm-2 other">
 					<h4><%= sort_link(@q, :state) %></h4>
 			</div>		
-			<div class="col-xs-1">
+			<div class="col-sm-1 other">
 					<h4><%= sort_link(@q, :height, default_order: :desc) %></h4>		
 			</div>
-			<div class="col-xs-1">
+			<div class="col-sm-1 other">
 					<h4><%= sort_link(@q, :width, default_order: :desc) %></h4>		
 			</div>
+			<div class="col-sm-1 other">
+					<h4><%= sort_link(@q, :form) %></h4>
+			</div>			
 	</div>
 
   			<% @waterfalls.each do |waterfall| %>
   			<div class="row waterfall">
-				<div class="col-xs-2">
-      			<h4><%= link_to waterfall.title, waterfall_path(waterfall)%></h4>
+				<div class="col-sm-2">
+      			<h4 class="waterfall-title"><%= link_to waterfall.title, waterfall_path(waterfall)%></h4>
       		</div>
-      		<div class="col-xs-2">		
+      		<div class="col-sm-2">		
       			<h4><%= image_tag waterfall.avatar.url(:thumb), class: "img-responsive small-picture"%></h4>
       		</div>
-    			<div class="col-xs-2">		
+    			<div class="col-sm-2 other">		
       			<h5><%= waterfall.location%></h5>
       		</div>
-      		<div class="col-xs-1">		
+      		<div class="col-sm-2 other">		
       			<h5><%= waterfall.state%></h5>
       		</div>
-      		<div class="col-xs-1">		
+      		<div class="col-sm-1 other">		
       			<h5><%= waterfall.height%> feet</h5>
       		</div>
-      		<div class="col-xs-1">		
+      		<div class="col-sm-1 other">		
       			<h5><%= waterfall.width%> feet</h5>
       		</div>
+      		<div class="col-sm-1 other">		
+      			<h5><%= waterfall.form%></h5>
+      		</div>      		
       		<% if admin_signed_in? %>
-      			<div class="col-xs-2">	
+      			<div class="col-sm-1 other">	
 	   	   		<%= link_to 'Edit', edit_waterfall_path(waterfall), class: "btn btn-primary" %>
 	   	   		<%= link_to 'Delete', waterfall_path(waterfall),
    		   	        method: :delete,
       		   	     data: { confirm: 'Are you sure?' }, class: "btn btn-primary" %>
       		   </div>
       		   <% else %>
-      		   	<div class="col-xs-3"></div>
+      		   	<div class="col-sm-3 other"></div>
 				<% end %> 
 			</div>   	
   			<% end %>

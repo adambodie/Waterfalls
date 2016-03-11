@@ -3,7 +3,7 @@
 <div class="container">
 	<div class="page">
  		<div class="row">
- 			<div class="col-md-6">
+ 			<div class="col-sm-6">
  					<p><strong>Summary:</strong></p>
 					<p><%= @waterfall.text %></p>
 					<p><strong>Height:</strong> <%= @waterfall.height %> feet</p>
@@ -21,7 +21,7 @@
 						<p><strong>Visited:</strong> No</p>
 					<% end %>
 			</div>
- 			<div class="col-md-6 carousel">
+ 			<div class="col-sm-6 carousel">
  			<a href="../images/<%=@waterfall.imageName%>.jpg" >			
 				<%= image_tag @waterfall.avatar.url(:medium), class:"img-responsive big-picture" %>
 			</a>			
@@ -29,7 +29,7 @@
 		</div>
 		<div class="row carousel">
 		<% if @waterfall.index != 0 %>
-			<h4>Additional Pictures</h4>
+			<h3>Additional Pictures</h3>
 		<% end %>
 		<% for i in (2..(@waterfall.index + 1)) do %>
 				<div class="col-sm-3 small-picture">
@@ -54,6 +54,5 @@
 		<% if admin_signed_in? %>
 			<%= link_to 'Edit', edit_waterfall_path(@waterfall), class: "waterfall-title btn btn-primary" %>
 		<% end %>
-		<%= link_to 'Back', waterfalls_path, class: "waterfall-title btn btn-primary"  %>
 	</div>
 </div>

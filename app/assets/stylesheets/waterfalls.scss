@@ -42,7 +42,7 @@
 	padding: 20px;
 }
 
-.other-pictures h3 {
+.carousel h3 {
 	text-align: center;
 }
 
@@ -71,4 +71,25 @@
     	h3 {
      		color:white; 
     	}
+}
+
+.other {
+	display: none;
+
+}
+
+.waterfall-title {
+	text-align: center;
+}
+
+@media (min-width: 768px) {
+	.other {
+		display: block;
 	}
+	.waterfall-title {
+		text-align: left;	
+	}
+	h4, h5 {
+		font-size: 12px;	
+	}
+}
