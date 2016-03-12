@@ -1,0 +1,26 @@
+
+.post-title {
+  text-align: center;
+}
+
+.post-title a {
+  text-decoration: none;
+  color: black;
+}
+
+.author {
+  text-indent: 2em;
+}
+
+.posts {
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+.text {
+  font-size: 14px;
+}
+
+.post {
+  padding: 30px;
+}

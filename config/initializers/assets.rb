@@ -8,6 +8,9 @@ Rails.application.config.assets.version = '1.0'
 Rails.application.config.assets.precompile += %w( animation.js )
 Rails.application.config.assets.precompile += %w( main.css )
 Rails.application.config.assets.precompile += %w( normalize.css )
+Rails.application.config.assets.precompile += %w( waterfalls.css )
+Rails.application.config.assets.precompile += %w( admin.css )
+Rails.application.config.assets.precompile += %w( posts.css )
 # Precompile additional assets.
 # application.js, application.css, and all non-JS/CSS in app/assets folder are already added.
 # Rails.application.config.assets.precompile += %w( search.js )
