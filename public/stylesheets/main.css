@@ -2,12 +2,12 @@
 body {
   background-image: url("../videos/background.jpg");
   background-size: cover;
+  background-repeat: no-repeat;
   color: black;
   font-family: 'Ubuntu', sans-serif;
   font-size: 13px;
   line-height: 18px;
 }
-
 
 /*         Navbar
 -------------------------------*/ 
@@ -16,7 +16,7 @@ body {
 	margin-top: 5px;
 	font-weight: bold;
 	padding: 10px;
-	display: inline-block;
+	display: block;
 	max-width: 350px;
 }
 
@@ -28,8 +28,14 @@ body {
 }
 
 #navbar {
-	background-color: white;
 	border: none;
+	background-color: #fff;
+	margin-top: 30px;
+}
+
+.navbar-default {
+	background-image: none;
+	background-color: #fff;
 }
 
 #navbar li {

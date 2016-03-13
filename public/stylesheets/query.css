@@ -7,6 +7,9 @@
     text-align: left;
   }
 
+	#main-title {
+		display: inline-block;	
+	}
   h4, h5 {
     font-size: 12px;
   }
@@ -14,11 +17,13 @@
   #navbar {
 		display: inline-block!important;
 	}
+	
 }
 
 @media (min-width: 1000px) {	
 	.video {
-		display: block;	
+		display: block;
+		padding-bottom: 100px;	
 	}
 	.mobile {
 		display: none;	

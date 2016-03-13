@@ -1,7 +1,8 @@
 class PostsController < ApplicationController
 
 	def index
-		@posts = Post.all
+		@q = Post.ransack(params[:q])
+    	@posts = @q.result(distinct: true).page(params[:page]).per(15).order('date DESC')
 	end
 	
 	def show
@@ -46,7 +47,7 @@ class PostsController < ApplicationController
 
   	private
   		def post_params
-    		params.require(:post).permit(:title, :text)
+    		params.require(:post).permit(:title, :text, :date)
   		end
 
 end
