@@ -4,12 +4,11 @@
 		<%= link_to 'New', new_waterfall_path(), class: "btn btn-primary" %>
 	<% end %>
 		<div class="row">
-			<div class="col-md-3"></div>
-			<div class="col-md-6">
-				<%= paginate @waterfalls %>
-			</div>
+				<div class="pages">
+					<%= paginate @waterfalls %>
+				</div>
 		</div>	
-	<div class="row waterfall">
+	<div class="row waterfall key">
 			<div class="col-sm-4">
    				<h4 class="waterfall-title"><%= sort_link(@q, :title) %></h4>
    		</div>
@@ -67,11 +66,10 @@
   			<% end %>
 
 		<div class="row">
-			<div class="col-md-3"></div>
-			<div class="col-md-6">
-				<%= paginate @waterfalls %>
-			</div>
-		</div>
+				<div class="pages">
+					<%= paginate @waterfalls %>
+				</div>
+		</div>	
 
 	</div> 
 </div>
