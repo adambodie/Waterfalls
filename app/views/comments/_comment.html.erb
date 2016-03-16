@@ -9,7 +9,9 @@
 </p><br>
  
 <p>
-  <%= link_to 'Delete', [comment.waterfall, comment],
+  <% if admin_signed_in? %>
+  		<%= link_to 'Delete', [comment.waterfall, comment],
                method: :delete,
                data: { confirm: 'Are you sure?' } %>
+	<% end %>
 </p><br>

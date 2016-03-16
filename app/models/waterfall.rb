@@ -1,6 +1,5 @@
 class Waterfall < ActiveRecord::Base
-	paginates_per 10
-	has_many :comments, dependent: :destroy
+	has_many :comments
 	has_many :pictures
 	validates :title, presence: true,
                     length: { minimum: 5 }

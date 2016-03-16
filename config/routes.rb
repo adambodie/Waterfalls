@@ -2,8 +2,7 @@ Rails.application.routes.draw do
   devise_for :admins
   get 'welcome/index'
 	resources :waterfalls do
-		resources :comments
-		resources :pictures
+		resources :comments, only: [:create, :destroy]
 	end
 	resources :posts
   # The priority is based upon order of creation: first created -> highest priority.

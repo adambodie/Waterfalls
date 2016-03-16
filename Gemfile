@@ -59,10 +59,6 @@ gem "devise"
 #Ransack
 gem 'ransack'
 
-#Carrierwave
-gem 'carrierwave'
-gem 'rmagick'
-
 #Redcarpet
 gem 'redcarpet'
 
