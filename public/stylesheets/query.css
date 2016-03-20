@@ -18,6 +18,10 @@
 		display: inline-block!important;
 	}
 	
+	.blog-pic-medium {
+		max-width: 300px;
+	}
+	
 }
 
 @media (min-width: 1000px) {	
